@@ -7,6 +7,9 @@
     {% for page in project_pages %}
       {% unless page.draft %}
         {% include project-card-1a.html page=page %}
+        {% for label in page.labels %}
+          <div class="ui basic label">{{ label }}</div>
+        {% endfor %}
       {% endunless %}
     {% endfor %}
   </div>
