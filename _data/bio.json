@@ -9,10 +9,10 @@
     "phone": "808-333-4444",
     "location": {
       "address": "",
-      "postalCode": "96822",
-      "city": "Honolulu",
-      "region": "Hawaii",
-      "countryCode": "USA"
+      "postalCode": "35400-000",
+      "city": "Ouro Preto",
+      "region": "Minas Gerais",
+      "countryCode": "BRA"
     },
     "profiles": [
       {
@@ -22,18 +22,13 @@
       },
       {
         "network": "linkedin",
-        "username": "mollymaluhia",
-        "url": "http://linkedin.com/in/changeme"
-      },
-      {
-        "network": "twitter",
-        "username": "mollymal",
-        "url": "http://twitter.com/changeme"
+        "username": "htrotta",
+        "url": "https://www.linkedin.com/in/htrotta/"
       },
       {
         "network": "instagram",
-        "username": "molly",
-        "url": "http://instagram.com/changeme"
+        "username": "htrotta_",
+        "url": "http://instagram.com/htrottra_"
       }
     ]
   },
