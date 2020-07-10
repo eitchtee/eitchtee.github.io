@@ -1,24 +1,24 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
+    "name": "Herculino Trotta",
     "label": "Student",
     "picture": "https://techfolios.github.io/template/images/molly.png",
     "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
+    "website": "https://eitchtee.github.io",
     "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2020.",
+    "phone": "808-333-4444",
     "location": {
       "address": "",
       "postalCode": "96822",
       "city": "Honolulu",
-      "countryCode": "USA",
-      "region": "Hawaii"
+      "region": "Hawaii",
+      "countryCode": "USA"
     },
     "profiles": [
       {
         "network": "github",
-        "username": "mmaluhia",
-        "url": "http://github.com/changeme"
+        "username": "eitchtee",
+        "url": "http://github.com/eitchtee"
       },
       {
         "network": "linkedin",
@@ -47,13 +47,11 @@
     },
     {
       "name": "data mining",
-      "keywords": [
-      ]
+      "keywords": []
     },
     {
       "name": "artificial intelligence",
-      "keywords": [
-      ]
+      "keywords": []
     }
   ],
   "skills": [
@@ -89,8 +87,7 @@
       "startDate": "2013-09-01",
       "endDate": "Present",
       "gpa": "",
-      "courses": [
-      ]
+      "courses": []
     }
   ],
   "work": [
