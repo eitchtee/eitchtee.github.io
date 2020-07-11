@@ -21,20 +21,23 @@
   </div>
 </div>
 
+
 <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+</script>
 
 <script>
-	  var $btns = $('.button').click(function() {
-	  if (this.id == 'all') {
-	    $('#filterable > a').fadeIn(450);
-	  } else {
-	    var $el = $('.' + this.id).fadeIn(450);
-	    $('#filterable > a').not($el).hide();
-	  }
-	  $btns.removeClass('active');
-	  $(this).addClass('active');
-	})
+    // from https://codepen.io/terf/post/jquery-filter-divs
+    var $btns = $('.button').click(function () {
+        if (this.id == 'all') {
+            $('#filterable > a').fadeIn(450);
+        } else {
+            var $el = $('.' + this.id).fadeIn(450);
+            $('#filterable > a').not($el).hide();
+        }
+        $btns.removeClass('active');
+        $(this).addClass('active');
+    })
 </script>
