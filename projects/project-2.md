@@ -11,6 +11,8 @@ labels:
   - Meteor
   - MongoDB
   - GitHub
+ category:
+  - Web
 summary: A responsive web application for travel planning that my team developed in ICS 415.
 
 externalurl: https://github.com/eitchtee/eitchtee.github.io/blob/master/css/stylesheet-customizations.scss
