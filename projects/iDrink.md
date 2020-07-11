@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/micromouse.jpg
+image: images/projects/idrink.png
 title: iDrink
 permalink: projects/idrink
 # All dates must be YYYY-MM-DD format!
