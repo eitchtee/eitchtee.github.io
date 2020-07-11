@@ -10,6 +10,8 @@ labels:
   - Robotics
   - Arduino
   - C++
+category:
+  - Robotics
 summary: My team developed a robotic mouse that won first place in the 2015 UH Micromouse competition.
 ---
 
