@@ -11,7 +11,7 @@ labels:
   - Meteor
   - MongoDB
   - GitHub
- category:
+category:
   - Web
 summary: A responsive web application for travel planning that my team developed in ICS 415.
 
