@@ -34,6 +34,7 @@
 	// filter items on button click
 	$('.filter-button-group').on( 'click', 'a', function() {
 	  var filterValue = $(this).attr('data-filter');
+	  console.log(filterValue);
 	  $grid.isotope({ filter: filterValue });
 	});
 	$('.button-group a.button').on('click', function(){
