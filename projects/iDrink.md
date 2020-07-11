@@ -7,7 +7,7 @@ permalink: projects/idrink
 # All dates must be YYYY-MM-DD format!
 date: 2020-06-08
 labels:
-  - GodotEngine
+  - Godot Engine
   - GDSCript
 category:
   - Jogos
