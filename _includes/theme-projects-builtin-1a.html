@@ -5,7 +5,7 @@
     {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
     {% assign project_labels = project_pages | map: "labels" | uniq %}
     
-    <div>
+    <div class="filter-buttons">
         {% for label in project_labels %}
           <a class="button ui basic label" id="{{ label }}">{{ label }}</a>
         {% endfor %}
@@ -43,9 +43,3 @@
         $(this).addClass('active');
     })
 </script>
-
-<style>
-    .hiding {
-        display: none!importat;
-    }
-</style>
