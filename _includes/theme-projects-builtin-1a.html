@@ -12,7 +12,7 @@
       <a class="button ui basic label active" id="all">All</a>
     </div>
   
-  <div class="ui stackable centered four cards" id="filterable">
+  <div class="ui stackable four cards" id="filterable">
     {% for page in project_pages %}
       {% unless page.draft %}
         {% include project-card-1a.html page=page %}
@@ -34,12 +34,8 @@
         if (this.id == 'all') {
             $('#filterable > a').fadeIn(450);
         } else {
-            var $el = $('.' + this.id).fadeIn(450, function() {
-            $('.' + this.id).removeClass('hiding');
-            });
-            $('#filterable > a').not($el).fadeOut(300, function() {
-            $('#filterable > a').not($el).addClass('hiding');
-            });
+            var $el = $('.' + this.id).fadeIn(450);
+            $('#filterable > a').not($el).fadeOut(300);
         }
         $btns.removeClass('active');
         $(this).addClass('active');
