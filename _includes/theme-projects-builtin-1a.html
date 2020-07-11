@@ -4,12 +4,17 @@
 
   <div class="ui stackable centered four cards">
     {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
+    {% assign projects_labels = site.pages | where: "type", "project" | map: "labels" | uniq %}
+    
+    <div>
+        {% for label in project_labels %}
+          <div class="ui basic label">{{ label }}</div>
+        {% endfor %}
+    </div>
+    
     {% for page in project_pages %}
       {% unless page.draft %}
         {% include project-card-1a.html page=page %}
-        {% for label in page.labels %}
-          <div class="ui basic label">{{ label }}</div>
-        {% endfor %}
       {% endunless %}
     {% endfor %}
   </div>
