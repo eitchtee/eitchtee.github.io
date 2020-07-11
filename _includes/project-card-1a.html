@@ -7,7 +7,7 @@
   <div class="content">
     <span class="header">{{ include.page.title }}</span>
     <div class="meta">
-      <span class="date">{{ include.page.category }}</span>
+      <span class="date">{{ include.page.category | join: " | " }}</span>
     </div>
 
     <div class="description">
