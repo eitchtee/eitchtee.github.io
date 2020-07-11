@@ -12,6 +12,10 @@ labels:
   - MongoDB
   - GitHub
 summary: A responsive web application for travel planning that my team developed in ICS 415.
+
+externalurl: https://github.com/eitchtee/eitchtee.github.io/blob/master/css/stylesheet-customizations.scss
+externalurl_text: Acesse
+
 ---
 
 <img class="ui medium right floated rounded image" src="../images/vacay-home-page.png">
