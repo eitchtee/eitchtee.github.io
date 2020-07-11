@@ -12,5 +12,5 @@ labels:
 category:
   - Jogos
 projecturl: https://play.google.com/store/apps/details?id=com.garfsapps.umgole
-summary: iDrink é um jogo para Android com diversos desafios para quebrar o gelo em festas e sociais.
+summary: iDrink é um divertido e afrontoso drinking game, perfeito para quebrar o gelo ou apimentar qualquer festa ou social de amigos, com centenas de desafios e perguntas únicas. Junte seus amigos e comece a jogar agora mesmo, afinal, a gente sabe, nada melhor do que ficar bêbado com quem a gente gosta.
 ---
