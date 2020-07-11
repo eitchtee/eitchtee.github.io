@@ -4,10 +4,10 @@
 
   <div class="ui stackable centered four cards">
     {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
-    {% assign projects_labels = site.pages | map: "labels" | uniq %}
+    {% assign projects_labels = site.pages | map: "labels" | where: "type", "project" | uniq %}
     
     <div>
-        {% for label in project_labels %}
+        {% for label in projects_labels %}
           <div class="ui basic label">{{ label }}</div>
         {% endfor %}
     </div>
