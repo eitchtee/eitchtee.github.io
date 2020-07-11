@@ -35,7 +35,9 @@
             $('#filterable > a').fadeIn(450);
         } else {
             var $el = $('.' + this.id).fadeIn(450);
-            $('#filterable > a').not($el).fadeOut(300);
+            $('#filterable > a').not($el).hide(0, function() {
+                $('#filterable > a').not($el).attr("style", "display: none !important");
+            });
         }
         $btns.removeClass('active');
         $(this).addClass('active');
