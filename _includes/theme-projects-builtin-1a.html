@@ -7,7 +7,7 @@
     
     <div>
         {% for label in project_labels %}
-          <div class="button ui basic label" data-filter=".{{ label | first }}">{{ label | first }}</div>
+          <div class="button ui basic label" data-filter=".{{ label }}">{{ label }}</div>
         {% endfor %}
       <a class="button active" data-filter="*">All</a>
     </div>
