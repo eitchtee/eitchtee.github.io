@@ -29,10 +29,10 @@
 <script>
 	  var $btns = $('.button').click(function() {
 	  if (this.id == 'all') {
-	    $('#filterable > div').fadeIn(450);
+	    $('#filterable > a').fadeIn(450);
 	  } else {
 	    var $el = $('.' + this.id).fadeIn(450);
-	    $('#parent > div').not($el).hide();
+	    $('#parent > a').not($el).hide();
 	  }
 	  $btns.removeClass('active');
 	  $(this).addClass('active');
