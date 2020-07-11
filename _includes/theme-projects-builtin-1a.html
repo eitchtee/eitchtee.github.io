@@ -12,7 +12,7 @@
       <a class="button active" data-filter="*">All</a>
     </div>
   
-  <div class="ui stackable centered four cards grid">
+  <div class="ui stackable centered four cards">
     {% for page in project_pages %}
       {% unless page.draft %}
         {% include project-card-1a.html page=page %}
@@ -28,7 +28,7 @@
 <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
 <script>
 	// init Isotope
-	var $grid = $('.grid').isotope({
+	var $grid = $('.stackable').isotope({
 	  // options
 	});
 	// filter items on button click
