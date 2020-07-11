@@ -1,13 +1,11 @@
-<!-- Like theme-projects-builtin-1, but uses project-card-2.html (i.e. entire card is a link). -->
-
 <div style="padding-top: 20px" class="ui container ">
 
     {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
-    {% assign project_labels = project_pages | map: "labels" | uniq %}
+    {% assign project_categories = project_pages | map: "category" | uniq %}
     
     <div class="filter-buttons">
-        {% for label in project_labels %}
-          <a class="button ui basic label" id="{{ label }}">{{ label }}</a>
+        {% for category in project_categories %}
+          <a class="button ui basic label" id="{{ label }}">{{ category }}</a>
         {% endfor %}
       <a class="button ui basic label active" id="all">Todos</a>
     </div>
