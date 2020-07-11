@@ -25,5 +25,9 @@
       {% endfor %}
     </div>
   </div>
+  
+  {% if page.externalurl %}
+      <a class="ui bottom attached button" href="{{ page.externalurl }}">{{ page.externalurl_text }}</a>
+  {% endif %}
 
 </a>
