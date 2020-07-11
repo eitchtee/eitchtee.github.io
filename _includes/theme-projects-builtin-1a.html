@@ -34,10 +34,20 @@
         if (this.id == 'all') {
             $('#filterable > a').fadeIn(450);
         } else {
-            var $el = $('.' + this.id).fadeIn(450);
-            $('#filterable > a').not($el).hide();
+            var $el = $('.' + this.id).fadeIn(450, function() {
+            $('.' + this.id).removeClass('hiding');
+            });
+            $('#filterable > a').not($el).fadeOut(300, function() {
+            $('#filterable > a').not($el).addClass('hiding');
+            });
         }
         $btns.removeClass('active');
         $(this).addClass('active');
     })
 </script>
+
+<style>
+    .hiding {
+        display: none!importat;
+    }
+</style>
