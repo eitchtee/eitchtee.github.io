@@ -10,10 +10,10 @@
       <img class="ui avatar image" src="{{ site.data.bio.basics.picture }}"><span>{{ site.data.bio.basics.name }}</span>
     </a>
     {% if num_projects > 0 %}
-    <a href="{{ site.baseurl }}/{{ language }}/projetos" class=" {% if include.active == "projects" %} active {% endif %}item">{{ site.projects-page-label-en }}</a>
+    <a href="{{ site.baseurl }}/{{ language }}/projects" class=" {% if include.active == "projects" %} active {% endif %}item">{{ site.projects-page-label-en }}</a>
     {% endif %}
     {% if num_essays > 0 %}
-    <a href="{{ site.baseurl }}/{{ language }}/textos" class=" {% if include.active == "essays" %} active {% endif %} item">{{ site.essays-page-label-en }}</a>
+    <a href="{{ site.baseurl }}/{{ language }}/essays" class=" {% if include.active == "essays" %} active {% endif %} item">{{ site.essays-page-label-en }}</a>
     {% endif %}
     <a href="{{ site.baseurl }}/{{ language }}/bio" class=" {% if include.active == "bio" %} active {% endif %} item">{{ site.bio-page-label-en }}</a>
   </nav>
