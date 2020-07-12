@@ -1,0 +1,50 @@
+{% assign language = "en" %}
+
+
+<div style="height: 100%; margin-top: -75px!important; margin-left:0!important; margin-right:0!important" class="ui middle aligned grid ">
+
+  <div class="column">
+
+    <div style="position: relative; top: 75px; z-index: 1" class="ui fluid centered small circular image">
+      <img src="{{ site.data.bio.basics.picture }}">
+    </div>
+
+
+    <div style="max-width: 500px; padding-top: 75px; margin-top: 0px" class="ui fluid centered card">
+
+      <div class="center aligned content">
+        <span class="header">{{ site.data.bio.basics.name }}</span>
+        <div class="meta">
+          <span class="date">{{ site.data.bio.basics.label }}</span>
+        </div>
+        <div class="center aligned description">
+          {{ site.data.bio.basics.summary }}
+        </div>
+      </div>
+      <div class="center aligned content">
+        <div class="description">
+          Interesses:
+          {% for interest in site.data.bio.interests %}
+            {{ interest.name }}{% if forloop.last != true %}, {% endif %}
+          {% endfor %}
+
+        </div>
+      </div>
+      <div class="center aligned extra content">
+        {% include home-network-links.html %}
+      </div>
+      <div class="center aligned content" style="line-height: 3em">
+        <a href="{{ site.baseurl}}/{{ language }}/projetos/">
+          <button class="ui basic button">{{ site.projects-page-label-en }}</button>
+        </a>
+        <a href="{{ site.baseurl}}/{{ language }}/textos/">
+          <button class="ui basic button">{{ site.essays-page-label-en }}</button>
+        </a>
+        <a href="{{ site.baseurl}}/{{ language }}/bio/">
+          <button class="ui basic button">{{ site.bio-page-label-en }}</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
