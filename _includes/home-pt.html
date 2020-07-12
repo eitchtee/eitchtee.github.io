@@ -1,9 +1,5 @@
-<!-- Home page design with small circular image bisecting card. -->
+{% assign language = "pt" %}
 
-{% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.draft != true" %}
-{% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.draft != true" %}
-{% assign num_essays = essay_pages.size %}
-{% assign num_projects = project_pages.size %}
 
 <div style="height: 100%; margin-top: -75px!important; margin-left:0!important; margin-right:0!important" class="ui middle aligned grid ">
 
@@ -38,14 +34,14 @@
         {% include home-network-links.html %}
       </div>
       <div class="center aligned content" style="line-height: 3em">
-        <a href="{{ site.baseurl}}/projects/">
-          <button class="ui basic button">{{ site.projects-page-label }} ({{ num_projects }})</button>
+        <a href="{{ site.baseurl}}/{{ language }}/projetos/">
+          <button class="ui basic button">{{ site.projects-page-label-pt }}</button>
         </a>
-        <a href="{{ site.baseurl}}/essays/">
-          <button class="ui basic button">{{ site.essays-page-label }} ({{ num_essays }})</button>
+        <a href="{{ site.baseurl}}/{{ language }}/textos/">
+          <button class="ui basic button">{{ site.essays-page-label-pt }}</button>
         </a>
-        <a href="{{ site.baseurl}}/bio/">
-          <button class="ui basic button">{{ site.bio-page-label }}</button>
+        <a href="{{ site.baseurl}}/{{ language }}/bio/">
+          <button class="ui basic button">{{ site.bio-page-label-pt }}</button>
         </a>
       </div>
     </div>
