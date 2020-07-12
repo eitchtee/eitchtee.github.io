@@ -1,7 +1,6 @@
-# Technical Portfolio
+# eitchtee.github.io
 
-This repository hosts a technical portfolio built using [TechFolio](http://techfolios.github.io). 
+This repository hosts my portfolio built using [TechFolio](http://techfolios.github.io). 
 
-See the quick start guide for instructions on how to tailor the template to your own needs.
-
+Este repositório abriga o meu portfolio baseado no [TechFolio](http://techfolios.github.io).
 
