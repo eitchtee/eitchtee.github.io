@@ -2,7 +2,7 @@
 
     {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
     {% assign project_categories = project_pages | map: "category" | uniq %}
-    {% assing language = "pt" %}
+    {% assign language = "pt" %}
     
     <div class="filter-buttons">
         {% for category in project_categories %}
