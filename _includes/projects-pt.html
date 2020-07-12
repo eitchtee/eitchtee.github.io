@@ -2,6 +2,7 @@
 
     {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
     {% assign project_categories = project_pages | map: "category" | uniq %}
+    {% assing lang = "pt" %}
     
     <div class="filter-buttons">
         {% for category in project_categories %}
@@ -12,9 +13,9 @@
   
   <div class="ui stackable four cards" id="filterable">
     {% for page in project_pages %}
-      {% unless page.draft %}
+      {% if page.lang == lang %}
         {% include project-card-1a.html page=page %}
-      {% endunless %}
+      {% endif %}
     {% endfor %}
   </div>
 </div>

@@ -11,6 +11,7 @@ labels:
   - GDSCript
 category:
   - Jogos
+lang: pt
 projecturl: https://play.google.com/store/apps/details?id=com.garfsapps.umgole
 summary: iDrink é um divertido e afrontoso drinking game, perfeito para quebrar o gelo ou apimentar qualquer festa ou social de amigos, com centenas de desafios e perguntas únicas. Junte seus amigos e comece a jogar agora mesmo, afinal, a gente sabe, nada melhor do que ficar bêbado com quem a gente gosta.
 ---

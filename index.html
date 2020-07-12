@@ -1,5 +1,17 @@
----
-layout: default
----
-
-{% include {{ site.theme-home }} %}
+<html>
+  <head>
+    <title>Herculino Trotta</title>
+    <script>
+        var lang = navigator.language || navigator.browserLanguage; //for IE
+        console.log(lang);
+        
+        if (lang.includes("pt")) {
+            window.location.replace("https://eitchtee.github.io/pt");
+        } else {
+            window.location.replace("https://eitchtee.github.io/en");
+        }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
