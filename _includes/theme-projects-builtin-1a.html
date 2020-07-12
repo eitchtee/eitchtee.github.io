@@ -5,9 +5,9 @@
     
     <div class="filter-buttons">
         {% for category in project_categories %}
-          <a class="button ui basic label" id="{{ category }}">{{ category }}</a>
+          <a class="button ui basic" id="{{ category }}">{{ category }}</a>
         {% endfor %}
-      <a class="button ui basic label active" id="all">Todos</a>
+      <a class="button ui basic active" id="all">Todos</a>
     </div>
   
   <div class="ui stackable four cards" id="filterable">
