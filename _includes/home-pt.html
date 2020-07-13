@@ -36,11 +36,25 @@
         {% include home-network-links.html %}
       </div>
       <div class="center aligned content" style="line-height: 3em">
-        {% if num_projects > 0 %}<a href="{{ site.baseurl}}/{{ language }}/projetos/" class="ui basic button">{{ site.projects-page-label-pt }}</a>{% endif %}
-        {% if num_essays > 0 %}<a href="{{ site.baseurl}}/{{ language }}/textos/ class="ui basic button"">{{ site.essays-page-label-pt }}</a>{% endif %}
-        <a href="{{ site.baseurl}}/{{ language }}/bio/" class="ui basic button">{{ site.bio-page-label-pt }}</a>
+        {% if num_projects > 0 %}<a class="ui animated positive button" href="{{ site.baseurl}}/{{ language }}/{{ site.projects-url-pt }}/">
+          <div class="visible content">{{ site.projects-page-label-pt }}</div>
+          <div class="hidden content">
+            <i class="right arrow icon"></i>
+          </div>
+        </a>{% endif %}
+        {% if num_essays > 0 %}<a class="ui animated positive button" href="{{ site.baseurl}}/{{ language }}/{{ site.essays-url-pt }}/">
+          <div class="visible content">{{ site.essays-page-label-pt }}</div>
+          <div class="hidden content">
+            <i class="right arrow icon"></i>
+          </div>
+        </a>{% endif %}
+        <a class="ui animated positive button" href="{{ site.baseurl}}/{{ language }}/{{ site.bio-url-pt }}/">
+          <div class="visible content">{{ site.bio-page-label-pt }}</div>
+          <div class="hidden content">
+            <i class="right arrow icon"></i>
+          </div>
+        </a>
       </div>
     </div>
   </div>
-
 </div>
