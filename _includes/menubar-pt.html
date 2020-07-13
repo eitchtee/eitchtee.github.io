@@ -1,6 +1,6 @@
 {% assign language = "pt" %}
-{% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.draft != true" %}
-{% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.draft != true" %}
+{% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.lang == 'pt'" %}
+{% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.lang == 'pt'" %}
 {% assign num_essays = essay_pages.size %}
 {% assign num_projects = project_pages.size %}
 
