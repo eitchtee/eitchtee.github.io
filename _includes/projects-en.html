@@ -1,13 +1,10 @@
 <div style="padding-top: 20px" class="ui container ">
-
-    {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
-    {% assign project_categories = project_pages | map: "category" | uniq %}
     {% assign language = "en" %}
+    {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
+    {% assign project_categories = project_pages | where: "lang", language | map: "category" | uniq %}
     
     <div class="filter-buttons">
-        {% for category in project_categories %}
-          <a class="button ui basic" id="{{ category }}">{{ category }}</a>
-        {% endfor %}
+        {% for category in project_categories %}<a class="button ui basic" id="{{ category }}">{{ category }}</a>{% endfor %}
       <a class="button ui basic active" id="all">Todos</a>
     </div>
   
