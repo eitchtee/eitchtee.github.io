@@ -1,4 +1,8 @@
 {% assign language = "en" %}
+{% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.lang == 'en'" %}
+{% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.lang == 'en'" %}
+{% assign num_essays = essay_pages.size %}
+{% assign num_projects = project_pages.size %}
 <div style="height: 100%; margin-top: -75px!important; margin-left:0!important; margin-right:0!important" class="ui middle aligned grid ">
 
   <div class="column">
@@ -32,12 +36,12 @@
         {% include home-network-links.html %}
       </div>
       <div class="center aligned content" style="line-height: 3em">
-        <a href="{{ site.baseurl}}/{{ language }}/projects/">
+        {% if num_projects > 0 %}<a href="{{ site.baseurl}}/{{ language }}/projects/">
           <button class="ui basic button">{{ site.projects-page-label-en }}</button>
-        </a>
-        <a href="{{ site.baseurl}}/{{ language }}/essays/">
+        </a>{% endif %}
+        {% if num_essays > 0 %}<a href="{{ site.baseurl}}/{{ language }}/essays/">
           <button class="ui basic button">{{ site.essays-page-label-en }}</button>
-        </a>
+        </a>{% endif %}
         <a href="{{ site.baseurl}}/{{ language }}/bio/">
           <button class="ui basic button">{{ site.bio-page-label-en }}</button>
         </a>
