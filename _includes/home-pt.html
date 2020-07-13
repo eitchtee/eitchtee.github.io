@@ -36,15 +36,9 @@
         {% include home-network-links.html %}
       </div>
       <div class="center aligned content" style="line-height: 3em">
-        {% if num_projects > 0 %}<a href="{{ site.baseurl}}/{{ language }}/projetos/">
-          <button class="ui basic button">{{ site.projects-page-label-pt }}</button>
-        </a>{% endif %}
-        {% if num_essays > 0 %}<a href="{{ site.baseurl}}/{{ language }}/textos/">
-          <button class="ui basic button">{{ site.essays-page-label-pt }}</button>
-        </a>{% endif %}
-        <a href="{{ site.baseurl}}/{{ language }}/bio/">
-          <button class="ui basic button">{{ site.bio-page-label-pt }}</button>
-        </a>
+        {% if num_projects > 0 %}<a href="{{ site.baseurl}}/{{ language }}/projetos/" class="ui basic button">{{ site.projects-page-label-pt }}</a>{% endif %}
+        {% if num_essays > 0 %}<a href="{{ site.baseurl}}/{{ language }}/textos/ class="ui basic button"">{{ site.essays-page-label-pt }}</a>{% endif %}
+        <a href="{{ site.baseurl}}/{{ language }}/bio/" class="ui basic button">{{ site.bio-page-label-pt }}</a>
       </div>
     </div>
   </div>
