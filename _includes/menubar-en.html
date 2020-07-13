@@ -10,11 +10,14 @@
       <img class="ui avatar image" src="{{ site.data.bio-en.basics.picture }}"><span>{{ site.data.bio-en.basics.short_name }}</span>
     </a>
     {% if num_projects > 0 %}
-    <a href="{{ site.baseurl }}/{{ language }}/projects" class=" {% if include.active == "projects" %} active {% endif %}item">{{ site.projects-page-label-en }}</a>
+    <a href="{{ site.baseurl }}/{{ language }}/{{ site.projects-url-en }}" class=" {% if include.active == "projects" %} active {% endif %}item">{{ site.projects-page-label-en }}</a>
     {% endif %}
     {% if num_essays > 0 %}
-    <a href="{{ site.baseurl }}/{{ language }}/essays" class=" {% if include.active == "essays" %} active {% endif %} item">{{ site.essays-page-label-en }}</a>
+    <a href="{{ site.baseurl }}/{{ language }}/{{ site.essays-url-en }}" class=" {% if include.active == "essays" %} active {% endif %} item">{{ site.essays-page-label-en }}</a>
     {% endif %}
-    <a href="{{ site.baseurl }}/{{ language }}/bio" class=" {% if include.active == "bio" %} active {% endif %} item">{{ site.bio-page-label-en }}</a>
+    <a href="{{ site.baseurl }}/{{ language }}/{{ site.bio-url-en }}" class=" {% if include.active == "bio" %} active {% endif %} item">{{ site.bio-page-label-en }}</a>
+    <div class="right menu">
+      <a class="item" href="{{ site.baseurl }}/pt/{% if include.active == "projects" %}{{ site.projects-url-pt }}{% elsif include.active == "essays" %}{{ site.essays-url-pt }}{% elsif include.active == "bio" %}{{ site.bio-url-pt }}{% endif %}"><i class="br flag"></i>Português</a>
+    </div>
   </nav>
 </div>
