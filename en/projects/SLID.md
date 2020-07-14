@@ -13,5 +13,5 @@ category:
   - Games
 lang: en
 projecturl: https://play.google.com/store/apps/details?id=com.kamofa.slid
-summary: SLID é um puzzle game viciante e ainda sim relaxante e educativo, onde o objetivo principal é formar palavras com as letras existentes no tabuleiro, ganhando pontos e aprendendo novos vocábulos e suas definições com cada movimento.
+summary: Put your vocabulary and mind up to the test in this addictive and yet relaxing and educative puzzle game whose main goal is to form words with the given letters, gaining points and learning new words and their meanings with each move.
 ---
