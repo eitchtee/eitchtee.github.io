@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/projects/idrink.png
 title: Teste
-permalink: projects/idrink
+permalink: pt/projetos/idrink
 # All dates must be YYYY-MM-DD format!
 date: 2020-06-08
 labels:
