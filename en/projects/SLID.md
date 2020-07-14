@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: project-en
 type: project
 image: images/projects/slid.png
 title: SLID
