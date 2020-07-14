@@ -16,8 +16,6 @@
     <a href="{{ site.baseurl }}/{{ language }}/{{ site.essays-url-pt }}" class=" {% if include.active == "essays" %} active {% endif %} item">{{ site.essays-page-label-pt }}</a>
     {% endif %}
     <a href="{{ site.baseurl }}/{{ language }}/{{ site.bio-url-pt }}" class=" {% if include.active == "bio" %} active {% endif %} item">{{ site.bio-page-label-pt }}</a>
-    <div class="right menu">
-      <a class="item" href="{{ site.baseurl }}/en/{% if include.active == "projects" %}{{ site.projects-url-en }}{% elsif include.active == "essays" %}{{ site.essays-url-en }}{% elsif include.active == "bio" %}{{ site.bio-url-en }}{% endif %}"><i class="us flag"></i>English</a>
-    </div>
   </nav>
+  <a href="{{ site.baseurl }}/en/{% if include.active == "projects" %}{{ site.projects-url-en }}{% elsif include.active == "essays" %}{{ site.essays-url-en }}{% elsif include.active == "bio" %}{{ site.bio-url-en }}{% endif %}" class="ui button icon basic" style="top: 10px; right: 10px; position: fixed; z-index: 1;"><i class="us flag" style="margin-right: 0;"></i></a>
 </div>

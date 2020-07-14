@@ -3,7 +3,7 @@
 {% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.lang == 'en'" %}
 {% assign num_essays = essay_pages.size %}
 {% assign num_projects = project_pages.size %}
-<a href="{{ site.baseurl}}/pt/" class="ui button icon basic" style="top: 10px; right: 10px; position: fixed; z-index: 1;"><i class="br flag" style="margin-right: 0;"></i></a>
+<a href="{{ site.baseurl}}/pt/" class="ui button icon basic" style="top: 10px; right: 10px; position: absolute; z-index: 1;"><i class="br flag" style="margin-right: 0;"></i></a>
 
 <div style="height: 100%; margin-top: -75px!important; margin-left:0!important; margin-right:0!important" class="ui middle aligned grid ">
 
