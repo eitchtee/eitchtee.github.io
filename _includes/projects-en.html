@@ -4,7 +4,9 @@
     {% assign project_categories = project_pages | where: "lang", language | map: "category" | uniq %}
     
     <div class="filter-buttons">
-        {% for category in project_categories %}<a class="button ui toggle" id="{{ category }}">{{ category }}</a>{% endfor %}
+        {% for category in project_categories %}
+        <a class="button ui toggle" id="{{ category }}">{{ category }}</a>
+        {% endfor %}
       <a class="button ui toggle active" id="all">All</a>
     </div>
   
