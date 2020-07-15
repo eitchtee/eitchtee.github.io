@@ -4,7 +4,7 @@
   {% assign essay_categories = essay_pages | where: "lang", language | map: "category" | uniq %}
   <div class="filter-buttons">
       {% for category in essay_categories %}
-      <a class="button ui toggle" id="{{ category }}">{{ category }}</a>
+      <a class="button ui toggle" id="{{ category | remove: " " }}">{{ category }}</a>
       {% endfor %}
     <a class="button ui toggle active" id="all">All</a>
   </div>
