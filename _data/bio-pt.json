@@ -54,32 +54,34 @@
   ],
   "skills": [
     {
-      "name": "Languages and Frameworks",
+      "name": "Linguagens e Frameworks",
       "level": "",
       "keywords": [
         "Pyhon",
         "Javascript",
-        "Godot Script"
+        "Godot Script",
+        "Dart",
+        "Flutter"
       ]
     },
     {
       "name": "Toolsets/OS",
       "level": "",
       "keywords": [
-        "MacOS",
-        "Ubuntu",
-        "Git/GitHub",
-        "g++",
-        "TI LaunchPad"
+        "Pycharm",
+        "Webstorm",
+        "Windows",
+        "Ubuntu/Linux",
+        "Git/GitHub"
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
-      "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "institution": "Universidade Federal de Ouro Preto",
+      "area": "Direito",
+      "studyType": "Bacharel",
+      "startDate": "2017-09-16",
       "endDate": "Present",
       "gpa": "",
       "courses": []

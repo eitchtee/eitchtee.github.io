@@ -16,11 +16,6 @@ bio-page-label-en: Resume
 projects-page-label-en: Projects
 essays-page-label-en: Essays
 
-# OPTIONAL CHANGES
-# You might want to change the bio page label to something else, such as CV
-
-# You might want to change the theme associated with one or more sections of the site.
-# Defining your own custom theme variations is easy. See the documentation.
 theme-home-pt: home-pt.html
 theme-projects-pt: projects-pt.html
 theme-essays-pt: essays-pt.html
