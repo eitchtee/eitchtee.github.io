@@ -1,5 +1,5 @@
 ---
-layout: project-pt
+layout: project-en
 type: project
 image: images/projects/taxa_di.png
 title: Taxa DI.gs

@@ -1,5 +1,5 @@
 ---
-layout: project-pt
+layout: project-en
 type: project
 image: images/projects/cryptoprice.png
 title: CRYPTOPRICE.gs
