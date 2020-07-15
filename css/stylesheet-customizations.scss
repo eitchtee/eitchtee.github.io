@@ -49,3 +49,24 @@ body {
 .breaddivider {
   color: rgba(0, 0, 0, 0.8)!important;
 }
+
+.header-link::after {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.header-link {
+  color: #000;
+}
+
+.header-link:hover {
+  color: #21BA45;
+}
+
+.link.card {
+  position: relative;
+}

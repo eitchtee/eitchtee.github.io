@@ -1,12 +1,13 @@
-{% assign filters = page.labels %}
-<a class="card {% for label in filters %} {{ label | remove: " " }} {% endfor %}" {% if page.projecturl %}target="_blank"{% endif %} href="{% if page.projecturl %}{{ page.projecturl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}">
+{% assign filters = page.category %}
+</style>
+<div class="ui link card {% for label in filters %} {{ label | remove: " " }} {% endfor %}">
   {% if include.page.image %}
   <div class="image">
     <img src="{{ site.baseurl }}/{{ include.page.image }}">
   </div>
   {% endif %}
   <div class="content">
-    <span class="header">{{ include.page.title }}</span>
+    <span class="header"><a class="header-link" {% if page.projecturl %}target="_blank"{% endif %} href="{% if page.projecturl %}{{ page.projecturl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}">{{ include.page.title }}</a></span>
     <div class="meta">
       <span class="date">{{ include.page.category | join: " | " }}</span>
     </div>
@@ -23,4 +24,10 @@
       {% endfor %}
     </div>
   </div>
-</a>
+
+  {% if page.buttons %}
+  <div class="ui bottom attached buttons" style="z-index: 1;">
+      {% for button in page.buttons %}<a class="ui button" href="{{ button[1] }}" target="_blank"><i class="{{ button[0] }} icon"></i>{{ button [2] }}</a>{% endfor %}
+  </div>
+  {% endif %}
+</div>
