@@ -1,7 +1,7 @@
 <div style="padding-top: 20px" class="ui container ">
     {% assign language = "en" %}
     {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
-    {% assign project_categories = project_pages | where: "lang", language | map: "labels" | uniq %}
+    {% assign project_categories = project_pages | where: "lang", language | map: "category" | uniq %}
     
     <div class="filter-buttons">
         {% for category in project_categories %}

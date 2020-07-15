@@ -11,7 +11,7 @@ labels:
   - Google Script
   - Google Sheets
 category:
-  - GSheets
+  - Google Sheets
 lang: en
 projecturl: https://github.com/eitchtee/CRYPTOPRICE.gs
 summary: Google Sheets' custom function for seeing a cryptocoin value in fiat using Coingecko's API.

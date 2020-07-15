@@ -11,7 +11,7 @@ labels:
   - Google Script
   - Google Sheets
 category:
-  - GSheets
+  - Google Sheets
 lang: pt
 projecturl: https://github.com/eitchtee/TAXA_DI.gs
 summary: Função customizada para o Google Sheets que permite acessar o último valor da taxa DI utilizando o mesmo recurso que o site oficial da B3.

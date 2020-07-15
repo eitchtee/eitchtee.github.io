@@ -10,7 +10,7 @@ labels:
   - Python
   - Twitter API
 category:
-  - Bots
+  - Twitter Bots
 lang: pt
 projecturl: https://twitter.com/btc_bipolar
 summary: Bot para Twitter que posta sempre que há uma alteração grande no valor em reais do bitcoin.

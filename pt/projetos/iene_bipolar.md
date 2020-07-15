@@ -10,7 +10,7 @@ labels:
   - Python
   - Twitter API
 category:
-  - Bots
+  - Twitter Bots
 lang: pt
 projecturl: https://twitter.com/IeneBipolar_
 summary: Bot para twitter que posta variações no câmbio do iene para o real.
