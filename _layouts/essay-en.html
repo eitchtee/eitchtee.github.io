@@ -1,0 +1,17 @@
+---
+layout: essays-en
+---
+
+<div style="margin-top: 20px; margin-bottom: 20px" class="ui text container">
+  <div class="ui breadcrumb">
+      <a href="/en/" class="section breadlink">Home</a>
+      <i class="right angle icon divider breaddivider"></i>
+      <a href="/en/{{ site.essays-url-en }}" class="section breadlink">{{ site.essays-page-label-en }}</a>
+      <i class="right angle icon divider breaddivider"></i>
+      <div class="active section">{{ page.title }}</div>
+  </div>
+
+<h1>{{ page.title }}</h1>
+<span class="date">{{ page.date | date_to_string }}</span>
+{{ content }}
+</div>
