@@ -1,6 +1,4 @@
-<!-- Used by theme-essays-builtin-1 -->
-
-<div class="card">
+<a class="card {{ page.category | join: " " }}" {% if page.projecturl %}target="_blank"{% endif %} href="{% if page.projecturl %}{{ page.projecturl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}">
   <div class="content">
     <span class="header">{{ include.page.title }}</span>
     <div class="meta">
@@ -15,10 +13,9 @@
   <div class="extra content">
     <div class="ui mini labels">
       {% for label in include.page.labels %}
-        <div class="ui basic label">{{ label }}</div>
+      <div class="ui basic label">{{ label }}</div>
       {% endfor %}
     </div>
   </div>
 
-  <a class="ui bottom attached button" href="{{ site.baseurl}}{{ include.page.url }}">Read More</a>
-</div>
+</a>

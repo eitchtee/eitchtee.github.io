@@ -10,10 +10,10 @@
       <a class="button ui toggle active" id="all">Todos</a>
     </div>
   
-  <div class="ui stackable four cards" id="filterable">
+  <div class="ui stackable three cards" id="filterable">
     {% for page in project_pages %}
       {% if page.lang == language %}
-        {% include project-card-1a.html page=page %}
+        {% include project-card.html page=page %}
       {% endif %}
     {% endfor %}
   </div>

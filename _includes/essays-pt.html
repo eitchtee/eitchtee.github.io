@@ -1,13 +1,35 @@
 <div style="padding-top: 20px" class="ui container ">
-
   {% assign language = "pt" %}
+  {% assign essay_pages = site.pages | where: "type", "essay" | sort: "date" | reverse %}
+  {% assign essay_categories = essay_pages | where: "lang", language | map: "category" | uniq %}
+  <div class="filter-buttons">
+    {% for category in essay_categories %}
+    <a class="button ui toggle" id="{{ category }}">{{ category }}</a>
+    {% endfor %}
+    <a class="button ui toggle active" id="all">Todos</a>
+  </div>
 
-  <div class="ui stackable centered four cards">
-    {% assign essay_pages = site.pages | where: "type", "essay" | sort: "date" | reverse %}
+  <div class="ui stackable centered three cards" id="filterable">
       {% for page in essay_pages %}
         {% if page.lang == language %}
-          {% include essay-card-1a.html page=page %}
+          {% include essay-card.html page=page %}
         {% endif %}
       {% endfor %}
   </div>
 </div>
+
+<script>
+  // from https://codepen.io/terf/post/jquery-filter-divs
+  var $btns = $('.button').click(function () {
+      if (this.id == 'all') {
+          $('#filterable > a').fadeIn(450);
+      } else {
+          var $el = $('.' + this.id).fadeIn(450);
+          $('#filterable > a').not($el).hide(0, function() {
+              $('#filterable > a').not($el).attr("style", "display: none !important");
+          });
+      }
+      $btns.removeClass('active');
+      $(this).addClass('active');
+  })
+</script>
