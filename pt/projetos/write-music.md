@@ -14,7 +14,8 @@ labels:
 category:
   - Web
 lang: pt
-buttons: [['github', 'https://github.com/eitchtee/write-music', 'Git'], ['globe', 'https://eitchtee.github.io/write-music/', 'Site']]
+# [['icon', 'url', 'Text', 'color']] Only icon and url are required
+buttons: [['github', 'https://github.com/eitchtee/write-music', 'Repo', 'black'], ['globe', 'https://eitchtee.github.io/write-music/', 'Site']]
 projecturl: https://eitchtee.github.io/write-music/
 summary: Write Music é um visualizador do ritmo de leitura de um texto. Baseado em um ensinamento de Gary Provost sobre escrita. Veja e ouça seu texto.
 ---

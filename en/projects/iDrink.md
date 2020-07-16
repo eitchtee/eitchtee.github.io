@@ -13,5 +13,6 @@ category:
   - Games
 lang: en
 projecturl: https://play.google.com/store/apps/details?id=com.garfsapps.umgole
+buttons: [['google play', 'https://play.google.com/store/apps/details?id=com.garfsapps.umgole', 'Play Store', 'green']]
 summary: iDrink is a fun and daring drinking game to break the ice and spice up any party or gathering, with hundreds of interesting and unique challenges and questions to play along. Gather your friends and start playing right now.
 ---

@@ -13,5 +13,7 @@ category:
   - Bots
 lang: en
 projecturl: https://twitter.com/IeneBipolar_
+# [['icon', 'url', 'Text', 'color']] Only icon and url are required
+buttons: [['github', 'https://github.com/eitchtee/iene_bipolar', 'Repo', 'black'], ['twitter', 'https://twitter.com/IeneBipolar_', 'Twitter', 'blue']]
 summary: Twitter bot that posts everytime the yen price has a change (in BRL).
 ---

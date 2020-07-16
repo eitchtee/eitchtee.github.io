@@ -13,5 +13,7 @@ category:
   - Bots
 lang: en
 projecturl: https://twitter.com/btc_bipolar
+# [['icon', 'url', 'Text', 'color']] Only icon and url are required
+buttons: [['github', 'https://github.com/eitchtee/bitcoin_bipolar', 'Repo', 'black'], ['twitter', 'https://twitter.com/BTC_bipolar', 'Twitter', 'blue']]
 summary: Twitter bot that posts everytime the bitcoin price has a big change.
 ---

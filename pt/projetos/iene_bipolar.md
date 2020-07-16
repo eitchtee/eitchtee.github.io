@@ -13,5 +13,7 @@ category:
   - Twitter Bots
 lang: pt
 projecturl: https://twitter.com/IeneBipolar_
+# [['icon', 'url', 'Text', 'color']] Only icon and url are required
+buttons: [['github', 'https://github.com/eitchtee/iene_bipolar', 'Repo', 'black'], ['twitter', 'https://twitter.com/IeneBipolar_', 'Twitter', 'blue']]
 summary: Bot para twitter que posta variações no câmbio do iene para o real.
 ---

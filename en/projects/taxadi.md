@@ -14,5 +14,6 @@ category:
   - Google Sheets
 lang: en
 projecturl: https://github.com/eitchtee/TAXA_DI.gs
+buttons: [['github', 'https://github.com/eitchtee/TAXA_DI.gs', 'Repo', 'black']]
 summary: Google Sheets' custom function for acessing Brazil's DI Index, commonly used as an APY indicator on some investments.
 ---
