@@ -10,7 +10,7 @@ labels:
   - Godot Engine
   - GDSCript
 category:
-  - Games
+  - Game
 lang: en
 projecturl: https://play.google.com/store/apps/details?id=com.garfsapps.umgole
 buttons: [['google play', 'https://play.google.com/store/apps/details?id=com.garfsapps.umgole', 'Play Store', 'green']]

@@ -10,7 +10,7 @@ labels:
   - Python
   - Twitter API
 category:
-  - Bots
+  - Twitter Bot
 lang: en
 projecturl: https://twitter.com/btc_bipolar
 # [['icon', 'url', 'Text', 'color']] Only icon and url are required

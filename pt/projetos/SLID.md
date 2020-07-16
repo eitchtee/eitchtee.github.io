@@ -10,7 +10,7 @@ labels:
   - Godot Engine
   - GDSCript
 category:
-  - Jogos
+  - Jogo
 lang: pt
 projecturl: https://play.google.com/store/apps/details?id=com.kamofa.slid
 # [['icon', 'url', 'Text', 'color']] Only icon and url are required
