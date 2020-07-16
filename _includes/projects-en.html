@@ -3,12 +3,14 @@
     {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
     {% assign project_categories = project_pages | where: "lang", language | map: "category" | sort | uniq %}
     
-    <div class="filter-buttons">
+    {% if project_categories.size > 1 %}
+    <div class="filter-buttons hiding">
         {% for category in project_categories %}
         <a class="button ui toggle" id="{{ category | remove: " " }}">{{ category }}</a>
         {% endfor %}
       <a class="button ui toggle active" id="all">All</a>
     </div>
+    {% endif %}
   
   <div class="ui stackable three cards" id="filterable">
     {% for page in project_pages %}
@@ -20,6 +22,7 @@
 </div>
 
 <script>
+    $('.filter-buttons').removeClass('hiding');
     // from https://codepen.io/terf/post/jquery-filter-divs
     var $btns = $('.button').click(function () {
         if (this.id == 'all') {
