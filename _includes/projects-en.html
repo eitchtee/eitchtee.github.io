@@ -1,6 +1,7 @@
 <div style="padding-top: 10px; padding-bottom: 50px" class="ui container ">
     {% assign language = "en" %}
     {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
+    {% assign project_pages_in_lang = project_pages | where: "lang", language %}
     {% assign project_categories = project_pages | where: "lang", language | map: "category" | sort | uniq %}
     
     {% if project_categories.size > 1 %}
@@ -12,17 +13,26 @@
     </div>
     {% endif %}
   
+  {% if project_pages_in_lang.size > 0 %}
   <div class="ui stackable three cards" id="filterable">
-    {% for page in project_pages %}
+    {% for page in project_pages_in_lang %}
       {% if page.lang == language %}
         {% include project-card.html page=page %}
       {% endif %}
     {% endfor %}
   </div>
+  {% else %}
+  <div class="ui container center aligned">
+    <h2 class="ui icon header disabled"><i class="frown icon"></i>
+      <div class="content">Nothing here<div class="sub header">No project has been added yet.</div></div>
+    </h2>
+  </div>
+  {% endif %}
 </div>
 
 <script>
-    $('.filter-buttons').removeClass('hiding');
+    $('.filter-buttons').removeClass('hiding'); // Show filter is JS is enabled
+    
     // from https://codepen.io/terf/post/jquery-filter-divs
     var $btns = $('.button').click(function () {
         if (this.id == 'all') {
