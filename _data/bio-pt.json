@@ -54,44 +54,40 @@
   ],
   "skills": [
     {
+      "icon": "code",
       "name": "Linguagens e Frameworks",
       "level": "",
       "keywords": [
         "Pyhon",
         "Javascript",
         "Godot Script",
-        "Dart",
-        "Flutter"
+        "Dart+Flutter",
+        "Semantic UI",
       ]
     },
     {
-      "name": "Toolsets/OS",
+      "icon": "wrench",
+      "name": "Ferramentas e Sistemas",
       "level": "",
       "keywords": [
         "Pycharm",
         "Webstorm",
         "Windows",
         "Ubuntu/Linux",
-        "Git/GitHub"
+        "Git/GitHub",
+        "Postman",
+        "Android Studio"
       ]
     }
   ],
   "education": [
     {
       "institution": "Universidade Federal de Ouro Preto",
+      "website": "https://ufop.br",
       "area": "Direito",
-      "studyType": "Bacharel",
+      "studyType": "Bacharelado",
       "startDate": "2017-09-16",
       "endDate": "Atualmente",
-      "gpa": "",
-      "courses": []
-    },
-    {
-      "institution": "UNIFAMINAS",
-      "area": "Direito",
-      "studyType": "Bacharel",
-      "startDate": "2017-02-02",
-      "endDate": "2018-06-18",
       "gpa": "",
       "courses": []
     }
@@ -114,7 +110,7 @@
       "position": "Help Desk Consultant",
       "website": "http://www.hawaii.edu/its/",
       "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
+      "endDate": "Atualmente",
       "summary": "",
       "highlights": [
         "Troubleshoot software, hardware and networking issues over the phone",

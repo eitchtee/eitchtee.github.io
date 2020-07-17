@@ -1,3 +1,4 @@
+{% assign current = "Atualmente" %}
 <div style="margin-top: 10px; margin-bottom:2em;" class="ui stackable grid container">
 
   <div class="six wide column middle aligned no-bottom">
@@ -6,7 +7,7 @@
     </h2>
   </div>
 
-  <div class="center aligned ten wide column filter-buttons no-bottom">
+  <div class="center aligned ten wide column filter-buttons no-bottom nonprintable">
     {% if site.data.bio-pt.basics.website %}
     <a class="ui button green small" href="{{ site.data.bio-pt.basics.website }}" target="_blank"><i class="home icon"></i>{{ site.data.bio-pt.basics.website | remove: "http://" | remove: "https://" }}</a>
     {% endif %}
@@ -19,7 +20,40 @@
     <a class="ui button green small" href="{{ entry.url }}" target="_blank"><i class="{{ entry.network | downcase }} icon"></i>{{ entry.username }}</a>
     {% endfor %}
   </div>
+</div>
 
+<div style="margin-bottom: 20px" class="ui one column stackable grid container">
+  <div class="column">
+    <h4 class="ui dividing header left aligned">
+      <i class="heart icon"></i>
+      Interesses  
+    </h4>
+    <div class="ui labels small">
+      {% for interest in site.data.bio-pt.interests %}
+      <div class="ui label active">
+        {{ interest.name }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom: 20px" class="ui two column stackable grid container">
+  {% for skill in site.data.bio-pt.skills %}
+  <div class="column">
+    <h4 class="ui dividing header left aligned">
+      <i class="{{ skill.icon }} icon"></i>
+      {{ skill.name }}
+    </h4>
+    <div class="ui labels small">
+      {% for keyword in skill.keywords %}
+      <div class="ui label active">
+        {{ keyword }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
 </div>
 
 {% if site.data.bio-pt.education %}
@@ -30,17 +64,69 @@
         <i class="graduation cap icon"></i>
         Educação
       </h4>
-      <div class="ui stackable cards">
+      <div class="ui stackable cards"  style="padding-top: 6px;">
         {% for educ in site.data.bio-pt.education %}
-        <div class="ui card {% if educ.endDate == 'Atualmente' %}yellow{% else %}green{% endif %}">
+        <div class="ui card {% if educ.endDate == current %}yellow{% else %}green{% endif %}">
           <div class="content">
             <div class="header">{{ educ.area }}</div>
+            <div class="meta">
+              <p>{{ educ.studyType }}</p>
+            </div>
             <div class="description">
-              <i class="building icon"></i>{{ educ.institution }}
+              {% if educ.website.size >= 1 %}
+              <a class="ui label active" href="{{ educ.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ educ.institution }}</a>
+              {% else %}
+              <div class="ui label active">
+                <i class="map marker alternate icon"></i>{{ educ.institution }}
+              </div>
+              {% endif %}
             </div>
           </div>
           <div class="extra content">
-            <div><i class="clock icon"></i>{{ educ.startDate | date: "%Y" }} - {{ educ.endDate | date: "%Y" }}</div>
+            {% assign start = {{educ.startDate | date: "%m" | plus: 0 }} %}
+            {% assign end = {{educ.endDate | date: "%m" | plus: 0 }} %}
+            <div><i class="calendar icon"></i>{{ educ.startDate | date: "%Y" }}/{% if start > 6 %}2{% else %}1{% endif %} - {% if educ.endDate == current %}{{ educ.endDate | date: "%Y" }}{% else %}{{ educ.endDate | date: "%Y" }}/{% if end > 6 %}2{% else %}1{% endif %}{% endif %}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if site.data.bio-pt.work %}
+<div style="margin-bottom: 20px" class="ui one column stackable grid container">
+  <div class="row">
+    <div class="column">
+      <h4 class="ui dividing header">
+        <i class="paperclip icon"></i>
+        Experiência Profissional
+      </h4>
+      <div class="ui stackable cards"  style="padding-top: 6px;">
+        {% for work in site.data.bio-pt.work %}
+        <div class="ui card {% if work.endDate == current %}yellow{% else %}green{% endif %}">
+          <div class="content">
+            <div class="header">{{ work.position }}</div>
+            <div class="meta">
+            </div>
+            <div class="description">
+              {% if work.website.size >= 1 %}
+              <a class="ui label active" href="{{ work.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ work.company }}</a>
+              {% else %}
+              <div class="ui label active"><i class="map marker alternate icon"></i>{{ work.company }}</div>
+              {% endif %}
+              <p></p>
+              <p>{{ work.summary }}</p>
+              <div class="ui bulleted list">
+                {% for highlight in work.highlights %}
+                <div class="item">{{ highlight }}</div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="extra content">
+            <div><i class="calendar icon"></i>{{ work.startDate | date: "%m/%Y" }} - {{ work.endDate | date: "%m/%Y" }}</div>
           </div>
         </div>
         {% endfor %}
