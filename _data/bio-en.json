@@ -13,7 +13,7 @@
       "postalCode": "",
       "city": "Ouro Preto",
       "region": "Minas Gerais",
-      "countryCode": "Brasil"
+      "countryCode": "Brazil"
     },
     "profiles": [
       {
@@ -76,11 +76,20 @@
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
-      "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "institution": "Universidade Federal de Ouro Preto",
+      "area": "Law",
+      "studyType": "Bachelor",
+      "startDate": "2017-09-16",
       "endDate": "Present",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "UNIFAMINAS",
+      "area": "Law",
+      "studyType": "Bachelor",
+      "startDate": "2017-02-02",
+      "endDate": "2018-06-18",
       "gpa": "",
       "courses": []
     }

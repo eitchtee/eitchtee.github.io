@@ -1,4 +1,4 @@
-<div style="margin-top: 10px; " class="ui stackable grid container divided">
+<div style="margin-top: 10px; margin-bottom:2em;" class="ui stackable grid container">
 
   <div class="six wide column middle aligned no-bottom">
     <h2 class="ui center aligned header no-bottom">{{ site.data.bio-pt.basics.name }}
@@ -22,6 +22,30 @@
 
 </div>
 
-<div style="margin-bottom: 20px" class="ui stackable grid container">
-
+{% if site.data.bio-pt.education %}
+<div style="margin-bottom: 20px" class="ui one column stackable grid container">
+  <div class="row">
+    <div class="column">
+      <h4 class="ui dividing header">
+        <i class="graduation cap icon"></i>
+        Educação
+      </h4>
+      <div class="ui stackable cards">
+        {% for educ in site.data.bio-pt.education %}
+        <div class="ui card {% if educ.endDate == 'Atualmente' %}yellow{% else %}green{% endif %}">
+          <div class="content">
+            <div class="header">{{ educ.area }}</div>
+            <div class="description">
+              <i class="building icon"></i>{{ educ.institution }}
+            </div>
+          </div>
+          <div class="extra content">
+            <div><i class="clock icon"></i>{{ educ.startDate | date: "%Y" }} - {{ educ.endDate | date: "%Y" }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>
+{% endif %}

@@ -82,7 +82,16 @@
       "area": "Direito",
       "studyType": "Bacharel",
       "startDate": "2017-09-16",
-      "endDate": "Present",
+      "endDate": "Atualmente",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "UNIFAMINAS",
+      "area": "Direito",
+      "studyType": "Bacharel",
+      "startDate": "2017-02-02",
+      "endDate": "2018-06-18",
       "gpa": "",
       "courses": []
     }
