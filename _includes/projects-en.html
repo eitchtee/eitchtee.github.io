@@ -5,7 +5,7 @@
     {% assign project_categories = project_pages | where: "lang", language | map: "category" | sort | uniq %}
     
     {% if project_categories.size > 1 %}
-    <div class="filter-buttons hiding">
+    <div class="nonprintable filter-buttons hiding">
         {% for category in project_categories %}
         <a class="button ui toggle" id="{{ category | remove: " " }}">{{ category }}</a>
         {% endfor %}

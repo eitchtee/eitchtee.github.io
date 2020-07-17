@@ -6,8 +6,8 @@
 
 // Used to remove menubar from page when printing.
 .nonprintable {
-  display: none;
-  visibility: hidden;
+  display: none!important;
+  visibility: hidden!important;
 }
 
 // Make text smaller, remove spacing between list items when printing.
