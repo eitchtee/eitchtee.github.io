@@ -1,16 +1,25 @@
-<div style="margin-top: 10px; " class="ui stackable grid container">
+<div style="margin-top: 10px; " class="ui stackable grid container divided">
 
-  <div class="sixteen wide column no-bottom">
-    <h2 class="ui center aligned header no-bottom">{{ site.data.bio-en.basics.name }}</h2>
+  <div class="six wide column middle aligned no-bottom">
+    <h2 class="ui center aligned header no-bottom">{{ site.data.bio-en.basics.name }}
+      <div class="sub header">{{ site.data.bio-en.basics.location.city }}, {{ site.data.bio-en.basics.location.region }}, {{ site.data.bio-en.basics.location.countryCode }}</div>
+    </h2>
   </div>
 
-  <div class="eight wide left aligned column">
-
+  <div class="center aligned ten wide column filter-buttons no-bottom">
+    {% if site.data.bio-en.basics.website %}
+    <a class="ui button green small" href="{{ site.data.bio-en.basics.website }}" target="_blank"><i class="home icon"></i>{{ site.data.bio-en.basics.website | remove: "http://" | remove: "https://" }}</a>
+    {% endif %}
+    
+    {% if site.data.bio-en.basics.email %}
+    <a class="ui button green small" href="mailto:{{ site.data.bio-en.basics.email }}" target="_blank"><i class="mail icon"></i>{{ site.data.bio-en.basics.email }}</a>
+    {% endif %}
+    
+    {% for entry in site.data.bio-en.basics.profiles %}
+    <a class="ui button green small" href="{{ entry.url }}" target="_blank"><i class="{{ entry.network | downcase }} icon"></i>{{ entry.username }}</a>
+    {% endfor %}
   </div>
 
-  <div class="eight wide right aligned column">
-
-  </div>
 </div>
 
 <div style="margin-bottom: 20px" class="ui stackable grid container">

@@ -1,6 +1,6 @@
 {
   "basics": {
-    "name": "Herculino Trotta",
+    "name": "Herculino de Miranda Trotta Neto",
     "short_name": "Herculino Trotta",
     "label": "Student",
     "picture": "/images/photo.jpg",
@@ -10,7 +10,7 @@
     "phone": "",
     "location": {
       "address": "",
-      "postalCode": "35400-000",
+      "postalCode": "",
       "city": "Ouro Preto",
       "region": "Minas Gerais",
       "countryCode": "Brasil"
@@ -19,7 +19,7 @@
       {
         "network": "github",
         "username": "eitchtee",
-        "url": "http://github.com/eitchtee"
+        "url": "https://github.com/eitchtee"
       },
       {
         "network": "stack overflow",
@@ -34,7 +34,7 @@
       {
         "network": "instagram",
         "username": "htrotta_",
-        "url": "http://instagram.com/htrottra_"
+        "url": "https://instagram.com/htrottra_"
       }
     ]
   },
