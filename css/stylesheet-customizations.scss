@@ -75,3 +75,26 @@ body {
   display: none;
   visibility: hidden;
 }
+
+
+/* ------------------------------------------------------------ */
+
+.language .progress {
+  display: inline-block;  
+}
+.language .progress .bar {
+  height: 12px;
+  width: 20px;
+  display: inline-block;
+}
+.language .progress .bar.empty {
+  border: 1px solid #c0c0c0;
+  background: #d0d0d0
+}
+.language .progress .bar.filled {
+  border: 1px solid #c0c0c0;
+  background: #21BA45;
+  color: #21BA45;
+  fill: #21BA45;
+}
+/* ------------------------------------------------------------ */
