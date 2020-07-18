@@ -27,74 +27,6 @@
   </div>
 </div>
 
-<div style="margin-bottom: 20px" class="ui one column stackable grid container">
-  <div class="column">
-    <h4 class="ui horizontal left aligned divider header">
-      <i class="heart icon"></i>
-      {{ interests }}
-    </h4>
-    <div class="ui labels small">
-      {% for interest in bio.interests %}
-      <div class="ui label active">
-        {{ interest.name }}
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-
-{% if bio.skills %}
-<div style="margin-bottom: 20px" class="ui two column stackable grid container">
-  {% for skill in bio.skills %}
-  <div class="column">
-    <h4 class="ui horizontal left aligned divider header">
-      <i class="{{ skill.icon }} icon"></i>
-      {{ skill.name }}
-    </h4>
-    <div class="ui labels small">
-      {% for keyword in skill.keywords %}
-      <div class="ui label active">
-        {{ keyword }}
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  {% endfor %}
-</div>
-{% endif %}
-
-
-{% if bio.languages %}
-<div style="margin-bottom: 20px" class="ui one column stackable grid container">
-  <div class="column">
-    <h4 class="ui horizontal left aligned divider header">
-      <i class="language icon"></i>
-      {{ languages }}
-    </h4>
-    <div class="ui five stackable cards"  style="padding-top: 6px;">
-      {% for lang in bio.languages %}
-      <div class="ui card">
-        <div class="content no-bottom">
-          <div class="header">{{ lang.name }}</div>
-        </div>
-        <div class="content center aligned">
-          <div class="description">
-            <div class="language">
-              <div class="progress">
-                {% for i in (1..4) %}
-                <div class="bar {% if i <= lang.level %}filled{% else %}empty{% endif %}"></div>
-                {% endfor %}
-              </div>
-            </div>
-            <div class="ui top pointing label">{{ lang.description }}</div>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-{% endif %}
 
 {% if bio.education %}
 <div style="margin-bottom: 20px" class="ui one column stackable grid container">
@@ -135,6 +67,7 @@
 </div>
 {% endif %}
 
+
 {% if bio.work %}
 <div style="margin-bottom: 20px" class="ui one column stackable grid container">
     <div class="column">
@@ -170,3 +103,74 @@
     </div>
 </div>
 {% endif %}
+
+
+{% if bio.languages %}
+<div style="margin-bottom: 20px" class="ui one column stackable grid container">
+  <div class="column">
+    <h4 class="ui horizontal left aligned divider header">
+      <i class="language icon"></i>
+      {{ languages }}
+    </h4>
+    <div class="ui five stackable cards"  style="padding-top: 6px;">
+      {% for lang in bio.languages %}
+      <div class="ui card">
+        <div class="content no-bottom">
+          <div class="header">{{ lang.name }}</div>
+        </div>
+        <div class="content center aligned">
+          <div class="description">
+            <div class="language">
+              <div class="progress">
+                {% for i in (1..4) %}
+                <div class="bar {% if i <= lang.level %}filled{% else %}empty{% endif %}"></div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="ui top pointing label">{{ lang.description }}</div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+{% if bio.skills %}
+<div style="margin-bottom: 20px" class="ui two column stackable grid container">
+  {% for skill in bio.skills %}
+  <div class="column">
+    <h4 class="ui horizontal left aligned divider header">
+      <i class="{{ skill.icon }} icon"></i>
+      {{ skill.name }}
+    </h4>
+    <div class="ui labels small">
+      {% for keyword in skill.keywords %}
+      <div class="ui label active">
+        {{ keyword }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+
+<div style="margin-bottom: 20px" class="ui one column stackable grid container">
+  <div class="column">
+    <h4 class="ui horizontal left aligned divider header">
+      <i class="heart icon"></i>
+      {{ interests }}
+    </h4>
+    <div class="ui labels small">
+      {% for interest in bio.interests %}
+      <div class="ui label active">
+        {{ interest.name }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
