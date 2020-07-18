@@ -38,6 +38,6 @@ bio-url-en: bio
 rouge-theme: igorpro
 
 # YOU NORMALLY NEVER CHANGE THE FOLLOWING
-markdown: kramdown
+markdown: GFM
 include: [_data]
 
