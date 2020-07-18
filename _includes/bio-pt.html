@@ -1,22 +1,27 @@
 {% assign current = "Atualmente" %}
+{% assign interests = "Interesses" %}
+{% assign languages = "Línguas" %}
+{% assign education = "Educação" %}
+{% assign profissional = "Experiência Profissional" %}
+{% assign bio = site.data.bio-pt %}
 <div style="margin-top: 10px; margin-bottom:2em;" class="ui stackable grid container">
 
   <div class="six wide column middle aligned no-bottom">
-    <h2 class="ui center aligned header no-bottom">{{ site.data.bio-pt.basics.name }}
-      <div class="sub header">{{ site.data.bio-pt.basics.location.city }}, {{ site.data.bio-pt.basics.location.region }}, {{ site.data.bio-pt.basics.location.countryCode }}</div>
+    <h2 class="ui center aligned header no-bottom">{{ bio.basics.name }}
+      <div class="sub header">{{ bio.basics.location.city }}, {{ bio.basics.location.region }}, {{ bio.basics.location.countryCode }}</div>
     </h2>
   </div>
 
   <div class="center aligned ten wide column filter-buttons no-bottom nonprintable">
-    {% if site.data.bio-pt.basics.website %}
-    <a class="ui button green small" href="{{ site.data.bio-pt.basics.website }}" target="_blank"><i class="home icon"></i>{{ site.data.bio-pt.basics.website | remove: "http://" | remove: "https://" }}</a>
+    {% if bio.basics.website %}
+    <a class="ui button green small" href="{{ bio.basics.website }}" target="_blank"><i class="home icon"></i>{{ bio.basics.website | remove: "http://" | remove: "https://" }}</a>
     {% endif %}
     
-    {% if site.data.bio-pt.basics.email %}
-    <a class="ui button green small" href="mailto:{{ site.data.bio-pt.basics.email }}" target="_blank"><i class="mail icon"></i>{{ site.data.bio-pt.basics.email }}</a>
+    {% if bio.basics.email %}
+    <a class="ui button green small" href="mailto:{{ bio.basics.email }}" target="_blank"><i class="mail icon"></i>{{ bio.basics.email }}</a>
     {% endif %}
     
-    {% for entry in site.data.bio-pt.basics.profiles %}
+    {% for entry in bio.basics.profiles %}
     <a class="ui button green small" href="{{ entry.url }}" target="_blank"><i class="{{ entry.network | downcase }} icon"></i>{{ entry.username }}</a>
     {% endfor %}
   </div>
@@ -24,12 +29,12 @@
 
 <div style="margin-bottom: 20px" class="ui one column stackable grid container">
   <div class="column">
-    <h4 class="ui dividing header left aligned">
+    <h4 class="ui horizontal left aligned divider header">
       <i class="heart icon"></i>
-      Interesses  
+      {{ interests }}
     </h4>
     <div class="ui labels small">
-      {% for interest in site.data.bio-pt.interests %}
+      {% for interest in bio.interests %}
       <div class="ui label active">
         {{ interest.name }}
       </div>
@@ -38,10 +43,11 @@
   </div>
 </div>
 
+{% if bio.skills %}
 <div style="margin-bottom: 20px" class="ui two column stackable grid container">
-  {% for skill in site.data.bio-pt.skills %}
+  {% for skill in bio.skills %}
   <div class="column">
-    <h4 class="ui dividing header left aligned">
+    <h4 class="ui horizontal left aligned divider header">
       <i class="{{ skill.icon }} icon"></i>
       {{ skill.name }}
     </h4>
@@ -55,17 +61,51 @@
   </div>
   {% endfor %}
 </div>
+{% endif %}
 
-{% if site.data.bio-pt.education %}
+
+{% if bio.languages %}
+<div style="margin-bottom: 20px" class="ui one column stackable grid container">
+  <div class="column">
+    <h4 class="ui horizontal left aligned divider header">
+      <i class="language icon"></i>
+      {{ languages }}
+    </h4>
+    <div class="ui five stackable cards"  style="padding-top: 6px;">
+      {% for lang in bio.languages %}
+      <div class="ui card">
+        <div class="content no-bottom">
+          <div class="header">{{ lang.name }}</div>
+        </div>
+        <div class="content center aligned">
+          <div class="description">
+            <div class="language">
+              <div class="progress">
+                {% for i in (1..4) %}
+                <div class="bar {% if i <= lang.level %}filled{% else %}empty{% endif %}"></div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="ui top pointing label">{{ lang.description }}</div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if bio.education %}
 <div style="margin-bottom: 20px" class="ui one column stackable grid container">
   <div class="row">
     <div class="column">
-      <h4 class="ui dividing header">
+      <h4 class="ui horizontal left aligned divider header">
         <i class="graduation cap icon"></i>
-        Educação
+        {{ education }}
       </h4>
-      <div class="ui stackable cards"  style="padding-top: 6px;">
-        {% for educ in site.data.bio-pt.education %}
+      <div class="ui three stackable cards"  style="padding-top: 6px;">
+        {% for educ in bio.education %}
         <div class="ui card {% if educ.endDate == current %}yellow{% else %}green{% endif %}">
           <div class="content">
             <div class="header">{{ educ.area }}</div>
@@ -95,34 +135,30 @@
 </div>
 {% endif %}
 
-{% if site.data.bio-pt.work %}
+{% if bio.work %}
 <div style="margin-bottom: 20px" class="ui one column stackable grid container">
-  <div class="row">
     <div class="column">
-      <h4 class="ui dividing header">
+      <h4 class="ui horizontal left aligned divider header">
         <i class="paperclip icon"></i>
-        Experiência Profissional
+        {{ profissional }}
       </h4>
-      <div class="ui stackable cards"  style="padding-top: 6px;">
-        {% for work in site.data.bio-pt.work %}
+      <div class="ui three stackable cards"  style="padding-top: 6px;">
+        {% for work in bio.work %}
         <div class="ui card {% if work.endDate == current %}yellow{% else %}green{% endif %}">
           <div class="content">
             <div class="header">{{ work.position }}</div>
-            <div class="meta">
-            </div>
             <div class="description">
               {% if work.website.size >= 1 %}
-              <a class="ui label active" href="{{ work.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ work.company }}</a>
+              <a class="ui label active" style="margin-bottom: 12px;" href="{{ work.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ work.company }}</a>
               {% else %}
-              <div class="ui label active"><i class="map marker alternate icon"></i>{{ work.company }}</div>
+              <div class="ui label active" style="margin-bottom: 12px;"><i class="map marker alternate icon"></i>{{ work.company }}</div>
               {% endif %}
-              <p></p>
-              <p>{{ work.summary }}</p>
-              <div class="ui bulleted list">
-                {% for highlight in work.highlights %}
-                <div class="item">{{ highlight }}</div>
-                {% endfor %}
-              </div>
+            </div>
+            {%if work.summary.size >= 1 %}<p>{{ work.summary }}</p>{% endif %}
+            <div class="ui bulleted list" style="margin-top: 0;">
+              {% for highlight in work.highlights %}
+              <div class="item">{{ highlight }}</div>
+              {% endfor %}
             </div>
           </div>
           <div class="extra content">
@@ -132,6 +168,5 @@
         {% endfor %}
       </div>
     </div>
-  </div>
 </div>
 {% endif %}
