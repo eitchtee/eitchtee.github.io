@@ -25,15 +25,6 @@
           {{ site.data.bio-en.basics.summary }}
         </div>
       </div>
-      <div class="center aligned content">
-        <div class="description">
-          Interests:
-          {% for interest in site.data.bio-en.interests %}
-            {{ interest.name }}{% if forloop.last != true %}, {% endif %}
-          {% endfor %}
-
-        </div>
-      </div>
       <div class="center aligned extra content">
         {% include home-network-links-en.html %}
       </div>
