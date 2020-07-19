@@ -13,12 +13,16 @@
 // Make text smaller, remove spacing between list items when printing.
 @media print {
 
-  p, a, li {
-    font-size: 12px;
+  p, a, li, .item {
+    font-size: 12px!important;
   }
 
-  h1, h2.ui.header, h3.ui.header {
-    font-size: 14px;
+  .ui.center.aligned.header.no-bottom{
+    text-align: center;
+  }
+
+  .six.wide.column.middle.aligned.no-bottom {
+    width: 100%!important;
   }
 
   a {
@@ -28,5 +32,13 @@
   ul li {
     padding: 0px;
     margin: 0px;
+  }
+
+  body {
+    margin: 6mm 6mm 6mm 6mm;  
+  }
+
+  .cv {
+    margin: 0!important;
   }
 }

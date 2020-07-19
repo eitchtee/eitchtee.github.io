@@ -4,7 +4,8 @@
 {% assign education = "Education" %}
 {% assign profissional = "Work" %}
 {% assign bio = site.data.bio-en %}
-<div style="margin-top: 10px; margin-bottom:2em;" class="ui stackable grid container">
+<div class="cv" style="margin-top: 10px; margin-bottom:6em;">
+<div class="ui stackable grid container">
 
   <div class="six wide column middle aligned no-bottom">
     <h2 class="ui center aligned header no-bottom">{{ bio.basics.name }}
@@ -121,7 +122,7 @@
         <div class="content center aligned">
           <div class="description">
             <div class="language">
-              <div class="progress">
+              <div class="progress nonprintable">
                 {% for i in (1..4) %}
                 <div class="bar {% if i <= lang.level %}filled{% else %}empty{% endif %}"></div>
                 {% endfor %}
@@ -173,4 +174,5 @@
       {% endfor %}
     </div>
   </div>
+</div>
 </div>

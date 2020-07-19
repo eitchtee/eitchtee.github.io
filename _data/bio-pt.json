@@ -112,6 +112,20 @@
   ],
   "work": [
     {
+      "company": "Fest Trotta, Muriaé",
+      "position": "Auxiliar Administrativo",
+      "website": "",
+      "startDate": "2020-03-31",
+      "endDate": "Atualmente",
+      "summary": "",
+      "highlights": [
+        "Atendimento de clientes.",
+        "Vendas.",
+        "Atendimento de delivery.",
+        "Prospecção de novos ramos e produtos para exploração pela empresa."
+      ]
+    },
+    {
       "company": "Delegacia de Polícia Civil de Ouro Preto",
       "position": "Relator Estagiário",
       "website": "",
@@ -146,20 +160,6 @@
         "Resolução de conflitos.",
         "Redação de atas da seção para homologação pelo juiz responsável.",
         "Atendimento ao público em geral."
-      ]
-    },
-    {
-      "company": "Fest Trotta, Muriaé",
-      "position": "Auxiliar Administrativo",
-      "website": "",
-      "startDate": "2015-01-01",
-      "endDate": "2017-09-16",
-      "summary": "",
-      "highlights": [
-        "Atendimento de clientes.",
-        "Vendas.",
-        "Atendimento de delivery.",
-        "Busca de novos ramos rentáveis para exploração pela empresa."
       ]
     }
   ],
