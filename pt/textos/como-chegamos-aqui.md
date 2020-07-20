@@ -1,10 +1,10 @@
 ---
-layout: essay-pt
+layout: essay
 type: essay
 title: Como chegamos aqui
 # All dates must be YYYY-MM-DD format!
 date: 2020-07-18
-lang: pt
+language: pt
 labels:
   - Devaneios
 ---

@@ -1,5 +1,5 @@
 ---
-layout: project-pt
+layout: project
 type: project
 image: images/projects/slid.png
 title: SLID
@@ -11,7 +11,7 @@ labels:
   - GDSCript
 category:
   - Jogo
-lang: pt
+language: pt
 projecturl: https://play.google.com/store/apps/details?id=com.kamofa.slid
 # [['icon', 'url', 'Text', 'color']] Only icon and url are required
 buttons: [['google play', 'https://play.google.com/store/apps/details?id=com.kamofa.slid', 'Play Store', 'green']]

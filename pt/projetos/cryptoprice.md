@@ -1,5 +1,5 @@
 ---
-layout: project-pt
+layout: project
 type: project
 image: images/projects/cryptoprice.png
 title: CRYPTOPRICE.gs
@@ -12,7 +12,7 @@ labels:
   - Google Sheets
 category:
   - Google Sheets
-lang: pt
+language: pt
 projecturl: https://github.com/eitchtee/CRYPTOPRICE.gs
 buttons: [['github', 'https://github.com/eitchtee/CRYPTOPRICE.gs', 'Repo', 'black']]
 summary: Função customizada para o Google Sheets que permite converter o valor de uma criptomoeda para uma moeda fiat convencional se utilizando da API da Coingecko.

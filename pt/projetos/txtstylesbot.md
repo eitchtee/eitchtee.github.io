@@ -1,5 +1,5 @@
 ---
-layout: project-pt
+layout: project
 type: project
 image: images/projects/txtstylesbot.jpg
 title: TextStylesBot
@@ -11,7 +11,7 @@ labels:
   - Telegram API
 category:
   - Telegram Bot
-lang: pt
+language: pt
 projecturl: https://github.com/eitchtee/TextStylesBot/
 # [['icon', 'url', 'Text', 'color']] Only icon and url are required
 buttons: [['github', 'https://github.com/eitchtee/TextStylesBot/', 'Repo', 'black'], ['telegram', 'https://t.me/txtfrmtbot', 'Telegram', 'teal']]

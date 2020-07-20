@@ -1,5 +1,5 @@
 ---
-layout: project-en
+layout: project
 type: project
 image: images/projects/slid.png
 title: SLID
@@ -11,7 +11,7 @@ labels:
   - GDSCript
 category:
   - Game
-lang: en
+language: en
 projecturl: https://play.google.com/store/apps/details?id=com.kamofa.slid
 buttons: [['google play', 'https://play.google.com/store/apps/details?id=com.kamofa.slid', 'Play Store', 'green']]
 summary: Put your vocabulary and mind up to the test in this addictive and yet relaxing and educative puzzle game whose main goal is to form words with the given letters, gaining points and learning new words and their meanings with each move.

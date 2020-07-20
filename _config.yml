@@ -18,12 +18,8 @@ essays-page-label-en: Essays
 
 theme-bio: bio.html
 theme-home: home.html
-
-theme-projects-pt: projects-pt.html
-theme-essays-pt: essays-pt.html
-
-theme-projects-en: projects-en.html
-theme-essays-en: essays-en.html
+theme-projects: projects.html
+theme-essays: essays.html
 
 projects-url-pt: projetos
 essays-url-pt: textos

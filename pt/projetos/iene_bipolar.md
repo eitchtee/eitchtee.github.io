@@ -1,5 +1,5 @@
 ---
-layout: project-en
+layout: project
 type: project
 image: images/projects/iene_bipolar.png
 title: Iene Bipolar
@@ -11,7 +11,7 @@ labels:
   - Twitter API
 category:
   - Twitter Bot
-lang: pt
+language: pt
 projecturl: https://twitter.com/IeneBipolar_
 # [['icon', 'url', 'Text', 'color']] Only icon and url are required
 buttons: [['github', 'https://github.com/eitchtee/iene_bipolar', 'Repo', 'black'], ['twitter', 'https://twitter.com/IeneBipolar_', 'Twitter', 'blue']]

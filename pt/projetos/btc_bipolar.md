@@ -1,5 +1,5 @@
 ---
-layout: project-pt
+layout: project
 type: project
 image: images/projects/btc_bipolar.png
 title: Bitcoin Bipolar
@@ -11,7 +11,7 @@ labels:
   - Twitter API
 category:
   - Twitter Bot
-lang: pt
+language: pt
 projecturl: https://twitter.com/btc_bipolar
 # [['icon', 'url', 'Text', 'color']] Only icon and url are required
 buttons: [['github', 'https://github.com/eitchtee/bitcoin_bipolar', 'Repo', 'black'], ['twitter', 'https://twitter.com/BTC_bipolar', 'Twitter', 'blue']]

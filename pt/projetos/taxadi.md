@@ -1,5 +1,5 @@
 ---
-layout: project-pt
+layout: project
 type: project
 image: images/projects/taxa_di.png
 title: Taxa DI.gs
@@ -12,7 +12,7 @@ labels:
   - Google Sheets
 category:
   - Google Sheets
-lang: pt
+language: pt
 projecturl: https://github.com/eitchtee/TAXA_DI.gs
 buttons: [['github', 'https://github.com/eitchtee/TAXA_DI.gs', 'Repo', 'black']]
 summary: Função customizada para o Google Sheets que permite acessar o último valor da taxa DI utilizando o mesmo recurso que o site oficial da B3.

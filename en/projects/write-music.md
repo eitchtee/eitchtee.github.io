@@ -1,5 +1,5 @@
 ---
-layout: project-en
+layout: project
 type: project
 image: images/projects/write-music.png
 title: Write Music
@@ -13,7 +13,7 @@ labels:
   - CSS
 category:
   - Web
-lang: en
+language: en
 projecturl: https://eitchtee.github.io/write-music/
 # [['icon', 'url', 'Text', 'color']] Only icon and url are required
 buttons: [['github', 'https://github.com/eitchtee/write-music', 'Repo', 'black'], ['globe', 'https://eitchtee.github.io/write-music/', 'Site']]

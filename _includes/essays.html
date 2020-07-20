@@ -1,30 +1,30 @@
 <div style="padding-top: 20px" class="ui container ">
-  {% assign language = "en" %}
+  {% assign language = page.language %}
   {% assign essay_pages = site.pages | where: "type", "essay" | sort: "date" | reverse %}
-  {% assign essay_pages_in_lang = essay_pages | where: "lang", language %}
-  {% assign essay_categories = essay_pages | where: "lang", language | map: "category" | sort | uniq %}
-  
+  {% assign essay_pages_in_lang = essay_pages | where: "language", language %}
+  {% assign essay_categories = essay_pages | where: "language", language | map: "category" | sort | uniq %}
+
   {% if essay_categories.size > 1 %}
   <div class="nonprintable filter-buttons hiding">
-      {% for category in essay_categories %}
+    {% for category in essay_categories %}
       <a class="button ui toggle" id="{{ category | remove: " " }}">{{ category }}</a>
-      {% endfor %}
-    <a class="button ui toggle active" id="all">All</a>
+    {% endfor %}
+    <a class="button ui toggle active" id="all">{% if language == 'pt' %}Todos{%- elsif language == 'en' -%}All{% endif %}</a>
   </div>
   {% endif %}
 
   {% if essay_pages_in_lang.size > 0 %}
-    <div class="ui stackable centered three cards" id="filterable">
-        {% for page in essay_pages_in_lang %}
-          {% if page.lang == language %}
-            {% include essay-card.html page=page %}
-          {% endif %}
-        {% endfor %}
-    </div>
+  <div class="ui stackable centered three cards" id="filterable">
+      {% for page in essay_pages_in_lang %}
+        {% if page.language == language %}
+          {% include essay-card.html page=page %}
+        {% endif %}
+      {% endfor %}
+  </div>
   {% else %}
   <div class="ui container center aligned">
     <h2 class="ui icon header disabled"><i class="frown icon"></i>
-      <div class="content">Nothing here<div class="sub header">No text has been added yet.</div></div>
+      <div class="content">{% if language == 'pt' %}Nada aqui{%- elsif language == 'en' -%}Nothing here{% endif %}<div class="sub header">{% if language == 'pt' %}Nenhum texto foi adicionado ainda.{%- elsif language == 'en' -%}No text has been added yet.{% endif %}</div></div>
     </h2>
   </div>
   {% endif %}
@@ -32,7 +32,7 @@
 
 <script>
   $('.filter-buttons').removeClass('hiding'); // Show filter is JS is enabled
-  
+
   // from https://codepen.io/terf/post/jquery-filter-divs
   var $btns = $('.button').click(function () {
       if (this.id == 'all') {
