@@ -1,0 +1,9 @@
+{% assign language = include.language %}
+{% if language == "pt" %}{% assign bio = site.data.bio-pt %}{% else %}{% assign bio = site.data.bio-en %}{% endif %}
+{% for profile in bio.basics.profiles %}
+   <a href="{{ profile.url }}"><i class="big {{ profile.network | downcase }} icon icon-color"></i> </a>
+{% endfor %}
+
+{% if bio.basics.email %}
+  <a href="mailto:{{ bio.basics.email }}"><i class="big mail icon icon-color"></i></a>
+{% endif %}

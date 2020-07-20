@@ -17,12 +17,11 @@ projects-page-label-en: Projects
 essays-page-label-en: Essays
 
 theme-bio: bio.html
+theme-home: home.html
 
-theme-home-pt: home-pt.html
 theme-projects-pt: projects-pt.html
 theme-essays-pt: essays-pt.html
 
-theme-home-en: home-en.html
 theme-projects-en: projects-en.html
 theme-essays-en: essays-en.html
 
