@@ -25,9 +25,9 @@
   </div>
 
   {% if page.buttons %}
-  <div class="nonprintable ui bottom attached buttons" style="z-index: 1;">
+  <div class="nonprintable {% if page.buttons.size >= 2 %}ui bottom attached buttons{% endif %}" style="z-index: 1;">
       {% for button in page.buttons %}
-      <a class="ui button {{ button[3] }}" href="{{ button[1] }}" target="_blank"><i class="{{ button[0] }} icon"></i>{{ button [2] }}</a>
+      <a class="ui bottom attached button {{ button[3] }}" href="{{ button[1] }}" target="_blank"><i class="{{ button[0] }} icon"></i>{{ button [2] }}</a>
       {% if page.buttons.size == 2 %}
         {% if {{forloop.index}} == 1 %}
           <div class="or" data-text="{% if page.language == 'pt' %}ou{% else %}or{% endif %}"></div>
