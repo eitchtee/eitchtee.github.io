@@ -196,12 +196,14 @@
       <i class="{{ skill.icon }} icon"></i>
       {{ skill.name }}
     </h4>
-    <div class="ui labels small">
+    <div class="ui segment">
+      <div class="ui labels small">
       {% for keyword in skill.keywords %}
       <div class="ui label active">
         {{ keyword }}
       </div>
       {% endfor %}
+    </div>
     </div>
   </div>
   {% endfor %}
@@ -215,13 +217,16 @@
       <i class="heart icon"></i>
       {{ interests }}
     </h4>
-    <div class="ui labels small">
-      {% for interest in bio.interests %}
-      <div class="ui label active">
-        {{ interest.name }}
+    <div class="ui segment">
+      <div class="ui labels small">
+        {% for interest in bio.interests %}
+        <div class="ui label active">
+          {{ interest.name }}
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
+    
   </div>
 </div>
 </div>
