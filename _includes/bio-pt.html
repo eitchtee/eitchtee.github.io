@@ -7,24 +7,42 @@
 <div class="cv" style="margin-top: 10px; margin-bottom:6em;">
   <div class="ui stackable grid container">
   
-    <div class="six wide column middle aligned no-bottom">
-      <h2 class="ui center aligned header no-bottom">{{ bio.basics.name }}
+    <div class="twelve wide column middle aligned">
+      <h1 class="ui left aligned header no-bottom">{{ bio.basics.name }}
         <div class="sub header">{{ bio.basics.location.city }}, {{ bio.basics.location.region }}, {{ bio.basics.location.countryCode }}</div>
-      </h2>
+      </h1>
     </div>
-  
-    <div class="center aligned ten wide column filter-buttons no-bottom nonprintable">
-      {% if bio.basics.website %}
-      <a class="ui button green small" href="{{ bio.basics.website }}" target="_blank"><i class="home icon"></i>{{ bio.basics.website | remove: "http://" | remove: "https://" }}</a>
-      {% endif %}
-      
-      {% if bio.basics.email %}
-      <a class="ui button green small" href="mailto:{{ bio.basics.email }}" target="_blank"><i class="mail icon"></i>{{ bio.basics.email }}</a>
-      {% endif %}
-      
-      {% for entry in bio.basics.profiles %}
-      <a class="ui button green small" href="{{ entry.url }}" target="_blank"><i class="{{ entry.network | downcase }} icon"></i>{{ entry.username }}</a>
-      {% endfor %}
+
+    <div class="four wide column">
+      <div class="ui middle aligned animated relaxed list">
+        {% if bio.basics.website %}
+        <a class="item" href="{{ bio.basics.website }}" target="_blank">
+          <i class="home icon"></i>
+          <div class="content">
+            <div class="header">{{ bio.basics.website | remove: "http://" | remove: "https://" }}</div>
+          </div>
+        </a>
+        {% endif %}
+
+        {% if bio.basics.email %}
+        <a class="item"  href="mailto:{{ bio.basics.email }}" target="_blank">
+          <i class="mail icon"></i>
+          <div class="content">
+            <div class="header">{{ bio.basics.email }}</div>
+          </div>
+        </a>
+        {% endif %}
+
+        {% for entry in bio.basics.profiles %}
+        <a class="item"  href="{{ entry.url }}" target="_blank">
+          <i class="{{ entry.network | downcase }} icon"></i>
+          <div class="content">
+            <div class="header">{{ entry.username }}</div>
+          </div>
+        </a>
+        {% endfor %}
+        
+      </div>
     </div>
   </div>
   
