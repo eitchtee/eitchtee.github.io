@@ -165,7 +165,7 @@
     <div class="ui horizontal stackable segments">
       {% for lang in bio.languages %}
       <div class="ui segment">
-        <div class="ui green progress" style="min-width: 200px!important;" data-value="{{ lang.level }}" data-total="4" id="{{ lang.name }}">
+        <div class="ui green progress" style="min-width: 200px!important;" data-value="{{ lang.level | minus: 0.05 }}" data-total="4" id="{{ lang.name }}">
           <div class="bar">
             <div class="progress">aaaa</div>
           </div>
@@ -175,7 +175,7 @@
         <script>
           $("#{{ lang.name}}").progress({
           duration : 0,
-          showActivity: false,
+          showActivity: true,
           label: 'ratio',
           text: {ratio: '{{ lang.description }}'}});          
         </script>
