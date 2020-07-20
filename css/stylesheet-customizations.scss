@@ -72,8 +72,16 @@ body {
 }
 
 .hiding {
-  display: none;
-  visibility: hidden;
+  display: none!important;
+  visibility: hidden!important;
+}
+
+.ui.progress .bar>.progress {
+  color: rgba(255,255,255,1);
+}
+
+.ui.progress:first-child {
+  margin: 0 0 1.5em;
 }
 
 
