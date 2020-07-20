@@ -16,28 +16,28 @@ bio-page-label-en: Resume
 projects-page-label-en: Projects
 essays-page-label-en: Essays
 
+theme-bio: bio.html
+
 theme-home-pt: home-pt.html
 theme-projects-pt: projects-pt.html
 theme-essays-pt: essays-pt.html
-theme-bio-pt: bio-pt.html
 
 theme-home-en: home-en.html
 theme-projects-en: projects-en.html
 theme-essays-en: essays-en.html
-theme-bio-en: bio-en.html
 
 projects-url-pt: projetos
 essays-url-pt: textos
-bio-url-pt: bio
+bio-url-pt: curriculo
 
 projects-url-en: projects
 essays-url-en: essays
-bio-url-en: bio
+bio-url-en: resume
 
 # Specify the rouge syntax highlighter theme. Pick one from css/rouge.
 rouge-theme: igorpro
 
 # YOU NORMALLY NEVER CHANGE THE FOLLOWING
-markdown: GFM
+markdown: kramdown
 include: [_data]
 
