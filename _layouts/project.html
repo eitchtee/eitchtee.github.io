@@ -24,5 +24,14 @@ layout: projects
 
 <h1>{{ page.title }}</h1>
 <div class="ui section divider"></div>
+{% if content.size > 1 %}
 {{ content }}
+{% else %}
+<div class="ui container center aligned">
+    <h2 class="ui icon header disabled"><i class="frown icon"></i>
+      <div class="content">{% if page.language == 'pt' %}Nada aqui{%- elsif page.language == 'en' -%}Nothing here{% endif %}<div class="sub header">{% if page.language == 'pt' %}Este projeto não tem uma descrição.{%- elsif page.language == 'en' -%}This project does not have a description.{% endif %}</div></div>
+    </h2>
+  </div>
+</div>
+{% endif %}
 </div>
