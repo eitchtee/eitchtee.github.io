@@ -4,7 +4,7 @@
     <span class="header">{{ include.page.title }}</span>
     <div class="meta">
       <span class="date">{% if include.page.language == 'pt' %}{% assign m = include.page.date | date: "%-m" %}
-        {{ include.page..date | date: "%-d" }}
+        {{ include.page.date | date: "%-d" }}
         {% case m %}
         {% when '1' %}de janeiro de
         {% when '2' %}de fevereiro de
