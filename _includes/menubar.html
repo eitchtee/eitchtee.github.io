@@ -22,8 +22,8 @@
 
   </nav>
   {% if language == 'pt' %}
-  <a href="{{ site.baseurl }}/en/{% if include.active == "projects" %}{{ site.projects-url-en }}{% elsif include.active == "essays" %}{{ site.essays-url-en }}{% elsif include.active == "bio" %}{{ site.bio-url-en }}{% elsif include.active == "404" %}404{% endif %}" class="ui button icon basic translate-button"><i class="us flag"></i></a>
+  <a href="{{ site.baseurl }}/en/{% if include.active == "projects" %}{{ site.projects-url-en }}{% elsif include.active == "essays" %}{{ site.essays-url-en }}{% elsif include.active == "bio" %}{{ site.bio-url-en }}{% elsif include.active == "404" %}404{% endif %}" class="ui button icon basic translate-button" data-tooltip="See in English" data-position="left center"><i class="us flag"></i></a>
   {% else %}
-  <a href="{{ site.baseurl }}/pt/{% if include.active == "projects" %}{{ site.projects-url-pt }}{% elsif include.active == "essays" %}{{ site.essays-url-pt }}{% elsif include.active == "bio" %}{{ site.bio-url-pt }}{% elsif include.active == "404" %}404{% endif %}" class="ui button icon basic translate-button"><i class="br flag"></i></a>
+  <a href="{{ site.baseurl }}/pt/{% if include.active == "projects" %}{{ site.projects-url-pt }}{% elsif include.active == "essays" %}{{ site.essays-url-pt }}{% elsif include.active == "bio" %}{{ site.bio-url-pt }}{% elsif include.active == "404" %}404{% endif %}" class="ui button icon basic translate-button" data-tooltip="Ver em Português" data-position="left center"><i class="br flag"></i></a>
   {% endif %}
 </div>
