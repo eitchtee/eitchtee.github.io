@@ -55,28 +55,34 @@
   "skills": [
     {
       "icon": "code",
-      "name": "Languages and Frameworks",
+      "name": "Linguagens e Frameworks",
       "level": "",
       "keywords": [
         "Pyhon",
         "Javascript",
         "Godot Script",
-        "Dart+Flutter"
+        "Dart+Flutter",
+        "Fomantic UI",
+        "Wordpress"
       ]
     },
     {
       "icon": "wrench",
-      "name": "Toolsets and OSs",
+      "name": "Ferramentas e Sistemas",
       "level": "",
       "keywords": [
         "Pycharm",
         "Webstorm",
         "VSCode",
         "Android Studio",
+        "Godot Engine",
+        "Unity3D",
         "Windows",
         "Ubuntu/Linux",
         "Git/GitHub",
-        "Postman"
+        "Postman",
+        "Adobe Photoshop",
+        "Microsoft Office"
       ]
     }
   ],

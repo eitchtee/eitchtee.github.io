@@ -61,7 +61,9 @@
         "Pyhon",
         "Javascript",
         "Godot Script",
-        "Dart+Flutter"
+        "Dart+Flutter",
+        "Fomantic UI",
+        "Wordpress"
       ]
     },
     {
@@ -73,10 +75,14 @@
         "Webstorm",
         "VSCode",
         "Android Studio",
+        "Godot Engine",
+        "Unity3D",
         "Windows",
         "Ubuntu/Linux",
         "Git/GitHub",
-        "Postman"
+        "Postman",
+        "Adobe Photoshop",
+        "Microsoft Office"
       ]
     }
   ],
