@@ -59,18 +59,18 @@
           {% for educ in bio.education %}
           <div class="ui card {% if educ.endDate == current %}yellow{% else %}green{% endif %}">
             <div class="content">
+              {% if educ.website.size >= 1 %}
+              <a class="ui top attached label active" href="{{ educ.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ educ.institution }}</a>
+              {% else %}
+              <div class="ui top attached label active">
+                <i class="map marker alternate icon"></i>{{ educ.institution }}
+              </div>
+              {% endif %}
               <div class="header">{{ educ.area }}</div>
               <div class="meta">
                 <p>{{ educ.studyType }}</p>
               </div>
               <div class="description">
-                {% if educ.website.size >= 1 %}
-                <a class="ui label active" href="{{ educ.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ educ.institution }}</a>
-                {% else %}
-                <div class="ui label active">
-                  <i class="map marker alternate icon"></i>{{ educ.institution }}
-                </div>
-                {% endif %}
               </div>
             </div>
             <div class="extra content">
@@ -98,26 +98,26 @@
           {% for work in bio.work %}
           <div class="ui card {% if work.endDate == current %}yellow{% else %}green{% endif %}">
             <div class="content">
+              {% if work.website.size >= 1 %}
+              <a class="ui top attached label active" style="margin-bottom: 12px;" href="{{ work.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ work.company }}</a>
+              {% else %}
+              <div class="ui top attached label active" style="margin-bottom: 12px;"><i class="map marker alternate icon"></i>{{ work.company }}</div>
+              {% endif %}
               <div class="header">{{ work.position }}</div>
               <div class="description">
-                {% if work.website.size >= 1 %}
-                <a class="ui label active" style="margin-bottom: 12px;" href="{{ work.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ work.company }}</a>
-                {% else %}
-                <div class="ui label active" style="margin-bottom: 12px;"><i class="map marker alternate icon"></i>{{ work.company }}</div>
-                {% endif %}
-              </div>
-              {%if work.summary.size >= 1 %}<p>{{ work.summary }}</p>{% endif %}
-              <div class="ui bulleted list" style="margin-top: 0;">
-                {% for highlight in work.highlights %}
-                <div class="item">{{ highlight }}</div>
-                {% endfor %}
+                {%if work.summary.size >= 1 %}<p>{{ work.summary }}</p>{% endif %}
+                <div class="ui bulleted list" style="margin-top: 0;">
+                  {% for highlight in work.highlights %}
+                  <div class="item">{{ highlight }}</div>
+                  {% endfor %}
+                </div>
               </div>
             </div>
             <div class="extra content">
               <div class="right floated"><i class="calendar icon"></i>{{ work.startDate | date: "%m/%Y" }} - {{ work.endDate | date: "%m/%Y" }}</div>
             </div>
-          </div>
-          {% endfor %}
+        </div>
+        {% endfor %}
         </div>
       </div>
   </div>

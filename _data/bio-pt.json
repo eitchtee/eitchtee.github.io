@@ -101,7 +101,7 @@
   "education": [
     {
       "institution": "Universidade Federal de Ouro Preto",
-      "website": "https://ufop.br",
+      "website": "https://direito.ufop.br/",
       "area": "Direito",
       "studyType": "Bacharelado",
       "startDate": "2017-09-16",
@@ -140,12 +140,12 @@
     {
       "company": "Universidade Federal de Ouro Preto",
       "position": "Webmaster e Pesquisador Extensionista",
-      "website": "https://estudosdebarragens.ufop.br",
+      "website": "",
       "startDate": "2018-05-01",
       "endDate": "2019-12-31",
       "summary": "Desenvolver e administrar o site <a class=\"icon-color\" href=\"https://estudosdebarragens.ufop.br\" target=\"_blank\">estudosdebarragens.ufop.br</a> para o projeto institucional <i>Rede UFOP de Estudos Sobre as Consequências dos Rompimentos de Barragens</i>, bem como compilar os dados necessários para o projeto.",
       "highlights": [
-        "Desenvolvimento de um site simples e funcional, inicialmente em Python e Django e posteriormente em Wordpress por requisição do departamento de tecnologia da universidade.",
+        "Desenvolvimento de um site simples e funcional, inicialmente em Python com o framework Django e depois refeito em Wordpress.",
         "Compilação de dados adquiridos por parcerias, web scrapping e pesquisa manual."
       ]
     },
