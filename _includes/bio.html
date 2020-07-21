@@ -48,7 +48,7 @@
   
   
   {% if bio.education %}
-  <div style="margin-bottom: 20px" class="ui one column stackable grid container">
+  <div style="margin-bottom: 20px" class="ui one column stackable grid container" id="{{ education | remove: ' ' }}">
     <div class="row">
       <div class="column">
         <h4 class="ui horizontal left aligned divider header">
@@ -88,7 +88,7 @@
   
   
   {% if bio.work %}
-  <div style="margin-bottom: 20px" class="ui one column stackable grid container">
+  <div style="margin-bottom: 20px" class="ui one column stackable grid container" id="{{ profissional | | remove: ' ' }}">
       <div class="column">
         <h4 class="ui horizontal left aligned divider header">
           <i class="paperclip icon"></i>
@@ -126,7 +126,7 @@
   
   {% if bio.languages %}
   <noscript>
-    <div style="margin-bottom: 20px" class="ui one column stackable grid container">
+    <div style="margin-bottom: 20px" class="ui one column stackable grid container" id="{{ languages | remove: ' ' }}">
       <div class="column">
         <h4 class="ui horizontal left aligned divider header">
           <i class="comments icon"></i>
@@ -158,7 +158,7 @@
 </noscript>
 <div style="margin-bottom: 20px" class="ui one column stackable grid container hiding" id="langBars">
   <div class="column">
-    <h4 class="ui horizontal left aligned divider header">
+    <h4 class="ui horizontal left aligned divider header" id="{{ languages | remove: ' ' }}">
       <i class="comments icon"></i>
       {{ languages }}
     </h4>
@@ -191,7 +191,7 @@
 {% if bio.skills %}
 <div style="margin-bottom: 20px" class="ui two column stackable grid container">
   {% for skill in bio.skills %}
-  <div class="column">
+  <div class="column" id="{{ skill.name | remove: ' ' }}">
     <h4 class="ui horizontal left aligned divider header">
       <i class="{{ skill.icon }} icon"></i>
       {{ skill.name }}
@@ -211,7 +211,7 @@
 {% endif %}
 
 
-<div style="margin-bottom: 20px" class="ui one column stackable grid container">
+<div style="margin-bottom: 20px" class="ui one column stackable grid container" id="{{ interests | remove: ' ' }}">
   <div class="column">
     <h4 class="ui horizontal left aligned divider header">
       <i class="heart icon"></i>
