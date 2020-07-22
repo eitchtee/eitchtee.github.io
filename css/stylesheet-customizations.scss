@@ -2,26 +2,32 @@
 # Provide front matter so Jekyll processes this file as SASS.
 ---
 
-// Put your custom CSS here if you want to override the defaults.
-// Here are some common customizations for colors
-
-// Customize the background color
 body {
-  // background-color: #f2f2f2;;
+  background-color: #f2f2f2;
+}
+
+:root {
+  --scrollbackground: #f2f2f2;
+  --scrollcolor: #21BA45;
+  --greenColor: #21BA45;
+  --greenColorHover: #0e6d24;
+  --greenColorLighHover: #34ea5f;
+  --lightBG: #f2f2f2;
+  --darkBG: #000;
 }
 
 // Customize the menubar color
 .ui.menu {
-  background: #fff;
+  background: #ffffff;
 }
 
 // Customize the home page icon colors
 .icon-color {
-  color: #21BA45;
+  color: var(--greenColor);
 }
 
 .icon-color:hover {
-  color: #0e6d24;
+  color: var(--greenColorHover);
 }
 
 .filter-buttons {
@@ -49,12 +55,13 @@ body {
 }
 
 .breadlink {
-  color: #21BA45!important;
+  color: var(--greenColor)!important;
   font-weight: bold;
 }
 
-.breaddivider {
-  color: rgba(0, 0, 0, 0.8)!important;
+.breadlink:hover {
+  color: var(--greenColorHover)!important;
+  font-weight: bold;
 }
 
 .header-link::after {
@@ -71,7 +78,7 @@ body {
 }
 
 .header-link:hover {
-  color: #21BA45;
+  color: #000;
 }
 
 .link.card {
@@ -91,8 +98,16 @@ body {
   margin: 0 0 1.5em;
 }
 
+a {
+  color: var(--greenColor)
+}
 
-/* ----------------------NO JS LANG BAR-------------------------- */
+a:hover {
+  color: var(--greenColorHover)
+}
+
+/* ------------------------------------------------------------ */
+/* LANGUAGE BAR */
 
 .language .progress {
   display: inline-block;  
@@ -104,20 +119,16 @@ body {
 }
 .language .progress .bar.empty {
   border: 1px solid #c0c0c0;
-  background: #d0d0d0
+  background: #d0d0d0;
 }
 .language .progress .bar.filled {
   border: 1px solid #c0c0c0;
-  background: #21BA45;
-  color: #21BA45;
-  fill: #21BA45;
+  background: var(--greenColor);
+  color: var(--greenColor);
+  fill: var(--greenColor);
 }
 /* ------------------------------------------------------------ */
-
-html {
-  --scrollbackground: #f2f2f2;
-  --scrollcolor: #21BA45;
-}
+/* SCROLLBAR */
 
 /* The emerging W3C standard
    that is currently Firefox-only */
@@ -139,8 +150,11 @@ html {
   border: 3px solid var(--scrollbackground);
 }
 
+/* ------------------------------------------------------------ */
+/* DARKMODE */
+
 body.inverted {
-  background-color: #101010;
+  background-color: var(--darkBG);
 }
 
 /* Dim images with dark theme on */
@@ -153,5 +167,18 @@ body.inverted .header-link {
 }
 
 body.inverted .header-link:hover {
-  color: #21BA45;
+  color: #fff;
+}
+
+body.inverted .breadlink:hover {
+  color: var(--greenColorLighHover)!important;
+  font-weight: bold;
+}
+
+body.inverted a:hover {
+  color: var(--greenColorLighHover)
+}
+
+body.inverted .icon-color:hover {
+  color: var(--greenColorLighHover);
 }
