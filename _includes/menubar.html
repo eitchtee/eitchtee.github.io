@@ -21,7 +21,7 @@
     <a href="{{ site.baseurl }}/{{ language }}/{% if language == 'pt' %}{{ site.bio-url-pt }}{% else %}{{ site.bio-url-en }}{% endif %}" class=" {% if include.active == "bio" %} active {% endif %} item">{% if language == "pt" %}{{ site.bio-page-label-pt }}{% else %}{{ site.bio-page-label-en }}{% endif %}</a>
 
   </nav>
-  <button class="ui button icon basic darkmode-button" id="darkmode" data-tooltip="{% if language == 'pt' %}Alternar tema{% else %}Toggle theme{% endif %}" data-position="bottom right"><i class="moon icon"></i></button>
+  <button class="ui button icon basic darkmode-button hiding" id="darkmode" data-tooltip="{% if language == 'pt' %}Alternar tema{% else %}Toggle theme{% endif %}" data-position="bottom right"><i class="moon icon"></i></button>
 
   {% if language == 'pt' %}
   <a href="{{ site.baseurl }}/en/{% if include.active == "projects" %}{{ site.projects-url-en }}{% elsif include.active == "essays" %}{{ site.essays-url-en }}{% elsif include.active == "bio" %}{{ site.bio-url-en }}{% elsif include.active == "404" %}404{% endif %}" class="ui button icon basic translate-button" data-tooltip="See in English" data-position="bottom right"><i class="us flag"></i></a>
