@@ -37,6 +37,13 @@ body {
   z-index: 1;
 }
 
+.darkmode-button {
+  top: 10px;
+  right: 60px;
+  position: absolute;
+  z-index: 1;
+}
+
 .flag {
   margin-right: 0!important;
 }
@@ -107,11 +114,16 @@ body {
 }
 /* ------------------------------------------------------------ */
 
+html {
+  --scrollbackground: #f2f2f2;
+  --scrollcolor: #21BA45;
+}
+
 /* The emerging W3C standard
    that is currently Firefox-only */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #21BA45 #f2f2f2;
+  scrollbar-color: var(--scrollcolor) var(--scrollbackground);
 }
 
 /* Works on Chrome/Edge/Safari */
@@ -119,14 +131,27 @@ body {
   width: 12px;
 }
 *::-webkit-scrollbar-track {
-  background: #f2f2f2;
+  background: var(--scrollbackground);
 }
 *::-webkit-scrollbar-thumb {
-  background-color: #21BA45;
+  background-color: var(--scrollcolor);
   border-radius: 20px;
-  border: 3px solid #f2f2f2;
+  border: 3px solid var(--scrollbackground);
 }
 
 body.inverted {
-  background-color: #232323;
+  background-color: #101010;
+}
+
+/* Dim images with dark theme on */
+body.inverted img {
+  filter: brightness(.8) contrast(1.2);
+}
+
+body.inverted .header-link {
+  color: #fff;
+}
+
+body.inverted .header-link:hover {
+  color: #21BA45;
 }

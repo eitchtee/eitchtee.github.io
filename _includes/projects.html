@@ -7,9 +7,9 @@
     {% if project_categories.size > 1 %}
     <div class="nonprintable filter-buttons hiding">
         {% for category in project_categories %}
-        <a class="button ui toggle" id="{{ category | remove: " " }}">{{ category }}</a>
+        <a class="button ui toggle filter" id="{{ category | remove: " " }}">{{ category }}</a>
         {% endfor %}
-      <a class="button ui toggle active" id="all">{% if language == 'pt' %}Todos{%- elsif language == 'en' -%}All{% endif %}</a>
+      <a class="button ui toggle filter active" id="all">{% if language == 'pt' %}Todos{%- elsif language == 'en' -%}All{% endif %}</a>
     </div>
     {% endif %}
   
@@ -34,7 +34,7 @@
     $('.filter-buttons').removeClass('hiding'); // Show filter is JS is enabled
     
     // from https://codepen.io/terf/post/jquery-filter-divs
-    var $btns = $('.button').click(function () {
+    var $btns = $('.button.filter').click(function () {
         if (this.id == 'all') {
             $('#filterable > div').fadeIn(450);
         } else {

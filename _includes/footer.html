@@ -1,0 +1,94 @@
+<script>
+    // TODO Add system override option. Not sure how.
+    let darkmodeEnabled = false;
+
+    if (localStorage.getItem("darkMode") === 'true') {
+        // if user set darkMode as the preferred mode on the website, use it
+        // Overwrites prefers-color-scheme
+        toggleDarkMode();
+    } else if (localStorage.getItem("darkMode") === 'false') {
+        // if user set lightMode as the preferred mode on the website, use it
+        // Overwrites prefers-color-scheme
+        toggleLightMode();
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // if user hasn't set a preferred mode on the website, but have a dark color scheme as default
+        // use darkMode
+        toggleDarkMode();
+    } else {
+        // If user hasn't set a preferred mode or don't have a dark color scheme set as default
+        // use lightMode
+        toggleLightMode();
+    }
+
+
+    function toggleDarkMode () {
+        // add fomantic ui's inverted class to all ui elements
+        $('body').find('.ui').addClass('inverted');
+        // add custom inverted class to body
+        $('body').addClass('inverted');
+        // change scrollbar background to match
+        $("html").attr("style","--scrollbackground:#101010");
+
+        // simple toggle icon change
+        $("#darkmode > i").removeClass('moon icon');
+        $("#darkmode > i").addClass('sun icon');
+        
+        localStorage.setItem("darkMode", true);
+        darkmodeEnabled = true;
+        return;
+    }
+    
+    function toggleLightMode() {
+        // remove fomantic ui's inverted class from all ui elements
+        $('body').find('.ui').removeClass('inverted');
+        // remove custom inverted class to body
+        $('body').removeClass('inverted');
+        // change scrollbar background to match
+        $("html").attr("style","--scrollbackground:#f2f2f2");
+
+        // simple toggle icon change
+        $("#darkmode > i").removeClass('sun icon')
+        $("#darkmode > i").addClass('moon icon');
+
+        localStorage.setItem("darkMode", false);
+        darkmodeEnabled = false;
+        return;
+    }
+
+    $('#darkmode').click(function () {
+        if (darkmodeEnabled) {
+            toggleLightMode();
+        } else {
+            toggleDarkMode();
+        }
+    });
+</script>
+
+<!-- <script>
+    if (window.CSS && CSS.supports("color", "var(--primary)")) {
+        var toggleColorMode = function toggleColorMode(e) {
+            // Switch to Light Mode
+            console.log(localStorage.getItem("color-mode"));
+            if (localStorage.getItem("color-mode") == "light") {
+                $('body').find('.ui').removeClass('inverted');
+                $('body').removeClass('inverted');
+
+                localStorage.setItem("color-mode", "light");
+                return;
+            }
+            
+            // Switch to Dark Mode
+            $('body').find('.ui').addClass('inverted');
+            $('body').addClass('inverted');
+
+            localStorage.setItem("color-mode", "dark");
+        };
+        // Get the buttons in the DOM
+
+        toggleColorMode();
+        $('#darkmode').click(toggleColorMode);
+    } else {
+        // If the feature isn't supported, then we hide the toggle buttons
+        $('#darkmode').addClass("hiding");
+    }
+</script> -->
