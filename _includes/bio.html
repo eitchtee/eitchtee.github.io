@@ -60,9 +60,9 @@
           <div class="ui card {% if educ.endDate == current %}yellow{% else %}green{% endif %}">
             <div class="content">
               {% if educ.website.size >= 1 %}
-              <a class="ui top attached label active" href="{{ educ.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ educ.institution }}</a>
+              <a class="ui top attached grey label active" href="{{ educ.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ educ.institution }}</a>
               {% else %}
-              <div class="ui top attached label active">
+              <div class="ui top attached grey label active">
                 <i class="map marker alternate icon"></i>{{ educ.institution }}
               </div>
               {% endif %}
@@ -99,9 +99,9 @@
           <div class="ui card {% if work.endDate == current %}yellow{% else %}green{% endif %}">
             <div class="content">
               {% if work.website.size >= 1 %}
-              <a class="ui top attached label active" style="margin-bottom: 12px;" href="{{ work.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ work.company }}</a>
+              <a class="ui top attached grey label active" style="margin-bottom: 12px;" href="{{ work.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ work.company }}</a>
               {% else %}
-              <div class="ui top attached label active" style="margin-bottom: 12px;"><i class="map marker alternate icon"></i>{{ work.company }}</div>
+              <div class="ui top attached grey label active" style="margin-bottom: 12px;"><i class="map marker alternate icon"></i>{{ work.company }}</div>
               {% endif %}
               <div class="header">{{ work.position }}</div>
               <div class="description">
@@ -147,7 +147,7 @@
                     {% endfor %}
                   </div>
                 </div>
-                <div class="ui top pointing label">{{ lang.description }}</div>
+                <div class="ui top pointing grey label">{{ lang.description }}</div>
               </div>
             </div>
           </div>
@@ -199,7 +199,7 @@
     <div class="ui segment">
       <div class="ui labels small">
       {% for keyword in skill.keywords %}
-      <div class="ui label active">
+      <div class="ui grey label active">
         {{ keyword }}
       </div>
       {% endfor %}
@@ -220,7 +220,7 @@
     <div class="ui segment">
       <div class="ui labels small">
         {% for interest in bio.interests %}
-        <div class="ui label active">
+        <div class="ui grey label active">
           {{ interest.name }}
         </div>
         {% endfor %}
