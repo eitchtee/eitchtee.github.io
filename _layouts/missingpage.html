@@ -3,16 +3,7 @@ layout: default
 ---
 
 <body>
-    <script>
-        var lang = navigator.language || navigator.browserLanguage; //for IE
-        console.log(lang);
-        
-        if (lang.includes("pt")) {
-            window.location.replace("/pt/404");
-        } else {
-            window.location.replace("/en/404");
-        }
-    </script>
+    <script src="/javascript/404LangRedirect.js"></script>
 
     <noscript>
       <style>
