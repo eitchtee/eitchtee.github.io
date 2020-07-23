@@ -24,7 +24,7 @@ layout: essays
     </div>
     {% endif %}
     <h1>{{ page.title }}</h1>
-    <span class="date">{% if page.language == 'pt' %}{% assign m = page.date | date: "%-m" %}
+    <i class="calendar outline icon grey"></i><span class="ui grey text">{% if page.language == 'pt' %}{% assign m = page.date | date: "%-m" %}
       {{ page.date | date: "%-d" }}
       {% case m %}
       {% when '1' %}de janeiro de
@@ -41,6 +41,7 @@ layout: essays
       {% when '12' %}de dezembro de
       {% endcase %}
       {{ page.date | date: "%Y" }}{% else %}{{ page.date | date_to_string }}{% endif %}</span>
+      <i class="tag icon grey"></i>{% for cat in page.labels %}<span class="ui grey text">{{ cat }}</span>{% endfor %}
       <div class="ui divider"></div>
     {{ content }}
   </div>
