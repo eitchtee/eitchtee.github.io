@@ -1,13 +1,14 @@
 // only show toggle is js is enabled
-$("#darkmode").removeClass("hiding")
+$("#darkmode").removeClass("hiding");
 // TODO Add system override option. Not sure how.
 let darkmodeEnabled = false;
+let localDarkModeEnabled = localStorage.getItem("darkMode")
 
-if (localStorage.getItem("darkMode") === 'true') {
+if (localDarkModeEnabled === 'true') {
     // if user set darkMode as the preferred mode on the website, use it
     // Overwrites prefers-color-scheme
     toggleDarkMode();
-} else if (localStorage.getItem("darkMode") === 'false') {
+} else if (localDarkModeEnabled === 'false') {
     // if user set lightMode as the preferred mode on the website, use it
     // Overwrites prefers-color-scheme
     toggleLightMode();
@@ -63,3 +64,7 @@ $('#darkmode').click(function () {
         toggleDarkMode();
     }
 });
+
+// display body after theme is set to avoid theme flickering
+// this is very hacky, but as this is a static website this shouldn't cause major problems
+$("body").removeClass('hiding');
