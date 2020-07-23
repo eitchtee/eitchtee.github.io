@@ -1,6 +1,9 @@
 ---
 layout: essays
 ---
+
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl}}/css/markdown.css">
+
 <div style="margin-top: 20px; margin-bottom: 20px" class="ui text container">
   <div class="ui segment">
     {% if page.language == 'pt' %}
@@ -38,7 +41,7 @@ layout: essays
       {% when '12' %}de dezembro de
       {% endcase %}
       {{ page.date | date: "%Y" }}{% else %}{{ page.date | date_to_string }}{% endif %}</span>
-      <div class="ui section divider"></div>
+      <div class="ui divider"></div>
     {{ content }}
   </div>
 </div>
