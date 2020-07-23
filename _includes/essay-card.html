@@ -1,4 +1,4 @@
-{% assign filters = page.category %}
+{% assign filters = page.labels %}
 <a class="card {% for label in filters %} {{ label | remove: " " }} {% endfor %}" {% if page.projecturl %}target="_blank"{% endif %} href="{% if page.projecturl %}{{ page.projecturl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}">
   <div class="content">
     <span class="header">{{ include.page.title }}</span>
