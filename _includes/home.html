@@ -4,7 +4,7 @@
 {% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.language == language" %}
 {% assign num_essays = essay_pages.size %}
 {% assign num_projects = project_pages.size %}
-<button class="ui button icon basic darkmode-button hiding" id="darkmode" data-tooltip="{% if language == 'pt' %}Alternar tema{% else %}Toggle theme{% endif %}" data-position="bottom right"><i class="moon icon"></i></button>
+<button class="ui button icon basic darkmode-button hiding" id="darkmode" data-tooltip="{% if language == 'pt' %}Alternar tema{% else %}Toggle theme{% endif %}" data-position="bottom right" style="z-index: 2;"><i class="moon icon"></i></button>
 <a href="{{ site.baseurl}}/{% if language=='pt' %}en{% else %}pt{% endif %}/" class="ui button icon basic translate-button" {% if language=='pt' %}data-tooltip="See in English" data-position="bottom right"{% else %}data-tooltip="Ver em Português" data-position="bottom right"{% endif %}><i class="{% if language=='pt' %}us{% else %}br{% endif %} flag"></i></a>
 
 <div style="height: 100%; margin-top: -75px!important; margin-left:0!important; margin-right:0!important" class="ui middle aligned grid ">
