@@ -1,4 +1,4 @@
-// only show toggle is js is enabled
+// only show toggle if js is enabled
 $("#darkmode").removeClass("hiding");
 // TODO Add system override option. Not sure how.
 let darkmodeEnabled = false;
