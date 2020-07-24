@@ -63,6 +63,7 @@ $('#darkmode').click(function () {
     } else {
         toggleDarkMode();
     }
+    $('#darkmode').blur()
 });
 
 // display body after theme is set to avoid theme flickering
