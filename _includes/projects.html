@@ -1,3 +1,11 @@
+<noscript>
+  <style>
+    .jsOnly {
+      display: none!important;
+      visibility: hidden!important;
+    }
+  </style>
+</noscript>
 <div style="padding-top: 10px; padding-bottom: 50px" class="ui container ">
     {% assign language = page.language %}
     {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
@@ -5,7 +13,7 @@
     {% assign project_categories = project_pages | where: "language", language | map: "category" | sort | uniq %}
     
     {% if project_categories.size > 1 %}
-    <div class="nonprintable filter-buttons hiding">
+    <div class="nonprintable filter-buttons jsOnly">
         {% for category in project_categories %}
         <a class="button ui toggle filter" href="#{{ category | remove: " " }}" id="filter-{{ category | remove: " " }}">{{ category }}</a>
         {% endfor %}

@@ -1,4 +1,3 @@
-$('.filter-buttons').removeClass('hiding'); // Show filter is JS is enabled
 var selector_query = window.location.hash.substr(1);
 
 if (selector_query) {

@@ -194,3 +194,8 @@ body.inverted .icon-color:hover {
 body.inverted .ui.list>a.item:hover>.icon {
   color: var(--greenColorLighHover)!important;
 }
+
+.avoid-flicker {
+  display: none!important;
+  visibility: hidden!important;
+}

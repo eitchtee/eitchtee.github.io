@@ -68,4 +68,4 @@ $('#darkmode').click(function () {
 
 // display body after theme is set to avoid theme flickering
 // this is very hacky, but as this is a static website this shouldn't cause major problems
-$("body").removeClass('hiding');
+$("body").removeClass('avoid-flicker');

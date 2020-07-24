@@ -125,13 +125,20 @@
   
   
   {% if bio.languages %}
-  <noscript>
-    <div style="margin-bottom: 20px" class="ui one column stackable grid container" id="{{ languages | remove: ' ' }}">
-      <div class="column">
-        <h4 class="ui horizontal left aligned divider header">
-          <i class="comments icon"></i>
-          {{ languages }}
-        </h4>
+  <div style="margin-bottom: 20px" class="ui one column stackable grid container" id="{{ languages | remove: ' ' }}">
+    <div class="column">
+      <h4 class="ui horizontal left aligned divider header">
+        <i class="comments icon"></i>
+        {{ languages }}
+      </h4>
+      <noscript>
+        <style>
+          .jsOnly {
+            display: none!important;
+            visibility: hidden!important;
+          }
+        </style>
+
         <div class="ui five stackable cards"  style="padding-top: 6px;">
           {% for lang in bio.languages %}
           <div class="ui card">
@@ -153,86 +160,74 @@
           </div>
           {% endfor %}
         </div>
-      </div>
-    </div>
-</noscript>
-<div style="margin-bottom: 20px" class="ui one column stackable grid container hiding" id="langBars">
-  <div class="column">
-    <h4 class="ui horizontal left aligned divider header" id="{{ languages | remove: ' ' }}">
-      <i class="comments icon"></i>
-      {{ languages }}
-    </h4>
-    <div class="ui horizontal stackable segments">
-      {% for lang in bio.languages %}
-      <div class="ui segment">
-        <div class="ui green progress" style="min-width: 200px!important;" data-value="{% if lang.level >= 4 %}{{ lang.level | minus: 0.08 }}{% else %}{{ lang.level }}{% endif %}" data-total="4" id="{{ lang.name }}">
-          <div class="bar">
-            <div class="progress"></div>
+      </noscript>
+      <div class="ui horizontal stackable segments jsOnly">
+        {% for lang in bio.languages %}
+        <div class="ui segment">
+          <div class="ui green progress" style="min-width: 200px!important;" data-value="{% if lang.level >= 4 %}{{ lang.level | minus: 0.08 }}{% else %}{{ lang.level }}{% endif %}" data-total="4" id="{{ lang.name }}">
+            <div class="bar">
+              <div class="progress"></div>
+            </div>
+            <div class="label">{{ lang.name }}</div>
           </div>
-          <div class="label">{{ lang.name }}</div>
-        </div>
-        
-        <script>
-          $("#{{ lang.name}}").progress({
-          duration : 0,
-          showActivity: true,
-          label: 'ratio',
-          text: {ratio: '{{ lang.description }}'}});          
-        </script>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-{% endif %}
-
-
-
-{% if bio.skills %}
-<div style="margin-bottom: 20px" class="ui two column stackable grid container">
-  {% for skill in bio.skills %}
-  <div class="column" id="{{ skill.name | remove: ' ' }}">
-    <h4 class="ui horizontal left aligned divider header">
-      <i class="{{ skill.icon }} icon"></i>
-      {{ skill.name }}
-    </h4>
-    <div class="ui segment">
-      <div class="ui labels small">
-      {% for keyword in skill.keywords %}
-      <div class="ui grey label active">
-        {{ keyword }}
-      </div>
-      {% endfor %}
-    </div>
-    </div>
-  </div>
-  {% endfor %}
-</div>
-{% endif %}
-
-
-<div style="margin-bottom: 20px" class="ui one column stackable grid container" id="{{ interests | remove: ' ' }}">
-  <div class="column">
-    <h4 class="ui horizontal left aligned divider header">
-      <i class="heart icon"></i>
-      {{ interests }}
-    </h4>
-    <div class="ui segment">
-      <div class="ui labels small">
-        {% for interest in bio.interests %}
-        <div class="ui grey label active">
-          {{ interest.name }}
+          
+          <script>
+            $("#{{ lang.name}}").progress({
+            duration : 0,
+            showActivity: true,
+            label: 'ratio',
+            text: {ratio: '{{ lang.description }}'}});          
+          </script>
         </div>
         {% endfor %}
       </div>
     </div>
-    
   </div>
-</div>
-</div>
+  {% endif %}
 
 
-<script>
-  // show alternative language column if javascript is enabled
-  $("#langBars").removeClass("hiding")
-</script>
+
+  {% if bio.skills %}
+  <div style="margin-bottom: 20px" class="ui two column stackable grid container">
+    {% for skill in bio.skills %}
+    <div class="column" id="{{ skill.name | remove: ' ' }}">
+      <h4 class="ui horizontal left aligned divider header">
+        <i class="{{ skill.icon }} icon"></i>
+        {{ skill.name }}
+      </h4>
+      <div class="ui segment">
+        <div class="ui labels small">
+        {% for keyword in skill.keywords %}
+        <div class="ui grey label active">
+          {{ keyword }}
+        </div>
+        {% endfor %}
+      </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+
+  <div style="margin-bottom: 20px" class="ui one column stackable grid container" id="{{ interests | remove: ' ' }}">
+    <div class="column">
+      <h4 class="ui horizontal left aligned divider header">
+        <i class="heart icon"></i>
+        {{ interests }}
+      </h4>
+      <div class="ui segment">
+        <div class="ui labels small">
+          {% for interest in bio.interests %}
+          <div class="ui grey label active">
+            {{ interest.name }}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
