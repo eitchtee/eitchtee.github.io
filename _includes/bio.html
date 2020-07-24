@@ -3,6 +3,8 @@
 {% assign languages = include.languages %}
 {% assign education = include.education %}
 {% assign profissional = include.profissional %}
+{% assign certificates = include.certificates %}
+{% assign awards = include.awards %}
 {% if include.bio == "pt" %}{% assign bio = site.data.bio-pt %}{% else %}{% assign bio = site.data.bio-en %}{% endif %}
 <div class="cv" style="margin-top: 10px; margin-bottom:6em;">
   <div class="ui stackable grid container">
@@ -122,6 +124,49 @@
       </div>
   </div>
   {% endif %}
+
+  <div style="margin-bottom: 20px" class="ui two column stackable grid container">
+  {% if bio.certificates %}
+    <div class="column" id="{{ skill.name | remove: ' ' }}">
+      <h4 class="ui horizontal left aligned divider header">
+        <i class="certificate icon"></i>
+        {{ certificates }}
+      </h4>
+      <div class="ui segment">
+        <div class="ui relaxed divided list">
+          {% for certificate in bio.certificates %}
+          <div class="item">
+            <div class="content">
+              <div class="header">{{ certificate.title }}, {{ certificate.issuer }}, {{ certificate.date }}</div>
+              {{ certificate.summary }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  {% if bio.awards %}
+    <div class="column" id="{{ skill.name | remove: ' ' }}">
+      <h4 class="ui horizontal left aligned divider header">
+        <i class="award icon"></i>
+        {{ awards }}
+      </h4>
+      <div class="ui segment">
+        <div class="ui relaxed divided list">
+          {% for award in bio.awards %}
+          <div class="item">
+            <div class="content">
+              <div class="header">{{ award.title }}, {{ award.awarder }}, {{ award.date }}</div>
+              {{ award.summary }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+  {% endif %}
+    </div>
+  </div>
   
   
   {% if bio.languages %}

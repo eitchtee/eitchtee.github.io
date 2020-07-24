@@ -95,10 +95,7 @@
     {
       "name": "Inglês",
       "level": 3,
-      "description": "Fluente",
-      "extra": [
-        "TOEFL ITP®: 647 de 677 pontos. <i>Usuário proficiente.</i>"
-      ]
+      "description": "Fluente"
     },
     {
       "name": "Espanhol",
@@ -185,10 +182,18 @@
   ],
   "awards": [
     {
-      "title": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
+      "title": "TOEFL ITP",
+      "date": "2017",
+      "awarder": "TOEFL",
+      "summary": "647 pontos. Nível C1: <i>Usuário proficiente.</i>"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Curso sobre Processo Legislativo Federal",
+      "date": "2020",
+      "issuer": "Instituto Legislativo Brasileiro",
+      "summary": "<i>Nota: 92/100</i>"
     }
   ],
   "references": []

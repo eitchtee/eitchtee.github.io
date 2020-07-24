@@ -95,10 +95,7 @@
     {
       "name": "English",
       "level": 3,
-      "description": "Fluent",
-      "extra": [
-        "TOEFL ITP®: 647 out of 677 points. <i>Proficient user.</i>"
-      ]
+      "description": "Fluent"
     },
     {
       "name": "Spanish",
@@ -185,10 +182,18 @@
   ],
   "awards": [
     {
-      "title": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
+      "title": "TOEFL ITP",
+      "date": "2017",
+      "awarder": "TOEFL",
+      "summary": "647 points. Level C1: <i>Proficient user.</i>"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Course about Brazil's Legislative Process",
+      "date": "2020",
+      "issuer": "Instituto Legislativo Brasileiro",
+      "summary": "<i>Grade: 92/100</i>"
     }
   ],
   "references": []
