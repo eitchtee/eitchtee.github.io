@@ -95,7 +95,10 @@
     {
       "name": "Inglês",
       "level": 3,
-      "description": "Fluente"
+      "description": "Fluente",
+      "extra": [
+        "TOEFL ITP®: 647 de 677 pontos. <i>Usuário proficiente.</i>"
+      ]
     },
     {
       "name": "Espanhol",
@@ -127,8 +130,8 @@
       "highlights": [
         "Atendimento de clientes.",
         "Vendas.",
-        "Atendimento de delivery.",
-        "Prospecção de novos ramos e produtos para exploração pela empresa."
+        "Controle de delivery.",
+        "Prospecção de novos ramos e produtos."
       ]
     },
     {
@@ -152,7 +155,7 @@
       "summary": "Desenvolver e administrar o site <a href=\"https://estudosdebarragens.ufop.br\" target=\"_blank\">estudosdebarragens.ufop.br</a> para o projeto institucional <i>Rede UFOP de Estudos Sobre as Consequências dos Rompimentos de Barragens</i>, bem como compilar os dados necessários para o projeto.",
       "highlights": [
         "Desenvolvimento de um site simples e funcional, inicialmente em Python com o framework Django e depois refeito em Wordpress.",
-        "Compilação de dados adquiridos por parcerias, web scrapping e pesquisa manual."
+        "Compilação dos dados adquiridos por parcerias, web scrapping e pesquisa manual."
       ]
     },
     {
@@ -165,7 +168,7 @@
       "highlights": [
         "Resolução de conflitos.",
         "Redação de atas da seção para homologação pelo juiz responsável.",
-        "Atendimento ao público em geral."
+        "Atendimento ao público."
       ]
     }
   ],

@@ -55,7 +55,7 @@
   "skills": [
     {
       "icon": "code",
-      "name": "Linguagens e Frameworks",
+      "name": "Languages and Frameworks",
       "level": "",
       "keywords": [
         "Pyhon",
@@ -68,7 +68,7 @@
     },
     {
       "icon": "wrench",
-      "name": "Ferramentas e Sistemas",
+      "name": "Systems and Tools",
       "level": "",
       "keywords": [
         "Pycharm",
@@ -95,7 +95,10 @@
     {
       "name": "English",
       "level": 3,
-      "description": "Fluent"
+      "description": "Fluent",
+      "extra": [
+        "TOEFL ITP®: 647 out of 677 points. <i>Proficient user.</i>"
+      ]
     },
     {
       "name": "Spanish",
@@ -118,54 +121,54 @@
   ],
   "work": [
     {
-      "company": "Fest Trotta, Muriaé",
-      "position": "Auxiliar Administrativo",
+      "company": "Fest Trotta, Brazil",
+      "position": "Administrative Assistant",
       "website": "",
       "startDate": "2020-03-31",
       "endDate": "Present",
       "summary": "",
       "highlights": [
-        "Atendimento de clientes.",
+        "Customer service.",
         "Sales.",
-        "Atendimento de delivery.",
-        "Prospecção de novos ramos e produtos para exploração pela empresa."
+        "Delivery management.",
+        "Prospecting of new branches and products."
       ]
     },
     {
-      "company": "Delegacia de Polícia Civil de Ouro Preto",
-      "position": "Relator Estagiário",
+      "company": "Delegacia de Polícia Civil de Ouro Preto, Brazil",
+      "position": "Trainee Rapporteur",
       "website": "",
       "startDate": "2019-02-12",
       "endDate": "2019-07-01",
-      "summary": "Relator de inquéritos da Policia Civil nas áreas de crimes ambientais e atos infracionais.",
+      "summary": "Generate reports about police investigations in the areas of environmental crimes and criminal acts.",
       "highlights": [
-        "Redigir relatórios sobre os inquéritos conclusos da PCMG para envio ao Ministério Público.",
-        "Controle de arquivo."
+        "Report generation.",
+        "Archive control."
       ]
     },
     {
-      "company": "Universidade Federal de Ouro Preto",
-      "position": "Webmaster e Pesquisador Extensionista",
+      "company": "Federal University of Ouro Preto, Brazil",
+      "position": "Webmaster",
       "website": "",
       "startDate": "2018-05-01",
       "endDate": "2019-12-31",
-      "summary": "Desenvolver e administrar o site <a class=\"icon-color\" href=\"https://estudosdebarragens.ufop.br\" target=\"_blank\">estudosdebarragens.ufop.br</a> para o projeto institucional <i>Rede UFOP de Estudos Sobre as Consequências dos Rompimentos de Barragens</i>, bem como compilar os dados necessários para o projeto.",
+      "summary": "Develop and manage the website <a href=\"https://estudosdebarragens.ufop.br\" target=\"_blank\">estudosdebarragens.ufop.br</a> for the Univerty's project <i>Rede UFOP de Estudos Sobre as Consequências dos Rompimentos de Barragens</i>, and gather the necessary data.",
       "highlights": [
-        "Desenvolvimento de um site simples e funcional, inicialmente em Python e Django e posteriormente em Wordpress por requisição do departamento de tecnologia da universidade.",
-        "Compilação de dados adquiridos por parcerias, web scrapping e pesquisa manual."
+        "Developent of an website in Python with the Django Framework, which got converted to an Wordpress template.",
+        "Compilation of data acquired by partnerships, web scrapping and manual search."
       ]
     },
     {
-      "company": "Juizado Especial da Comarca de Muriaé",
-      "position": "Conciliador Estagiário",
+      "company": "Juizado Especial da Comarca de Muriaé, Brazil",
+      "position": "Trainee Conciliator",
       "website": "",
       "startDate": "2017-06-01",
       "endDate": "2017-09-14",
-      "summary": "Presidir as seções de conciliação do Juizado Especial.",
+      "summary": "Presiding conciliation sections on Brazil's Special Court.",
       "highlights": [
-        "Resolução de conflitos.",
-        "Redação de atas da seção para homologação pelo juiz responsável.",
-        "Atendimento ao público em geral."
+        "Conflict resolution.",
+        "Writing minutes for ratification by the magistrate in charge.",
+        "Costumer service."
       ]
     }
   ],
