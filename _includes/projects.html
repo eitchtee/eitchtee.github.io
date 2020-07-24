@@ -1,11 +1,3 @@
-<noscript>
-  <style>
-    .jsOnly {
-      display: none!important;
-      visibility: hidden!important;
-    }
-  </style>
-</noscript>
 <div style="padding-top: 10px; padding-bottom: 50px" class="ui container ">
     {% assign language = page.language %}
     {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
