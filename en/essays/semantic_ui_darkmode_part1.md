@@ -18,7 +18,9 @@ Usually the implementation of such modules is quite convoluted requiring a rewri
 I've opted to do a very simple icon button as my toggle, but you can use checkboxes, buttons or anything else, just make sure to adapt your code accordingly.
 
 ```html
-<button class="ui button icon basic darkmode-button" id="darkmode"><i class="moon icon"></i></button>
+<button class="ui button icon basic" id="darkmode">
+  <i class="moon icon"></i>
+</button>
 ```
 
 ## Invert everything
@@ -86,5 +88,59 @@ $('#darkmode').click(function () {
 
 ## Conclusion
 Today we learned how to do a very basic Dark theme toggle for your website leveraging Fomantic UI's built-in options.
+
+Your final code should look something like this:
+
+```html
+<style>
+  :root {
+  --darkBG: #232B32;
+  }
+
+  body.inverted {
+    background-color: var(--darkBG);
+  }
+</style>
+
+<button class="ui button icon basic" id="darkmode">
+  <i class="moon icon"></i>
+</button>
+
+<script>
+  function toggleDarkMode () {
+    // add fomantic's inverted class to all ui elements
+    $('body').find('.ui').addClass('inverted');
+    // add custom inverted class to body
+    $('body').addClass('inverted');
+
+    // simple toggle icon change
+    $("#darkmode > i").removeClass('moon');
+    $("#darkmode > i").addClass('sun');
+
+    return;
+  }
+
+  function toggleLightMode() {
+    // remove fomantic's inverted from all ui elements
+    $('body').find('.ui').removeClass('inverted');
+    // remove custom inverted class to body
+    $('body').removeClass('inverted');
+
+    // change button icon
+    $("#darkmode > i").removeClass('sun')
+    $("#darkmode > i").addClass('moon');
+
+    return;
+  }
+
+  $('#darkmode').click(function () {
+    if (darkmodeEnabled) {
+        toggleLightMode();
+    } else {
+        toggleDarkMode();
+    }
+  });
+</script>
+```
 
 *[FUI]: Fomantic UI / Semantic UI
