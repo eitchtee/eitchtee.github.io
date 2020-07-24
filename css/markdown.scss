@@ -25,16 +25,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-/* body {
+body {
   font-family: Helvetica, arial, sans-serif;
   font-size: 14px;
-  line-height: 1.6;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-  padding: 30px;
-  color: #333;
-} */
+  // line-height: 1.6;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  // background-color: white;
+  // padding: 30px;
+  // color: #333;
+}
 
 body > *:first-child {
     margin-top: 0 !important;
@@ -388,7 +388,7 @@ pre code {
 }
 
 .highlight pre {
-  background-color: #f8f8f8;
+  // background-color: #f8f8f8;
   border: 1px solid #cccccc;
   font-size: 13px;
   line-height: 19px;
@@ -398,7 +398,7 @@ pre code {
 }
 
 pre {
-  background-color: #f8f8f8;
+  // background-color: #f8f8f8;
   border: 1px solid #cccccc;
   font-size: 13px;
   line-height: 19px;

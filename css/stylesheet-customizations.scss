@@ -163,7 +163,11 @@ body.inverted {
 
 /* Dim images with dark theme on */
 body.inverted img {
-  filter: brightness(.8) contrast(1.2);
+  filter: brightness(.85) contrast(1);
+}
+
+body.inverted img:hover {
+  filter: brightness(1) contrast(1);
 }
 
 body.inverted .header-link {
