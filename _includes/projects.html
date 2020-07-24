@@ -24,7 +24,12 @@
   {% else %}
   <div class="ui container center aligned">
     <h2 class="ui icon header disabled"><i class="frown icon"></i>
-      <div class="content">{% if language == 'pt' %}Nada aqui{%- elsif language == 'en' -%}Nothing here{% endif %}<div class="sub header">{% if language == 'pt' %}Nenhum projeto foi adicionado ainda.{%- elsif language == 'en' -%}No project has been added yet.{% endif %}</div></div>
+      <span class="content">
+        {% if language == 'pt' %}Nada aqui{%- elsif language == 'en' -%}Nothing here{% endif %}
+        <span class="sub header">
+          {% if language == 'pt' %}Nenhum projeto foi adicionado ainda.{%- elsif language == 'en' -%}No project has been added yet.{% endif %}
+        </span>
+      </span>
     </h2>
   </div>
   {% endif %}

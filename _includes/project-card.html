@@ -2,7 +2,7 @@
 <div class="ui link card {% for label in filters %} {{ label | remove: " " }} {% endfor %}">
   {% if include.page.image %}
   <div class="image">
-    <img src="{{ site.baseurl }}/{{ include.page.image }}">
+    <img src="{{ site.baseurl }}/{{ include.page.image }}" alt="{{ include.page.title }}">
   </div>
   {% endif %}
   <div class="content">
