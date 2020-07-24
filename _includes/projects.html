@@ -7,9 +7,9 @@
     {% if project_categories.size > 1 %}
     <div class="nonprintable filter-buttons hiding">
         {% for category in project_categories %}
-        <a class="button ui toggle filter" id="{{ category | remove: " " }}">{{ category }}</a>
+        <a class="button ui toggle filter" href="#{{ category | remove: " " }}" id="filter-{{ category | remove: " " }}">{{ category }}</a>
         {% endfor %}
-      <a class="button ui toggle filter active" id="all">{% if language == 'pt' %}Todos{%- elsif language == 'en' -%}All{% endif %}</a>
+      <a class="button ui toggle filter active" href="#" id="filter-all">{% if language == 'pt' %}Todos{%- elsif language == 'en' -%}All{% endif %}</a>
     </div>
     {% endif %}
   
