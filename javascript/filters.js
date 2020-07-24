@@ -1,29 +1,34 @@
-var selector_query = window.location.hash.substr(1);
+let selector_query = window.location.hash.substr(1);
+let filterButtons = $('.button.filter')
 
 if (selector_query) {
-    if ($('#filter-' + selector_query).length) {
+    let element = $('#filter-' + selector_query)
+    
+    if (element.length) {
         filter(selector_query);
-        $('.button.filter').removeClass('active');
-        $('#filter-' + selector_query).addClass('active');
-        $('#filter-' + selector_query).blur();
+        filterButtons.removeClass('active');
+        element.addClass('active');
+        element.blur();
     }
 }
 
-var $btns = $('.button.filter').click(function () {
+filterButtons.click(function () {
     filter(this.id.replace("filter-", ""));
 
-    $btns.removeClass('active');
+    filterButtons.removeClass('active');
     $(this).addClass('active');
     $(this).blur();
 })
 
 function filter(category) {
+    let selector = $('#filterable > div, #filterable > a')
+
     if (category.toLowerCase() == 'all' || category.toLowerCase() == 'todos') {
-        $('#filterable > div, #filterable > a').fadeIn(450);
+        selector.fadeIn(450);
     } else {
         var $el = $('.' + category).fadeIn(450);
-        $('#filterable > div, #filterable > a').not($el).hide(0, function() {
-            $('#filterable > div, #filterable > a').not($el).attr("style", "display: none !important");
+        selector.not($el).hide(0, function() {
+            selector.not($el).attr("style", "display: none !important");
         });
     }
 }

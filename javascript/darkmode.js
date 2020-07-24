@@ -1,6 +1,7 @@
-// only show toggle if js is enabled
-$("#darkmode").removeClass("hiding");
 // TODO Add system override option. Not sure how.
+let body = $("body")
+let darkModeIcon = $("#darkmode > i");
+let darkModeToggle = $('#darkmode');
 let darkmodeEnabled = false;
 let localDarkModeEnabled = localStorage.getItem("darkMode")
 
@@ -25,15 +26,15 @@ if (localDarkModeEnabled === 'true') {
 
 function toggleDarkMode () {
     // add fomantic ui's inverted class to all ui elements
-    $('body').find('.ui').addClass('inverted');
+    body.find('.ui').addClass('inverted');
     // add custom inverted class to body
-    $('body').addClass('inverted');
+    body.addClass('inverted');
     // change scrollbar background to match
     $("html").attr("style","--scrollbackground:var(--darkBG)");
 
     // simple toggle icon change
-    $("#darkmode > i").removeClass('moon');
-    $("#darkmode > i").addClass('sun');
+    darkModeIcon.removeClass('moon');
+    darkModeIcon.addClass('sun');
     
     localStorage.setItem("darkMode", true);
     darkmodeEnabled = true;
@@ -42,30 +43,30 @@ function toggleDarkMode () {
 
 function toggleLightMode() {
     // remove fomantic ui's inverted class from all ui elements
-    $('body').find('.ui').removeClass('inverted');
+    body.find('.ui').removeClass('inverted');
     // remove custom inverted class to body
-    $('body').removeClass('inverted');
+    body.removeClass('inverted');
     // change scrollbar background to match
     $("html").attr("style","--scrollbackground:var(lightBG)");
 
     // simple toggle icon change
-    $("#darkmode > i").removeClass('sun')
-    $("#darkmode > i").addClass('moon');
+    darkModeIcon.removeClass('sun')
+    darkModeIcon.addClass('moon');
 
     localStorage.setItem("darkMode", false);
     darkmodeEnabled = false;
     return;
 }
 
-$('#darkmode').click(function () {
+darkModeToggle.click(function () {
     if (darkmodeEnabled) {
         toggleLightMode();
     } else {
         toggleDarkMode();
     }
-    $('#darkmode').blur()
+    darkModeToggle.blur()
 });
 
 // display body after theme is set to avoid theme flickering
 // this is very hacky, but as this is a static website this shouldn't cause major problems
-$("body").removeClass('avoid-flicker');
+body.removeClass('avoid-flicker');
