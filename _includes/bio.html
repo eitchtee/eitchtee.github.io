@@ -167,11 +167,11 @@
       <div class="ui segment">
         <div class="ui green progress" style="min-width: 200px!important;" data-value="{% if lang.level >= 4 %}{{ lang.level | minus: 0.08 }}{% else %}{{ lang.level }}{% endif %}" data-total="4" id="{{ lang.name }}">
           <div class="bar">
-            <div class="progress">aaaa</div>
+            <div class="progress"></div>
           </div>
           <div class="label">{{ lang.name }}</div>
         </div>
-
+        
         <script>
           $("#{{ lang.name}}").progress({
           duration : 0,
