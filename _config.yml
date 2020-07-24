@@ -7,11 +7,11 @@ baseurl: ""
 
 bio-page-label-pt: Currículo
 projects-page-label-pt: Projetos
-essays-page-label-pt: Textos
+essays-page-label-pt: Blog
 
 bio-page-label-en: Resume
 projects-page-label-en: Projects
-essays-page-label-en: Essays
+essays-page-label-en: Blog
 
 theme-bio: bio.html
 theme-home: home.html
@@ -19,11 +19,11 @@ theme-projects: projects.html
 theme-essays: essays.html
 
 projects-url-pt: projetos
-essays-url-pt: textos
+essays-url-pt: blog
 bio-url-pt: curriculo
 
 projects-url-en: projects
-essays-url-en: essays
+essays-url-en: blog
 bio-url-en: resume
 
 # Specify the rouge syntax highlighter theme. Pick one from css/rouge.
