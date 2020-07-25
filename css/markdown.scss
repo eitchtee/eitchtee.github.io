@@ -233,6 +233,11 @@ blockquote {
   color: #777777;
 }
 
+.inverted blockquote {
+  color: #b7b7b7;
+  border-left: 4px solid #8c8989;
+}
+
 blockquote > :first-child {
   margin-top: 0;
 }
