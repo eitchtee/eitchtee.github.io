@@ -133,11 +133,15 @@
         {{ certificates }}
       </h4>
       <div class="ui segment">
-        <div class="ui relaxed divided list">
+        <div class="ui relaxed divided bulleted list">
           {% for certificate in bio.certificates %}
           <div class="item">
             <div class="content">
+              {% if certificate.url %}
+              <a href="{{certificate.url}}" target="_blank" class="header">{{ certificate.title }}, {{ certificate.issuer }}, {{ certificate.date }}</a>
+              {% else %}
               <div class="header">{{ certificate.title }}, {{ certificate.issuer }}, {{ certificate.date }}</div>
+              {% endif %}
               {{ certificate.summary }}
             </div>
           </div>
@@ -153,11 +157,15 @@
         {{ awards }}
       </h4>
       <div class="ui segment">
-        <div class="ui relaxed divided list">
+        <div class="ui relaxed divided bulleted list">
           {% for award in bio.awards %}
           <div class="item">
             <div class="content">
+              {% if award.url %}
+              <a href="{{award.url}}" target="_blank" class="header">{{ award.title }}, {{ award.awarder }}, {{ award.date }}</a>
+              {% else %}
               <div class="header">{{ award.title }}, {{ award.awarder }}, {{ award.date }}</div>
+              {% endif %}
               {{ award.summary }}
             </div>
           </div>
