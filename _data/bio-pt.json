@@ -185,7 +185,7 @@
       "title": "TOEFL ITP",
       "date": "2017",
       "awarder": "ETS",
-      "summary": "647 pontos. Nível C1: <i>Usuário proficiente.</i>"
+      "summary": "647 pontos.</br>Nível C1: <i>Usuário proficiente.</i>"
     }
   ],
   "certificates": [
@@ -199,8 +199,15 @@
       "title": "Python (Básico)",
       "date": "2020",
       "issuer": "HackerRank",
-      "summary": "Cobrindo tópicos como Scalar Types, Operadores de Fluxo de Controle, Strings, Collections e Iteração, Modularidade, Objects e Tipos e Classes.",
+      "summary": "Cobrindo tópicos como Scalar Types, Operadores de Fluxo de Controle, Strings, Collections e Iteração, Modularidade, Objetos e Tipos e Classes.",
       "url": "https://www.hackerrank.com/certificates/2e8bc83d4013"
+    },
+    {
+      "title": "Javascript (Básico)",
+      "date": "2020",
+      "issuer": "HackerRank",
+      "summary": "Cobrindo tópicos como Funções, Currying, Hoisting, Escopo, Herança, Eventos e Error Handling.",
+      "url": "https://www.hackerrank.com/certificates/8e4e93d661fc"
     }
   ],
   "references": []

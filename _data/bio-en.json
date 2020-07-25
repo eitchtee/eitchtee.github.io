@@ -185,7 +185,7 @@
       "title": "TOEFL ITP",
       "date": "2017",
       "awarder": "ETS",
-      "summary": "647 points. Level C1: <i>Proficient user.</i>"
+      "summary": "647 points.</br>Level C1: <i>Proficient user.</i>"
     }
   ],
   "certificates": [
@@ -201,7 +201,14 @@
       "issuer": "HackerRank",
       "summary": "Covering topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes.",
       "url": "https://www.hackerrank.com/certificates/2e8bc83d4013"
-    }
+    },
+    {
+      "title": "Javascript (Basic)",
+      "date": "2020",
+      "issuer": "HackerRank",
+      "summary": "Covering topics like Functions, Currying, Hoisting, Scope, Inheritance, Events and Error Handling.",
+      "url": "https://www.hackerrank.com/certificates/8e4e93d661fc"
+    },
   ],
   "references": []
 }
