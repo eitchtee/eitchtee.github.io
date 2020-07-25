@@ -138,9 +138,9 @@
           <div class="item">
             <div class="content">
               {% if certificate.url %}
-              <a href="{{certificate.url}}" target="_blank" class="header">{{ certificate.title }}, {{ certificate.issuer }}, {{ certificate.date }}</a>
+              <a href="{{certificate.url}}" target="_blank" class="header">{{ certificate.title }}, <i>{{ certificate.issuer }}, {{ certificate.date }}</i></a>
               {% else %}
-              <div class="header">{{ certificate.title }}, {{ certificate.issuer }}, {{ certificate.date }}</div>
+              <div class="header">{{ certificate.title }}, <i>{{ certificate.issuer }}, {{ certificate.date }}</i></div>
               {% endif %}
               {{ certificate.summary }}
             </div>
@@ -162,9 +162,9 @@
           <div class="item">
             <div class="content">
               {% if award.url %}
-              <a href="{{award.url}}" target="_blank" class="header">{{ award.title }}, {{ award.awarder }}, {{ award.date }}</a>
+              <a href="{{award.url}}" target="_blank" class="header">{{ award.title }}, <i>{{ award.awarder }}, {{ award.date }}</i></a>
               {% else %}
-              <div class="header">{{ award.title }}, {{ award.awarder }}, {{ award.date }}</div>
+              <div class="header">{{ award.title }}, <i>{{ award.awarder }}, {{ award.date }}</i></div>
               {% endif %}
               {{ award.summary }}
             </div>
