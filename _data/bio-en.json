@@ -194,6 +194,13 @@
       "date": "2020",
       "issuer": "Instituto Legislativo Brasileiro",
       "summary": "<i>Grade: 92/100</i>"
+    },
+    {
+      "title": "Python (Basic)",
+      "date": "2020",
+      "issuer": "HackerRank",
+      "summary": "Covering topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes.",
+      "url": "https://www.hackerrank.com/certificates/2e8bc83d4013"
     }
   ],
   "references": []
