@@ -149,9 +149,9 @@
       "website": "",
       "startDate": "2018-05-01",
       "endDate": "2019-12-31",
-      "summary": "Develop and manage the website <a href=\"https://estudosdebarragens.ufop.br\" target=\"_blank\">estudosdebarragens.ufop.br</a> for the Univerty's project <i>Rede UFOP de Estudos Sobre as Consequências dos Rompimentos de Barragens</i>, and gather the necessary data.",
+      "summary": "Develop and manage the website <a href=\"https://estudosdebarragens.ufop.br\" target=\"_blank\">estudosdebarragens.ufop.br</a> for the University's project <i>Rede UFOP de Estudos Sobre as Consequências dos Rompimentos de Barragens</i>, and gather the necessary data.",
       "highlights": [
-        "Developent of an website in Python with the Django Framework, which got converted to an Wordpress template.",
+        "Development of an website in Python with the Django Framework, which got converted to an Wordpress template.",
         "Compilation of data acquired by partnerships, web scrapping and manual search."
       ]
     },
@@ -185,7 +185,7 @@
       "title": "TOEFL ITP",
       "date": "2017",
       "awarder": "ETS",
-      "summary": "647 points.</br>Level C1: <i>Proficient user.</i>"
+      "summary": "647 points.</br>Level C1: <i>Proficient English user.</i>"
     }
   ],
   "certificates": [
@@ -214,7 +214,7 @@
       "issuer": "HackerRank",
       "summary": "Covering topics like Functions, Currying, Hoisting, Scope, Inheritance, Events and Error Handling.",
       "url": "https://www.hackerrank.com/certificates/8e4e93d661fc"
-    },
+    }
   ],
   "references": []
 }
