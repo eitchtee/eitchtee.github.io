@@ -55,34 +55,67 @@
   "skills": [
     {
       "icon": "code",
-      "name": "Languages and Frameworks",
+      "name": "Languages",
       "level": "",
       "keywords": [
         "Pyhon",
         "Javascript",
         "Godot Script",
-        "Dart+Flutter",
+        "Dart",
+        "Fomantic UI",
+        "Wordpress"
+      ]
+    },
+    {
+      "icon": "crop alternate",
+      "name": "Frameworks",
+      "level": "",
+      "keywords": [
+        "Django",
+        "Flutter",
         "Fomantic UI",
         "Wordpress"
       ]
     },
     {
       "icon": "wrench",
-      "name": "Systems and Tools",
+      "name": "Tools",
+      "level": "",
+      "keywords": [
+        "Git/GitHub",
+        "Postman",
+        "Adobe Photoshop",
+        "Microsoft Office",
+        "Google Docs"
+      ]
+    },
+    {
+      "icon": "laptop",
+      "name": "Systems",
+      "level": "",
+      "keywords": [
+        "Windows",
+        "Ubuntu/Linux"
+      ]
+    },
+    {
+      "icon": "laptop code",
+      "name": "IDEs",
       "level": "",
       "keywords": [
         "Pycharm",
         "Webstorm",
         "VSCode",
-        "Android Studio",
+        "Android Studio"
+      ]
+    },
+    {
+      "icon": "gamepad",
+      "name": "Game Engines",
+      "level": "",
+      "keywords": [
         "Godot Engine",
-        "Unity3D",
-        "Windows",
-        "Ubuntu/Linux",
-        "Git/GitHub",
-        "Postman",
-        "Adobe Photoshop",
-        "Microsoft Office"
+        "Unity3D"
       ]
     }
   ],
