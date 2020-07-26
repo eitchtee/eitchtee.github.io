@@ -149,10 +149,8 @@
       "website": "",
       "startDate": "2018-05-01",
       "endDate": "2019-12-31",
-      "summary": "Develop and manage the website <a href=\"https://estudosdebarragens.ufop.br\" target=\"_blank\">estudosdebarragens.ufop.br</a> for the University's project <i>Rede UFOP de Estudos Sobre as Consequências dos Rompimentos de Barragens</i>, and gather the necessary data.",
+      "summary": "Develop and manage the website <a href=\"https://estudosdebarragens.ufop.br\" target=\"_blank\">estudosdebarragens.ufop.br</a> for the University's project <i>Rede UFOP de Estudos Sobre as Consequências dos Rompimentos de Barragens</i>, and gather the necessary data through partnerships, manual research and web scraping.",
       "highlights": [
-        "Development of an website in Python with the Django Framework, which got converted to an Wordpress template.",
-        "Compilation of data acquired by partnerships, web scrapping and manual search."
       ]
     },
     {

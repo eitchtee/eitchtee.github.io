@@ -149,10 +149,8 @@
       "website": "",
       "startDate": "2018-05-01",
       "endDate": "2019-12-31",
-      "summary": "Desenvolver e administrar o site <a href=\"https://estudosdebarragens.ufop.br\" target=\"_blank\">estudosdebarragens.ufop.br</a> para o projeto institucional <i>Rede UFOP de Estudos Sobre as Consequências dos Rompimentos de Barragens</i>, bem como compilar os dados necessários para o projeto.",
+      "summary": "Desenvolver e administrar o site <a href=\"https://estudosdebarragens.ufop.br\" target=\"_blank\">estudosdebarragens.ufop.br</a> para o projeto institucional <i>Rede UFOP de Estudos Sobre as Consequências dos Rompimentos de Barragens</i>, bem como compilar os dados necessários por meio de parcerias, pesquisa manual e web scraping.",
       "highlights": [
-        "Desenvolvimento de um site simples e funcional, inicialmente em Python com o framework Django e depois refeito em Wordpress.",
-        "Compilação dos dados adquiridos por parcerias, web scrapping e pesquisa manual."
       ]
     },
     {
