@@ -6,6 +6,7 @@
 {% assign volunteer = include.volunteer %}
 {% assign certificates = include.certificates %}
 {% assign awards = include.awards %}
+{% assign skills = include.skills %}
 {% if include.bio == "pt" %}{% assign bio = site.data.bio-pt %}{% else %}{% assign bio = site.data.bio-en %}{% endif %}
 
 <div class="cv" style="margin-top: 10px; margin-bottom:6em;">
@@ -224,7 +225,26 @@
     </div>
   </div>
   
-  
+
+  <div style="margin-bottom: 20px" class="ui one column stackable grid container" id="{{ skills | remove: ' ' }}">
+    <div class="column">
+      <h4 class="ui horizontal left aligned divider header">
+        <i class="info circle icon"></i>
+        {{ skills }}
+      </h4>
+      <div class="ui segment">
+        <div class="ui labels small">
+          {% for skill in bio.other_skills %}
+          <div class="ui grey label active">
+            {{ skill.name }}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   {% if bio.languages %}
   <div style="margin-bottom: 20px" class="ui one column stackable grid container" id="{{ languages | remove: ' ' }}">
     <div class="column">
