@@ -3,6 +3,7 @@
 {% assign languages = include.languages %}
 {% assign education = include.education %}
 {% assign profissional = include.profissional %}
+{% assign volunteer = include.volunteer %}
 {% assign certificates = include.certificates %}
 {% assign awards = include.awards %}
 {% if include.bio == "pt" %}{% assign bio = site.data.bio-pt %}{% else %}{% assign bio = site.data.bio-en %}{% endif %}
@@ -134,6 +135,43 @@
       </div>
   </div>
   {% endif %}
+
+  {% if bio.volunteer %}
+  <div style="margin-bottom: 20px" class="ui one column stackable grid container" id="{{ volunteer | | remove: ' ' }}">
+      <div class="column">
+        <h4 class="ui horizontal left aligned divider header">
+          <i class="hands helping icon"></i>
+          {{ volunteer }}
+        </h4>
+        <div class="ui three stackable cards"  style="padding-top: 6px;">
+          {% for work in bio.volunteer %}
+          <div class="ui card {% if work.endDate == current %}yellow{% else %}green{% endif %}">
+            <div class="content">
+              {% if work.website.size >= 1 %}
+              <a class="ui top attached grey label active" style="margin-bottom: 12px;" href="{{ work.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ work.organization }}</a>
+              {% else %}
+              <div class="ui top attached grey label active" style="margin-bottom: 12px;"><i class="map marker alternate icon"></i>{{ work.organization }}</div>
+              {% endif %}
+              <div class="header">{{ work.position }}</div>
+              <div class="description">
+                {%if work.summary.size >= 1 %}<p>{{ work.summary }}</p>{% endif %}
+                <div class="ui bulleted list" style="margin-top: 0;">
+                  {% for highlight in work.highlights %}
+                  <div class="item">{{ highlight }}</div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+            <div class="extra content">
+              <div class="right floated"><i class="calendar icon"></i>{{ work.startDate | date: "%m/%Y" }} - {{ work.endDate | date: "%m/%Y" }}</div>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+      </div>
+  </div>
+  {% endif %}
+
 
   <div style="margin-bottom: 20px" class="ui two column stackable grid container">
   {% if bio.certificates %}

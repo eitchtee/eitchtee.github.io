@@ -169,12 +169,21 @@
   ],
   "volunteer": [
     {
-      "organization": "",
+      "organization": "Associação República Kasa Cheia",
       "website": "",
-      "position": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
+      "position": "Tesoureiro",
+      "startDate": "2020-03-02",
+      "endDate": "Atualmente",
+      "summary": "Supervisionar as despesas e resguardar os fundos da associação, assegurando que os seus interesses sejam cumpridos sem a perda da sua liquidez.",
+      "highlights": []
+    },
+    {
+      "organization": "Associação República Tôa Tôa",
+      "website": "",
+      "position": "Tesoureiro",
+      "startDate": "2018-01-01",
+      "endDate": "2019-03-01",
+      "summary": "Supervisionar as despesas e resguardar os fundos da associação, assegurando que os seus interesses sejam cumpridos sem a perda da sua liquidez.",
       "highlights": []
     }
   ],

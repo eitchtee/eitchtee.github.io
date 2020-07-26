@@ -169,12 +169,21 @@
   ],
   "volunteer": [
     {
-      "organization": "",
+      "organization": "Association República Kasa Cheia",
       "website": "",
-      "position": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
+      "position": "Treasurer",
+      "startDate": "2020-03-02",
+      "endDate": "Current",
+      "summary": "Oversee expenditures and look after the association’s fund, making sure their interest is met without loosing liquidity.",
+      "highlights": []
+    },
+    {
+      "organization": "Association República Tôa Tôa",
+      "website": "",
+      "position": "Treasurer",
+      "startDate": "2018-01-01",
+      "endDate": "2019-03-01",
+      "summary": "Oversee expenditures and look after the association’s fund, making sure their interest is met without loosing liquidity.",
       "highlights": []
     }
   ],
