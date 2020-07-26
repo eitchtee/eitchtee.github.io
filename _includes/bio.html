@@ -6,7 +6,18 @@
 {% assign certificates = include.certificates %}
 {% assign awards = include.awards %}
 {% if include.bio == "pt" %}{% assign bio = site.data.bio-pt %}{% else %}{% assign bio = site.data.bio-en %}{% endif %}
+
 <div class="cv" style="margin-top: 10px; margin-bottom:6em;">
+  <div style="margin-bottom: 20px" class="ui stackable grid container no-bottom nonprintable" id="Download">
+    <div class="twelve wide column no-bottomm"></div>
+    <div class="four wide column no-bottom">
+      <a class="ui labeled icon button nonprintable" href="{% if include.bio == 'pt' %}/files/Herculino de Miranda Trotta Neto - Curriculo.pdf{% else %}/files/Herculino de Miranda Trotta Neto - CV.pdf{% endif %}" target="_blank">
+        <i class="download icon"></i>
+        {% if include.bio == 'pt' %}Baixar em PDF{% else %}Download as PDF{% endif %}
+      </a>
+    </div>
+  </div>
+
   <div class="ui stackable grid container">
   
     <div class="twelve wide column middle aligned">
@@ -47,8 +58,7 @@
       </div>
     </div>
   </div>
-  
-  
+
   {% if bio.education %}
   <div style="margin-bottom: 20px" class="ui one column stackable grid container" id="{{ education | remove: ' ' }}">
     <div class="row">
