@@ -3,7 +3,10 @@ let body = $("body")
 let darkModeIcon = $("#darkmode > i");
 let darkModeToggle = $('#darkmode');
 let darkmodeEnabled = false;
-let localDarkModeEnabled = localStorage.getItem("darkMode")
+
+let isLocalStorageEnabled = detectLocalStorage()
+
+let localDarkModeEnabled = isLocalStorageEnabled ? localStorage.getItem("darkMode") : null;
 
 if (localDarkModeEnabled === 'true') {
     // if user set darkMode as the preferred mode on the website, use it
@@ -36,7 +39,8 @@ function toggleDarkMode () {
     darkModeIcon.removeClass('moon');
     darkModeIcon.addClass('sun');
     
-    localStorage.setItem("darkMode", true);
+    
+    isLocalStorageEnabled ? localStorage.setItem("darkMode", true) : false;
     darkmodeEnabled = true;
     return;
 }
@@ -53,7 +57,7 @@ function toggleLightMode() {
     darkModeIcon.removeClass('sun')
     darkModeIcon.addClass('moon');
 
-    localStorage.setItem("darkMode", false);
+    isLocalStorageEnabled ? localStorage.setItem("darkMode", false) : false;
     darkmodeEnabled = false;
     return;
 }
@@ -66,6 +70,24 @@ darkModeToggle.click(function () {
     }
     darkModeToggle.blur()
 });
+
+
+// LocalStorage is quite iffy.
+// If this is check is not done, the website might be blocked due to an exception
+// due to the browser not having permission to access it.
+// The return value is used throughout the entire code as a failsafe.
+// Refer to: https://dev.to/merri/code-golf-shortest-localstorage-step-by-step-1bh3
+// and: https://github.com/Modernizr/Modernizr/blob/master/feature-detects/storage/localstorage.js
+// for more information
+function detectLocalStorage() {
+    try {
+        localStorage.setItem('detectLocalStorage', '_');
+        localStorage.removeItem('detectLocalStorage');
+        return true;
+    } catch (error) {
+        return false;
+    }
+}
 
 // display body after theme is set to avoid theme flickering
 // this is very hacky, but as this is a static website this shouldn't cause major problems
