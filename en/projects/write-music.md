@@ -14,8 +14,8 @@ labels:
 category:
   - Web
 language: en
-projecturl: https://eitchtee.github.io/write-music/
+projecturl: https://herculino.com/write-music/
 # [['icon', 'url', 'Text', 'color']] Only icon and url are required
-buttons: [['github', 'https://github.com/eitchtee/write-music', 'Repo', 'black'], ['globe', 'https://eitchtee.github.io/write-music/', 'Site', 'grey']]
+buttons: [['github', 'https://github.com/eitchtee/write-music', 'Repo', 'black'], ['globe', 'https://herculino.com/write-music/', 'Site', 'grey']]
 summary: Write Music is a rythm visualizer tool, but for your text. Based on a writing tip by Gary Provost. See and hear your text.
 ---
