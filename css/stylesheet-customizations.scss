@@ -218,3 +218,7 @@ body.inverted .ui.list>a.item:hover>.icon {
 .ui.inverted.list .item a:not(.ui):hover {
   color: var(--greenLinkColor)!important;
 }
+
+a.ui.ui.ui.inverted.grey.label:hover {
+  color: inherit!important;
+}
