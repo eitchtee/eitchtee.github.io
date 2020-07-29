@@ -58,12 +58,10 @@
       "name": "Languages",
       "level": "",
       "keywords": [
-        "Pyhon",
-        "Javascript",
-        "Godot Script",
-        "Dart",
-        "Fomantic UI",
-        "Wordpress"
+        ["Python", "Advanced"],
+        ["Javascript", "Basic"],
+        ["Godot Script", "Advanced"],
+        ["Dart", "Basic"]
       ]
     },
     {
@@ -71,10 +69,10 @@
       "name": "Frameworks",
       "level": "",
       "keywords": [
-        "Django",
-        "Flutter",
-        "Fomantic UI",
-        "Wordpress"
+        ["Django"],
+        ["Flutter"],
+        ["Fomantic UI"],
+        ["Wordpress"]
       ]
     },
     {
@@ -82,11 +80,11 @@
       "name": "Tools",
       "level": "",
       "keywords": [
-        "Git/GitHub",
-        "Postman",
-        "Adobe Photoshop",
-        "Microsoft Office",
-        "Google Docs"
+        ["Git/GitHub"],
+        ["Postman"],
+        ["Adobe Photoshop"],
+        ["Microsoft Office"],
+        ["Google Docs"]
       ]
     },
     {
@@ -94,8 +92,8 @@
       "name": "Systems",
       "level": "",
       "keywords": [
-        "Windows",
-        "Ubuntu/Linux"
+        ["Windows"],
+        ["Ubuntu/Linux"]
       ]
     },
     {
@@ -103,10 +101,10 @@
       "name": "IDEs",
       "level": "",
       "keywords": [
-        "Pycharm",
-        "Webstorm",
-        "VSCode",
-        "Android Studio"
+        ["Pycharm"],
+        ["Webstorm"],
+        ["VSCode"],
+        ["Android Studio"]
       ]
     },
     {
@@ -114,8 +112,8 @@
       "name": "Game Engines",
       "level": "",
       "keywords": [
-        "Godot Engine",
-        "Unity3D"
+        ["Godot Engine"],
+        ["Unity3D"]
       ]
     }
   ],
