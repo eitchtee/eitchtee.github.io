@@ -228,30 +228,34 @@
   ],
   "certificates": [
     {
-      "title": "Curso sobre Processo Legislativo Federal",
-      "date": "2020",
-      "issuer": "Instituto Legislativo Brasileiro",
-      "summary": "<i>Nota: 92/100</i>"
-    },
-    {
-      "title": "Curso Dialogando sobre a Lei Maria da Penha",
-      "date": "2020",
-      "issuer": "Instituto Legislativo Brasileiro",
-      "summary": "<i>Nota: 91/100</i>"
-    },
-    {
       "title": "Python (Básico)",
       "date": "2020",
       "issuer": "HackerRank",
       "summary": "Cobrindo tópicos como Scalar Types, Operadores de Fluxo de Controle, Strings, Collections e Iteração, Modularidade, Objetos e Tipos e Classes.",
-      "url": "https://www.hackerrank.com/certificates/2e8bc83d4013"
+      "url": "https://www.hackerrank.com/certificates/2e8bc83d4013",
+      "category": "Tecnologia"
     },
     {
       "title": "Javascript (Básico)",
       "date": "2020",
       "issuer": "HackerRank",
       "summary": "Cobrindo tópicos como Funções, Currying, Hoisting, Escopo, Herança, Eventos e Error Handling.",
-      "url": "https://www.hackerrank.com/certificates/8e4e93d661fc"
+      "url": "https://www.hackerrank.com/certificates/8e4e93d661fc",
+      "category": "Tecnologia"
+    },
+    {
+      "title": "Curso sobre Processo Legislativo Federal",
+      "date": "2020",
+      "issuer": "Instituto Legislativo Brasileiro",
+      "summary": "<i>Nota: 92/100</i>",
+      "category": "Direito"
+    },
+    {
+      "title": "Curso Dialogando sobre a Lei Maria da Penha",
+      "date": "2020",
+      "issuer": "Instituto Legislativo Brasileiro",
+      "summary": "<i>Nota: 91/100</i>",
+      "category": "Direito"
     }
   ],
   "references": [],

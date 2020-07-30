@@ -222,3 +222,17 @@ body.inverted .ui.list>a.item:hover>.icon {
 a.ui.ui.ui.inverted.grey.label:hover {
   color: inherit!important;
 }
+
+.ui.attached.inverted.tabular.menu {
+  border-bottom: 1px solid #555555;
+}
+
+.ui.tabular.menu.inverted {
+  background: none transparent;
+}
+
+.ui.inverted.tabular.menu .active.item {
+  background: #1b1c1d;
+  margin-bottom: -1px;
+  border-color: #555555;
+}

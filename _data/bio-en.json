@@ -228,30 +228,34 @@
   ],
   "certificates": [
     {
-      "title": "Course about Brazil's Legislative Process",
-      "date": "2020",
-      "issuer": "Instituto Legislativo Brasileiro",
-      "summary": "<i>Grade: 92/100</i>"
-    },
-    {
-      "title": "Course Talking about Maria da Penha's Law",
-      "date": "2020",
-      "issuer": "Instituto Legislativo Brasileiro",
-      "summary": "<i>Grade: 91/100</i>"
-    },
-    {
       "title": "Python (Basic)",
       "date": "2020",
       "issuer": "HackerRank",
       "summary": "Covering topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes.",
-      "url": "https://www.hackerrank.com/certificates/2e8bc83d4013"
+      "url": "https://www.hackerrank.com/certificates/2e8bc83d4013",
+      "category": "Tech"
     },
     {
       "title": "Javascript (Basic)",
       "date": "2020",
       "issuer": "HackerRank",
       "summary": "Covering topics like Functions, Currying, Hoisting, Scope, Inheritance, Events and Error Handling.",
-      "url": "https://www.hackerrank.com/certificates/8e4e93d661fc"
+      "url": "https://www.hackerrank.com/certificates/8e4e93d661fc",
+      "category": "Tech"
+    },
+    {
+      "title": "Course about Brazil's Legislative Process",
+      "date": "2020",
+      "issuer": "Instituto Legislativo Brasileiro",
+      "summary": "<i>Grade: 92/100</i>",
+      "category": "Law"
+    },
+    {
+      "title": "Course Talking about Maria da Penha's Law",
+      "date": "2020",
+      "issuer": "Instituto Legislativo Brasileiro",
+      "summary": "<i>Grade: 91/100</i>",
+      "category": "Law"
     }
   ],
   "references": [],
