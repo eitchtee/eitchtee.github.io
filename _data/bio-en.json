@@ -126,7 +126,7 @@
     {
       "name": "English",
       "level": 3,
-      "description": "Fluent"
+      "description": "Advanced"
     },
     {
       "name": "Spanish",
@@ -223,7 +223,7 @@
       "title": "TOEFL ITP",
       "date": "2017",
       "awarder": "ETS",
-      "summary": "647 points.</br>Level C1: <i>Proficient English user.</i>"
+      "summary": "Level C1: <i>Proficient English user.</i>"
     }
   ],
   "certificates": [
@@ -247,14 +247,14 @@
       "title": "Course about Brazil's Legislative Process",
       "date": "2020",
       "issuer": "Instituto Legislativo Brasileiro",
-      "summary": "<i>Grade: 92/100</i>",
+      "summary": "<i>Final Grade: 92</i>",
       "category": "Law"
     },
     {
       "title": "Course Talking about Maria da Penha's Law",
       "date": "2020",
       "issuer": "Instituto Legislativo Brasileiro",
-      "summary": "<i>Grade: 91/100</i>",
+      "summary": "<i>Final Grade: 91</i>",
       "category": "Law"
     }
   ],

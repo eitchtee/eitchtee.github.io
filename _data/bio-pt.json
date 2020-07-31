@@ -126,7 +126,7 @@
     {
       "name": "Inglês",
       "level": 3,
-      "description": "Fluente"
+      "description": "Avançado"
     },
     {
       "name": "Espanhol",
@@ -223,7 +223,7 @@
       "title": "TOEFL ITP",
       "date": "2017",
       "awarder": "ETS",
-      "summary": "647 pontos.</br>Nível C1: <i>Usuário proficiente de Inglês.</i>"
+      "summary": "Nível C1: <i>Usuário proficiente de Inglês.</i>"
     }
   ],
   "certificates": [
@@ -247,14 +247,14 @@
       "title": "Curso sobre Processo Legislativo Federal",
       "date": "2020",
       "issuer": "Instituto Legislativo Brasileiro",
-      "summary": "<i>Nota: 92/100</i>",
+      "summary": "<i>Nota final: 92</i>",
       "category": "Direito"
     },
     {
       "title": "Curso Dialogando sobre a Lei Maria da Penha",
       "date": "2020",
       "issuer": "Instituto Legislativo Brasileiro",
-      "summary": "<i>Nota: 91/100</i>",
+      "summary": "<i>Nota final: 91</i>",
       "category": "Direito"
     }
   ],
