@@ -33,3 +33,5 @@ rouge-theme: base16.dark
 markdown: kramdown
 include: [_data]
 
+plugins:
+  - jekyll-sitemap
