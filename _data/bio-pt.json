@@ -7,7 +7,7 @@
     "email": "herculinotrotta@gmail.com",
     "website": "https://herculino.com",
     "summary": "Graduando em Direito pela Universidade Federal de Ouro Preto. Apaixonado por tecnologia.",
-    "phone": "",
+    "phone": "+55 32 9 8899 2043",
     "location": {
       "address": "",
       "postalCode": "",
@@ -40,15 +40,15 @@
   },
   "interests": [
     {
+      "name": "tecnologias disruptivas",
+      "keywords": []
+    },
+    {
       "name": "automatização",
       "keywords": []
     },
     {
       "name": "gamedev",
-      "keywords": []
-    },
-    {
-      "name": "tecnologias disruptivas",
       "keywords": []
     }
   ],
@@ -231,7 +231,7 @@
       "title": "Python (Básico)",
       "date": "2020",
       "issuer": "HackerRank",
-      "summary": "Cobrindo tópicos como Scalar Types, Operadores de Fluxo de Controle, Strings, Collections e Iteração, Modularidade, Objetos e Tipos e Classes.",
+      "summary": "<i>Cobrindo tópicos como Scalar Types, Operadores de Fluxo de Controle, Strings, Collections e Iteração, Modularidade, Objetos e Tipos e Classes.</i>",
       "url": "https://www.hackerrank.com/certificates/2e8bc83d4013",
       "category": "Tecnologia"
     },
@@ -239,7 +239,7 @@
       "title": "Javascript (Básico)",
       "date": "2020",
       "issuer": "HackerRank",
-      "summary": "Cobrindo tópicos como Funções, Currying, Hoisting, Escopo, Herança, Eventos e Error Handling.",
+      "summary": "<i>Cobrindo tópicos como Funções, Currying, Hoisting, Escopo, Herança, Eventos e Error Handling.</i>",
       "url": "https://www.hackerrank.com/certificates/8e4e93d661fc",
       "category": "Tecnologia"
     },

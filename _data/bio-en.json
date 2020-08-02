@@ -7,7 +7,7 @@
     "email": "herculinotrotta@gmail.com",
     "website": "https://herculino.com",
     "summary": "Law student in love with technology.",
-    "phone": "",
+    "phone": "+55 32 9 8899 2043",
     "location": {
       "address": "",
       "postalCode": "",
@@ -40,15 +40,15 @@
   },
   "interests": [
     {
+      "name": "disruptive technologies",
+      "keywords": []
+    },
+    {
       "name": "automation",
       "keywords": []
     },
     {
       "name": "gamedev",
-      "keywords": []
-    },
-    {
-      "name": "disruptive technologies",
       "keywords": []
     }
   ],
@@ -231,7 +231,7 @@
       "title": "Python (Basic)",
       "date": "2020",
       "issuer": "HackerRank",
-      "summary": "Covering topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes.",
+      "summary": "<i>Covering topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes.</i>",
       "url": "https://www.hackerrank.com/certificates/2e8bc83d4013",
       "category": "Tech"
     },
@@ -239,7 +239,7 @@
       "title": "Javascript (Basic)",
       "date": "2020",
       "issuer": "HackerRank",
-      "summary": "Covering topics like Functions, Currying, Hoisting, Scope, Inheritance, Events and Error Handling.",
+      "summary": "<i>Covering topics like Functions, Currying, Hoisting, Scope, Inheritance, Events and Error Handling.</i>",
       "url": "https://www.hackerrank.com/certificates/8e4e93d661fc",
       "category": "Tech"
     },
