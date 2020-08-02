@@ -149,12 +149,13 @@
   ],
   "work": [
     {
-      "company": "Fest Trotta, Brazil",
+      "company": "Fest Trotta",
       "position": "Administrative Assistant",
       "website": "",
       "startDate": "2020-03-31",
       "endDate": "Present",
       "summary": "",
+      "location": "Muriaé, Brazil",
       "highlights": [
         "Customer service.",
         "Sales.",
@@ -163,34 +164,37 @@
       ]
     },
     {
-      "company": "Delegacia de Polícia Civil de Ouro Preto, Brazil",
+      "company": "Delegacia de Polícia Civil de Ouro Preto",
       "position": "Trainee Rapporteur",
       "website": "",
       "startDate": "2019-02-12",
       "endDate": "2019-07-01",
       "summary": "Generate reports about police investigations in the areas of environmental crimes and criminal acts.",
+      "location": "Ouro Preto, Brazil",
       "highlights": [
         "Report creation.",
         "Archive control."
       ]
     },
     {
-      "company": "Federal University of Ouro Preto, Brazil",
+      "company": "Federal University of Ouro Preto",
       "position": "Webmaster",
       "website": "",
       "startDate": "2018-05-01",
       "endDate": "2019-12-31",
       "summary": "Develop and manage the website <a href=\"https://estudosdebarragens.ufop.br\" target=\"_blank\">estudosdebarragens.ufop.br</a> for the University's project <i>Rede UFOP de Estudos Sobre as Consequências dos Rompimentos de Barragens</i>, and gather the necessary data through partnerships, manual research and web scraping.",
+      "location": "Ouro Preto, Brazil",
       "highlights": [
       ]
     },
     {
-      "company": "Juizado Especial da Comarca de Muriaé, Brazil",
+      "company": "Juizado Especial da Comarca de Muriaé",
       "position": "Trainee Conciliator",
       "website": "",
       "startDate": "2017-06-01",
       "endDate": "2017-09-14",
       "summary": "Presiding conciliation sections on Brazil's Special Court.",
+      "location": "Muriaé, Brazil",
       "highlights": [
         "Conflict resolution.",
         "Writing minutes for ratification by the magistrate in charge.",
@@ -206,6 +210,7 @@
       "startDate": "2020-03-02",
       "endDate": "Current",
       "summary": "Oversee expenditures and look after the association’s fund, making sure their interest is met without loosing liquidity.",
+      "location": "Ouro Preto, Brazil",
       "highlights": []
     },
     {
@@ -215,6 +220,7 @@
       "startDate": "2018-01-01",
       "endDate": "2019-03-01",
       "summary": "Oversee expenditures and look after the association’s fund, making sure their interest is met without loosing liquidity.",
+      "location": "Ouro Preto, Brazil",
       "highlights": []
     }
   ],

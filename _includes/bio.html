@@ -128,7 +128,13 @@
               </div>
             </div>
             <div class="extra content">
-              <div class="right floated"><i class="calendar icon"></i>{{ work.startDate | date: "%m/%Y" }} - {{ work.endDate | date: "%m/%Y" }}</div>
+              <div class="right floated">
+                <i class="calendar icon"></i>{{ work.startDate | date: "%m/%Y" }} - {{ work.endDate | date: "%m/%Y" }}
+              </div>
+              <div>
+                <i class="map marked alternate icon"></i>
+                {{ work.location }}
+              </div>
             </div>
         </div>
         {% endfor %}
@@ -164,7 +170,13 @@
               </div>
             </div>
             <div class="extra content">
-              <div class="right floated"><i class="calendar icon"></i>{{ work.startDate | date: "%m/%Y" }} - {{ work.endDate | date: "%m/%Y" }}</div>
+              <div class="right floated">
+                <i class="calendar icon"></i>{{ work.startDate | date: "%m/%Y" }} - {{ work.endDate | date: "%m/%Y" }}
+              </div>
+              <div>
+                <i class="map marked alternate icon"></i>
+                {{ work.location }}
+              </div>
             </div>
         </div>
         {% endfor %}
