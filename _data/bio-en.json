@@ -121,17 +121,17 @@
     {
       "name": "Portuguese",
       "level": 4,
-      "description": "Native"
+      "fluency": "Native"
     },
     {
       "name": "English",
       "level": 3,
-      "description": "Advanced"
+      "fluency": "Advanced"
     },
     {
       "name": "Spanish",
       "level": 1,
-      "description": "Basic"
+      "fluency": "Basic"
     }
     
   ],
