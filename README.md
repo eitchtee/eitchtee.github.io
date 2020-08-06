@@ -1,6 +1,6 @@
 <div align="center">
 	<a href="https://herculino.com" target="_blank">
-    	<img alt="herculino.com" title="herculino.com" src="./images/projects/herculino.com.png" />
+    	<img alt="herculino.com" title="herculino.com" src="./images/projects/herculino.com.png" width="500" />
     </a>
 </div>
 
@@ -26,18 +26,14 @@
 
 - Persistent **Dark-theme toggle** with user configuration detection
 
-<div align="center">
-	<img alt="Theme toggler feature example" title="Theme toggler" src="./images/readme/theme_toggle.gif" />
-</div>
+<img alt="Theme toggler feature example" title="Theme toggler" src="./images/readme/theme_toggle.gif" />
 
 - Full internationalization with redirect on root domain
 	- Two languages avaliable: English and Portuguese
 
 - Filtering for projects and blog posts
 
-<div align="center">
-	<img alt="Filter feature example" title="Filter" src="./images/readme/filter.gif" />
-</div>
+<img alt="Filter feature example" title="Filter" src="./images/readme/filter.gif" />
 
 ## Tech Stack
 
@@ -56,7 +52,7 @@ The following tools were used in the construction of the project:
 ##### **Tools**
 
 -   _Editor_:  **[Visual Studio Code](https://code.visualstudio.com/)**
-<br />
+
 > Original template by **[Techfolios](http://techfolios.github.io/)**
 
 
