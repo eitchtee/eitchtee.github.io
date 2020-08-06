@@ -28,8 +28,10 @@
 
 <img alt="Theme toggler feature example" title="Theme toggler" src="./images/readme/theme_toggle.gif" />
 
-- Full internationalization with redirect on root domain
-	- Two languages avaliable: English and Portuguese
+- Full localization with redirect on root domain
+  - Two languages avaliable: English and Portuguese
+
+<img alt="Localization feature example" title="Localization" src="./images/readme/localization.gif" />
 
 - Filtering for projects and blog posts
 
