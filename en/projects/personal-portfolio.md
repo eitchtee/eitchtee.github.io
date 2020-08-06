@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/projects/eitchtee.github.io.png
+image: images/projects/herculino.com.png
 title: herculino.com
 permalink: en/projects/personal-portfolio
 # All dates must be YYYY-MM-DD format!
