@@ -4,7 +4,7 @@
     </a>
 </div>
 
-<h1 align="center">herculino.com</h1>
+<h3 align="center">herculino.com</h3>
 <p align="center">My personal portfolio, CV and blog.</p>
 
 <div align="center">
