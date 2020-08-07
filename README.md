@@ -1,5 +1,5 @@
 <div align="center">
-	<a href="https://herculino.com" target="_blank">
+    <a href="https://herculino.com" target="_blank">
     	<img alt="herculino.com" title="herculino.com" src="./images/projects/herculino.com.png" width="500" />
     </a>
 </div>
@@ -8,13 +8,8 @@
 <p align="center">My personal portfolio, CV and blog.</p>
 
 <div align="center">
-  <a href="https://github.com/eitchtee/eitchtee.github.io/blob/master/LICENSE" target="_blank">
-	<img alt="GitHub" src="https://img.shields.io/github/license/eitchtee/eitchtee.github.io?style=for-the-badge">
-  </a>
-
-  <a href="https://herculino.com" target="_blank">
-	  <img alt="Website" src="https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fherculino.com">
-  </a>
+  <a href="https://github.com/eitchtee/eitchtee.github.io/blob/master/LICENSE" target="_blank"><img alt="GitHub" src="https://img.shields.io/github/license/eitchtee/eitchtee.github.io?style=for-the-badge"></a>
+  <a href="https://herculino.com/" target="_blank"><img alt="Website" src="https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fherculino.com/"></a>
 </div>
 
 <br/>
