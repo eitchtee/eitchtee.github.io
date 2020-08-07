@@ -26,16 +26,16 @@
 
 - Persistent **Dark-theme toggle** with user configuration detection
 
-<img alt="Theme toggler feature example" title="Theme toggler" src="./images/readme/theme_toggle.gif" width="400" />
+<img alt="Theme toggler feature example" title="Theme toggler" src="./.github/theme_toggle.gif" width="400" />
 
 - Full localization with redirect on root domain
   - Two languages avaliable: English and Portuguese
 
-<img alt="Localization feature example" title="Localization" src="./images/readme/localization.gif" width="400" />
+<img alt="Localization feature example" title="Localization" src="./.github/localization.gif" width="400" />
 
 - Filtering for projects and blog posts
 
-<img alt="Filter feature example" title="Filter" src="./images/readme/filter.gif" width="400" />
+<img alt="Filter feature example" title="Filter" src="./.github/filter.gif" width="400" />
 
 ## Tech Stack
 
