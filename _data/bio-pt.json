@@ -149,7 +149,17 @@
   ],
   "work": [
     {
-      "company": "Fest Trotta, Muriaé",
+      "company": "Universidade Federal de Ouro Preto",
+      "position": "Monitor de Tecnologia",
+      "website": "",
+      "startDate": "2020-08-04",
+      "endDate": "Atualmente",
+      "summary": "Oferecer suporte aos professores da Universidade para utilização da plataforma Moodle e tecnologias correlatas no desenvolvimento operacional das disciplinas ofertadas durante o Período Letivo Especial Emergencial ocorrido de forma remota no segundo período de 2020.",
+      "location": "Remoto",
+      "highlights": []
+    },
+    {
+      "company": "Fest Trotta",
       "position": "Auxiliar Administrativo",
       "website": "",
       "startDate": "2020-03-31",
@@ -188,7 +198,7 @@
       ]
     },
     {
-      "company": "Juizado Especial da Comarca de Muriaé",
+      "company": "Juizado Especial",
       "position": "Conciliador Estagiário",
       "website": "",
       "startDate": "2017-06-01",

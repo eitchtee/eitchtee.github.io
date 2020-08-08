@@ -137,7 +137,7 @@
   ],
   "education": [
     {
-      "institution": "Federal University of Ouro Preto, Brazil",
+      "institution": "Universidade Federal de Ouro Preto, Brazil",
       "website": "https://direito.ufop.br/",
       "area": "Law",
       "studyType": "B.A.",
@@ -148,6 +148,16 @@
     }
   ],
   "work": [
+    {
+      "company": "Universidade Federal de Ouro Preto",
+      "position": "Learning Support Assistant",
+      "website": "",
+      "startDate": "2020-08-04",
+      "endDate": "Present",
+      "summary": "Help teachers with the Moodle Platform and other related technologies.",
+      "location": "Remote",
+      "highlights": []
+    },
     {
       "company": "Fest Trotta",
       "position": "Administrative Assistant",
@@ -177,7 +187,7 @@
       ]
     },
     {
-      "company": "Federal University of Ouro Preto",
+      "company": "Universidade Federal de Ouro Preto",
       "position": "Webmaster",
       "website": "",
       "startDate": "2018-05-01",
