@@ -36,14 +36,30 @@ jobs:
         
     - name: Generate Locales
       run: |
-        sudo apt-get update && sudo apt-get install tzdata locales -y && sudo locale-gen pt_BR
-        sudo apt-get update && sudo apt-get install tzdata locales -y && sudo locale-gen en_US.UTF-8
+        sudo apt-get update && sudo apt-get install tzdata locales -y && sudo locale-gen pt_BR && sudo locale-gen en_US.UTF-8
         sudo update-locale
         echo "All languages:"
         locale -a
     
-    - name: Run builder
+    - name: Run builder for english
       run: |
         python builder/builder.py site/files/config-en.yaml
+    
+    - name: Run builder for portuguese
+      run: |
         python builder/builder.py site/files/config-pt.yaml
-
+        
+    - name: Github Action for LaTeX
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: builder/pt/main.tex
+    
+    - name: Github Action for LaTeX
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: builder/en/main.tex
+        
+    - name: Testing
+      run: |
+        dir builder/pt
+        dir builder/en
