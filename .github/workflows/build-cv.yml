@@ -53,11 +53,13 @@ jobs:
       uses: xu-cheng/latex-action@v2
       with:
         root_file: builder/pt/main.tex
+        working_directory: builder/pt/
     
     - name: Github Action for LaTeX
       uses: xu-cheng/latex-action@v2
       with:
         root_file: builder/en/main.tex
+        working_directory: builder/en/
         
     - name: Testing
       run: |
