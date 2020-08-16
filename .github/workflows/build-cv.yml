@@ -1,0 +1,77 @@
+name: Build CV.pdf
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - '**.json'
+      - '**.yaml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: Checkout json-resume2altacv
+      uses: actions/checkout@v2.3.2
+      with:
+        repository: eitchtee/json-resume2altacv
+        path: builder
+        
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: Checkout eitchtee.github.io
+      uses: actions/checkout@v2.3.2
+      with:
+        path: site
+
+    - name: Setup Python
+      uses: actions/setup-python@v2.1.2
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r builder/requirements.txt
+        
+    - name: Generate Locales
+      run: |
+        sudo apt-get update && sudo apt-get install tzdata locales -y && sudo locale-gen pt_BR && sudo locale-gen en_US.UTF-8
+        sudo update-locale
+        echo "All languages:"
+        locale -a
+    
+    - name: Run builder for english
+      run: |
+        python builder/builder.py site/files/config-en.yaml
+    
+    - name: Run builder for portuguese
+      run: |
+        python builder/builder.py site/files/config-pt.yaml
+        
+    - name: Build Latex pt
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: ./main.tex
+        working_directory: builder/pt/
+    
+    - name: Build Latex en
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: ./main.tex
+        working_directory: builder/en/
+        
+    - name: Move files
+      run: |
+        mv builder/en/main.pdf "site/files/Herculino de Miranda Trotta Neto - CV.pdf" -f
+        mv builder/pt/main.pdf "site/files/Herculino de Miranda Trotta Neto - Curriculo.pdf" -f
+        
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v4.4.0
+      with:
+        # The name of the user that will be displayed as the author of the commit
+        author_name: CV Builder BOT
+        # The directory where your repository is located. You should use actions/checkout first to set it up
+        cwd: site
+        # The message for the commit
+        message: Update CV PDF files
