@@ -244,20 +244,12 @@
   ],
   "certificates": [
     {
-      "title": "Python",
-      "date": "2020",
-      "issuer": "Kaggle",
-      "summary": "<i>Aspectos chave do Python para Data Science</i>",
-      "url": "https://www.kaggle.com/learn/certification/eitchtee/python",
-      "category": "Tecnologia"
-    },
-    {
       "title": "Python (Básico)",
       "date": "2020",
       "issuer": "HackerRank",
       "summary": "<i>Cobrindo tópicos como Scalar Types, Operadores de Fluxo de Controle, Strings, Collections e Iteração, Modularidade, Objetos e Tipos e Classes.</i>",
       "url": "https://www.hackerrank.com/certificates/2e8bc83d4013",
-      "category": "Tecnologia"
+      "category": "Programação"
     },
     {
       "title": "Javascript (Básico)",
@@ -265,7 +257,23 @@
       "issuer": "HackerRank",
       "summary": "<i>Cobrindo tópicos como Funções, Currying, Hoisting, Escopo, Herança, Eventos e Error Handling.</i>",
       "url": "https://www.hackerrank.com/certificates/8e4e93d661fc",
-      "category": "Tecnologia"
+      "category": "Programação"
+    },
+    {
+      "title": "Python",
+      "date": "2020",
+      "issuer": "Kaggle Learn",
+      "summary": "<i>Aspectos chave do Python para Data Science</i>",
+      "url": "https://www.kaggle.com/learn/certification/eitchtee/python",
+      "category": "Data Science"
+    },
+    {
+      "title": "Introdução ao Machine Learning",
+      "date": "2020",
+      "issuer": "Kaggle Learn",
+      "summary": "<i>Aprendendo as ideias principais do Machine Learning e criação dos meus primeiros modelos</i>",
+      "url": "https://www.kaggle.com/learn/certification/eitchtee/intro-to-machine-learning",
+      "category": "Data Science"
     },
     {
       "title": "Curso sobre Processo Legislativo Federal",

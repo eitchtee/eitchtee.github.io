@@ -244,20 +244,12 @@
   ],
   "certificates": [
     {
-      "title": "Python",
-      "date": "2020",
-      "issuer": "Kaggle",
-      "summary": "<i>This course covers the key Python skills you’ll need so you can start using Python for data science.</i>",
-      "url": "https://www.kaggle.com/learn/certification/eitchtee/python",
-      "category": "Tech"
-    },
-    {
       "title": "Python (Basic)",
       "date": "2020",
       "issuer": "HackerRank",
       "summary": "<i>Covering topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes.</i>",
       "url": "https://www.hackerrank.com/certificates/2e8bc83d4013",
-      "category": "Tech"
+      "category": "Programming"
     },
     {
       "title": "Javascript (Basic)",
@@ -265,7 +257,23 @@
       "issuer": "HackerRank",
       "summary": "<i>Covering topics like Functions, Currying, Hoisting, Scope, Inheritance, Events and Error Handling.</i>",
       "url": "https://www.hackerrank.com/certificates/8e4e93d661fc",
-      "category": "Tech"
+      "category": "Programming"
+    },
+    {
+      "title": "Python",
+      "date": "2020",
+      "issuer": "Kaggle Learn",
+      "summary": "<i>This course covers the key Python skills you’ll need so you can start using Python for data science.</i>",
+      "url": "https://www.kaggle.com/learn/certification/eitchtee/python",
+      "category": "Data Science"
+    },
+    {
+      "title": "Intro to Machine Learning",
+      "date": "2020",
+      "issuer": "Kaggle Learn",
+      "summary": "<i>Learning the core ideas in machine learning, and building my first models.</i>",
+      "url": "https://www.kaggle.com/learn/certification/eitchtee/intro-to-machine-learning",
+      "category": "Data Science"
     },
     {
       "title": "Course about Brazil's Legislative Process",
