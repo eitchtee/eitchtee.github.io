@@ -244,6 +244,14 @@
   ],
   "certificates": [
     {
+      "title": "Python",
+      "date": "2020",
+      "issuer": "Kaggle",
+      "summary": "<i>Aspectos chave do Python para Data Science</i>",
+      "url": "https://www.kaggle.com/learn/certification/eitchtee/python",
+      "category": "Tecnologia"
+    },
+    {
       "title": "Python (Básico)",
       "date": "2020",
       "issuer": "HackerRank",

@@ -244,6 +244,14 @@
   ],
   "certificates": [
     {
+      "title": "Python",
+      "date": "2020",
+      "issuer": "Kaggle",
+      "summary": "<i>This course covers the key Python skills you’ll need so you can start using Python for data science.</i>",
+      "url": "https://www.kaggle.com/learn/certification/eitchtee/python",
+      "category": "Tech"
+    },
+    {
       "title": "Python (Basic)",
       "date": "2020",
       "issuer": "HackerRank",
