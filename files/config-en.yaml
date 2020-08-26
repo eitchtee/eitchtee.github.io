@@ -33,6 +33,8 @@ composition:
     - new-page
     - awards
 
+ignore-certificates-of:
+
 strings:
   work: Work Experience
   technical-skills: Technical Skills
