@@ -29,7 +29,10 @@ if (localDarkModeEnabled === 'true') {
 
 function toggleDarkMode () {
     // add fomantic ui's inverted class to all ui elements
-    body.find('.ui').addClass('inverted');
+    // body.find('.ui').addClass('inverted');
+    body.find('.ui').addClass(function(){
+        return $(this).hasClass('dontInvert') ? "" : "inverted";
+    });
     // add custom inverted class to body
     body.addClass('inverted');
     // change scrollbar background to match
@@ -47,7 +50,10 @@ function toggleDarkMode () {
 
 function toggleLightMode() {
     // remove fomantic ui's inverted class from all ui elements
-    body.find('.ui').removeClass('inverted');
+    // body.find('.ui').removeClass('inverted');
+    body.find('.ui').removeClass(function(){
+        return $(this).hasClass('dontInvert') ? "" : "inverted";
+    });
     // remove custom inverted class to body
     body.removeClass('inverted');
     // change scrollbar background to match
