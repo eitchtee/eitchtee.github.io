@@ -28,8 +28,7 @@ if (localDarkModeEnabled === 'true') {
 
 
 function toggleDarkMode () {
-    // add fomantic ui's inverted class to all ui elements
-    // body.find('.ui').addClass('inverted');
+    // add fomantic ui's inverted class to all ui elements if they dont have dontInvert as a class
     body.find('.ui').addClass(function(){
         return $(this).hasClass('dontInvert') ? "" : "inverted";
     });
@@ -49,8 +48,7 @@ function toggleDarkMode () {
 }
 
 function toggleLightMode() {
-    // remove fomantic ui's inverted class from all ui elements
-    // body.find('.ui').removeClass('inverted');
+    // remove fomantic ui's inverted class from all ui elements if they dont have dontInvert as a class
     body.find('.ui').removeClass(function(){
         return $(this).hasClass('dontInvert') ? "" : "inverted";
     });
