@@ -3,7 +3,7 @@
     {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
     {% assign project_pages_in_lang = project_pages | where: "language", language %}
     {% assign project_categories = project_pages | where: "language", language | map: "category" | sort | uniq %}
-    
+
     {% if project_categories.size > 1 %}
     <div class="nonprintable filter-buttons jsOnly">
         {% for category in project_categories %}
@@ -12,7 +12,7 @@
       <a class="button ui toggle filter active" href="#" id="filter-all">{% if language == 'pt' %}Todos{%- elsif language == 'en' -%}All{% endif %}</a>
     </div>
     {% endif %}
-  
+
   {% if project_pages_in_lang.size > 0 %}
   <div class="ui stackable three cards" id="filterable">
     {% for page in project_pages_in_lang %}
