@@ -6,7 +6,7 @@
   </div>
   {% endif %}
   <div class="content">
-    <span class="header"><a class="header-link" {% if page.projecturl %}target="_blank"{% endif %} href="{% if page.projecturl %}{{ page.projecturl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}">{{ include.page.title }}</a></span>
+    <span class="header">{{ include.page.title }}</span>
     <div class="meta">
       <span class="date">{{ include.page.category | join: " | " }}</span>
     </div>
