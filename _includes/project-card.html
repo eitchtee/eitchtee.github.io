@@ -1,5 +1,5 @@
 {% assign filters = page.category %}
-<div class="ui link card {% for label in filters %} {{ label | remove: " " }} {% endfor %}">
+<div class="ui card {% for label in filters %} {{ label | remove: " " }} {% endfor %}">
   {% if include.page.image %}
   <div class="image">
     <img src="{{ site.baseurl }}/{{ include.page.image }}" alt="{{ include.page.title }}">
