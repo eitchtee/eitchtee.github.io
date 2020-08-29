@@ -2,8 +2,11 @@
 {% if language == "pt" %}{% assign bio = site.data.bio-pt %}{% else %}{% assign bio = site.data.bio-en %}{% endif %}
 {% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.language == language" %}
 {% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.language == language" %}
+{% assign portfolio_pages = site.pages | where: "type", "portfolio" | where_exp: "page", "page.language == language" %}
 {% assign num_essays = essay_pages.size %}
 {% assign num_projects = project_pages.size %}
+{% assign num_portfolios = portfolio_pages.size %}
+
 <button class="ui button icon basic darkmode-button jsOnly" id="darkmode" data-tooltip="{% if language == 'pt' %}Alternar tema{% else %}Toggle theme{% endif %}" data-position="bottom right" style="z-index: 2;"><i class="moon icon"></i></button>
 <a href="{{ site.baseurl}}/{% if language=='pt' %}en{% else %}pt{% endif %}/" class="ui button icon basic translate-button" {% if language=='pt' %}data-tooltip="See in English" data-position="bottom right"{% else %}data-tooltip="Ver em Português" data-position="bottom right"{% endif %}><i class="{% if language=='pt' %}us{% else %}br{% endif %} flag"></i></a>
 
@@ -39,6 +42,12 @@
         </a>{% endif %}
         {% if num_essays > 0 %}<a class="ui animated green button" href="{{ site.baseurl}}/{{ language }}/{% if include.language == "pt" %}{{ site.essays-url-pt }}{% else %}{{ site.essays-url-en }}{% endif %}/">
           <div class="visible content">{% if language == "pt" %}{{ site.essays-page-label-pt }}{% else %}{{ site.essays-page-label-en }}{% endif %}</div>
+          <div class="hidden content">
+            <i class="right arrow icon"></i>
+          </div>
+        </a>{% endif %}
+        {% if num_portfolios > 0 %}<a class="ui animated green button" href="{{ site.baseurl}}/{{ language }}/{{ site.portfolio-url }}/">
+          <div class="visible content">{% if language == "pt" %}{{ site.portfolio-page-label-pt }}{% else %}{{ site.portfolio-page-label-en }}{% endif %}</div>
           <div class="hidden content">
             <i class="right arrow icon"></i>
           </div>

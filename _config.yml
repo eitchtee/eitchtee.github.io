@@ -8,15 +8,18 @@ baseurl: ""
 bio-page-label-pt: Currículo
 projects-page-label-pt: Projetos
 essays-page-label-pt: Blog
+portfolio-page-label-pt: Portfólio
 
 bio-page-label-en: CV
 projects-page-label-en: Projects
 essays-page-label-en: Blog
+portfolio-page-label-en: Portfolio
 
 theme-bio: bio.html
 theme-home: home.html
 theme-projects: projects.html
 theme-essays: essays.html
+theme-portfolio: portfolio.html
 
 projects-url-pt: projetos
 essays-url-pt: blog
@@ -25,6 +28,8 @@ bio-url-pt: curriculo
 projects-url-en: projects
 essays-url-en: blog
 bio-url-en: cv
+
+portfolio-url: portfolio
 
 # Specify the rouge syntax highlighter theme. Pick one from css/rouge.
 rouge-theme: base16.dark
