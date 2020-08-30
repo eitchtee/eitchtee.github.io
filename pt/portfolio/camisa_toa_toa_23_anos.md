@@ -1,7 +1,7 @@
 ---
 layout: art
 type: portfolio
-image: images/portfolio/toa_toa_23_anos_camisa.png
+image: images/portfolio/toa_toa_23_anos_camisa_frente.png
 title: Camisa comemorativa dos 23 anos da República Tôa Tôa
 permalink: pt/portfolio/camisa_23_anos_toa_toa
 # All dates must be YYYY-MM-DD format!
