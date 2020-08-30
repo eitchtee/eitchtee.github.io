@@ -236,3 +236,14 @@ a.ui.ui.ui.inverted.grey.label:hover {
   margin-bottom: -1px;
   border-color: #555555;
 }
+
+
+.masonry-with-columns {
+  columns: 3 200px;
+  column-gap: 0.5rem;
+  a {
+    width: 150px;
+    display: inline-block;
+    width: 100%;
+  } 
+}

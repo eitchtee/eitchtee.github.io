@@ -14,7 +14,7 @@
   {% endif %}
 
   {% if portfolio_pages_in_lang.size > 0 %}
-  <div class="ui stackable three cards" id="filterable">
+  <div class="masonry-with-columns" id="filterable">
     {% for page in portfolio_pages_in_lang %}
       {% if page.language == language %}
         {% include portfolio-card.html page=page %}
@@ -36,7 +36,7 @@
 
 <script src="/javascript/filters.js"></script>
 <script>
-  $('.cards .image').dimmer({
+  $('.masonry-with-columns .dimmer').dimmer({
   on: 'hover',
   duration    : {
   show : 500,

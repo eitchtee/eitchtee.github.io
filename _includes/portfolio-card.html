@@ -1,14 +1,14 @@
 {% assign filters = page.category %}
-<a class="ui link card {% for label in filters %} {{ label | remove: " " }} {% endfor %}" href="{% if page.projecturl %}{{ page.projecturl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}">
+<a class="{% for label in filters %} {{ label | remove: " " }} {% endfor %}" href="{% if page.projecturl %}{{ page.projecturl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}">
   <div class="dimmable image">
     <div class="ui bottom dimmer dontInvert">
       <div class="content">
-          <div class="ui inverted center aligned header dontInvert">{{ include.page.title }}</div>
+          <div class="ui inverted header dontInvert">{{ include.page.title }}</div>
           {{ include.page.summary }}
       </div>
     </div>
     {% if include.page.image %}
-    <img src="{{ site.baseurl }}/{{ include.page.image }}" alt="{{ include.page.title }}">
+    <img class="ui image" src="{{ site.baseurl }}/{{ include.page.image }}" alt="{{ include.page.title }}">
     {% endif %}
   </div>
 </a>
