@@ -1,0 +1,13 @@
+---
+layout: art
+type: portfolio
+image: images/portfolio/toa_toa_23_anos_camisa.png
+title: Camisa comemorativa dos 23 anos da República Tôa Tôa
+permalink: pt/portfolio/camisa_23_anos_toa_toa
+# All dates must be YYYY-MM-DD format!
+date: 2017-11-04
+category:
+  - Camisa
+language: pt
+summary: Feita com o Photoshop e Corel Draw
+---
