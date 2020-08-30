@@ -2,12 +2,12 @@
 layout: art
 type: portfolio
 image: images/portfolio/toa_toa_panfleto.png
-title: Panfleto para a República Tôa Tôa
-permalink: pt/portfolio/panfleto_toa_toa
+title: Flyer for a Brazillian Fraternity
+permalink: en/portfolio/flyer_toa_toa
 # All dates must be YYYY-MM-DD format!
 date: 2018-06-13
 category:
-  - Panfleto
-language: pt
-summary: Feito com o Photoshop
+  - Flyer
+language: en
+summary: Made with Photoshop
 ---
