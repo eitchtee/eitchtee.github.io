@@ -11,3 +11,11 @@ category:
 language: pt
 summary: Feito com o Photoshop
 ---
+Arte gráfica desensolvida utilizando o `Photoshop`.
+
+Arte para propaganda de vagas na República Tôa Tôa em Ouro Preto/MG.
+
+<figure>
+  <img src="/images/portfolio/toa_toa_panfleto.png" alt="Panfleto"/>
+  <figcaption>Panfleto</figcaption>
+</figure>
