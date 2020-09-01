@@ -22,5 +22,5 @@ Baseada em uma arte já existente que foi modificada para as necessidades da Rep
 
 <figure>
   <img src="/images/portfolio/toa_toa_23_anos_camisa_toda.jpg" alt="Arte aplicada na camisa"/>
-  <figcaption>Camisa com com arte e demais demais aplicados</figcaption>
+  <figcaption>Camisa com com arte e demais detalhes aplicados</figcaption>
 </figure>
