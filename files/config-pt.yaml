@@ -33,7 +33,7 @@ composition:
     - new-page
     - awards
 
-ignore-certificates-of:
+ignore-certificates-of: []
 
 strings:
   work: Experiência Profissional
