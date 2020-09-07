@@ -26,9 +26,12 @@ function filter(category) {
     if (category.toLowerCase() == 'all' || category.toLowerCase() == 'todos') {
         selector.fadeIn(450);
     } else {
-        var $el = $('.' + category).fadeIn(450);
-        selector.not($el).hide(0, function() {
-            selector.not($el).attr("style", "display: none !important");
+        var fadedOut = function() {
+            return selector.not('.' + category).fadeOut('fast').promise();
+        }
+
+        $.when(fadedOut()).done(function() {
+            $('.' + category).fadeIn('fast')
         });
     }
 }
