@@ -26,12 +26,8 @@ function filter(category) {
     if (category.toLowerCase() == 'all' || category.toLowerCase() == 'todos') {
         selector.fadeIn(450);
     } else {
-        var fadedOut = function() {
-            return selector.not('.' + category).fadeOut('fast').promise();
-        }
-
-        $.when(fadedOut()).done(function() {
-            $('.' + category).fadeIn('fast')
+        selector.not('.' + category).fadeOut('fast').promise().done(function() {
+            $('.' + category).fadeIn('fast');
         });
     }
 }
