@@ -14,7 +14,7 @@
   {% endif %}
 
   {% if essay_pages_in_lang.size > 0 %}
-  <div class="ui stackable centered three cards" id="filterable">
+  <div class="ui unstackable link divided relaxed items" id="filterable">
       {% for page in essay_pages_in_lang %}
         {% if page.language == language %}
           {% include essay-card.html page=page %}

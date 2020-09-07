@@ -1,5 +1,5 @@
 {% assign filters = page.labels %}
-<a class="card {% for label in filters %} {{ label | remove: " " }} {% endfor %}" {% if page.projecturl %}target="_blank"{% endif %} href="{% if page.projecturl %}{{ page.projecturl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}">
+<a class="item {% for label in filters %} {{ label | remove: " " }} {% endfor %}" {% if page.projecturl %}target="_blank"{% endif %} href="{% if page.projecturl %}{{ page.projecturl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}">
   <div class="content">
     <span class="header">{{ include.page.title }}</span>
     <div class="meta">
@@ -23,16 +23,15 @@
     </div>
 
     <div class="description">
-      {{ include.page.content | markdownify | strip_html | truncatewords: 40 }}
+      <p>{{ include.page.content | markdownify | strip_html | truncatewords: 80 }}</p>
     </div>
-  </div>
 
-  <div class="extra content">
-    <div class="ui small labels">
+    <div class="extra">
       {% for label in include.page.labels %}
       <div class="ui grey label">{{ label }}</div>
       {% endfor %}
     </div>
   </div>
+
 
 </a>
