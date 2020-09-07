@@ -14,7 +14,7 @@
     {% endif %}
 
   {% if project_pages_in_lang.size > 0 %}
-  <div class="ui stackable three cards" id="filterable">
+  <div class="ui centered stackable three cards" id="filterable">
     {% for page in project_pages_in_lang %}
       {% if page.language == language %}
         {% include project-card.html page=page %}
