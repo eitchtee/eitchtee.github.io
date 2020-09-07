@@ -107,6 +107,11 @@ a:hover {
   color: var(--greenColorHover);
 }
 
+.ui.items a.item:hover .content .header, .ui.link.items>.item:hover .content .header {
+  color: var(--greenColorHover);
+
+}
+
 .ui.list>a.item:hover>.icon {
   color: var(--greenColorHover)!important;
 }
