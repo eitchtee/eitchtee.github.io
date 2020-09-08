@@ -250,6 +250,14 @@
   ],
   "certificates": [
     {
+      "title": "Fundamentos do Suporte Técnico",
+      "date": "2020",
+      "issuer": "Google | Coursera",
+      "summary": "Cobrindo tópicos como: sistema binário, montagem de computadores, escolha e instalação de um sistema operacional em um computador, redes, como os aplicativos são criados e como eles funcionam internamente no computador, resolução de problemas e habilidades interpessoais em um ambiente de Tecnologia da Informação.",
+      "url": "https://www.coursera.org/account/accomplishments/verify/YNS5FHHL6KFA",
+      "category": "TI"
+    },
+    {
       "title": "Python (Básico)",
       "date": "2020",
       "issuer": "HackerRank",

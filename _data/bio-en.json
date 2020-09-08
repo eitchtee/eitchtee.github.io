@@ -250,6 +250,14 @@
   ],
   "certificates": [
     {
+      "title": "Technical Support Fundamentals",
+      "date": "2020",
+      "issuer": "Google | Coursera",
+      "summary": "Covering topics such as: binary system, computer assembly, choose and install an operating system on a computer, networks, how applications are created and how they work under the hood of a computer, problem-solving methodologies and soft skills in an Information Technology setting.",
+      "url": "https://www.coursera.org/account/accomplishments/verify/YNS5FHHL6KFA",
+      "category": "TI"
+    },
+    {
       "title": "Python (Basic)",
       "date": "2020",
       "issuer": "HackerRank",
