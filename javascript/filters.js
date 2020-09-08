@@ -24,10 +24,12 @@ function filter(category) {
     let selector = $('#filterable > div, #filterable > a')
 
     if (category.toLowerCase() == 'all' || category.toLowerCase() == 'todos') {
-        selector.fadeIn(450);
+        selector.fadeOut('fast').promise().done(function() {
+            selector.fadeIn('slow');
+        });
     } else {
-        selector.not('.' + category).fadeOut('fast').promise().done(function() {
-            $('.' + category).fadeIn('fast');
+        selector.fadeOut('fast').promise().done(function() {
+            $('.' + category).fadeIn('slow');
         });
     }
 }
