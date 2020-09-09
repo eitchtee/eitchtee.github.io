@@ -24,11 +24,15 @@ function filter(category) {
     let selector = $('#filterable > div, #filterable > a')
 
     if (category.toLowerCase() == 'all' || category.toLowerCase() == 'todos') {
-        selector.fadeOut('fast').promise().done(function() {
+        selector.fadeOut('fast', function() {
+            selector.attr("style", "display: none !important");
+        }).promise().done(function() {
             selector.fadeIn('slow');
         });
     } else {
-        selector.fadeOut('fast').promise().done(function() {
+        selector.fadeOut('fast', function() {
+            selector.attr("style", "display: none !important");
+        }).promise().done(function() {
             $('.' + category).fadeIn('slow');
         });
     }
