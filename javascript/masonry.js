@@ -49,6 +49,7 @@ function resizeMasonryItem(item){
     // Get all item class objects in one list
     var allItems = document.querySelectorAll('.masonry-item');
     // allItems = allItems
+    // console.log(allItems);
   
     /*
      * Loop through the above list and execute the spanning function to
@@ -86,10 +87,14 @@ function resizeMasonryItem(item){
   
 
 /* Resize all the grid items on the load and resize events */
-var masonryEvents = ['load', 'resize'];
+var masonryEvents = ['load', 'resize', 'fadeInComplete'];
 masonryEvents.forEach( function(event) {
 window.addEventListener(event, resizeAllMasonryItems);
 } );
+
+$("#filterable").on("fadeInComplete", function() {
+  resizeAllMasonryItems();
+});
 
 /* Do a resize once more when all the images finish loading */
 waitForImages();

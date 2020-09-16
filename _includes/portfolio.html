@@ -4,14 +4,14 @@
   {% assign portfolio_pages_in_lang = portfolio_pages | where: "language", language %}
   {% assign portfolio_categories = portfolio_pages | where: "language", language | map: "category" | sort | uniq %}
 
-  <!-- {% if portfolio_categories.size > 1 %}
+  {% if portfolio_categories.size > 1 %}
   <div class="nonprintable filter-buttons jsOnly">
       {% for category in portfolio_categories %}
       <a class="button ui toggle filter" href="#{{ category | remove: " " }}" id="filter-{{ category | remove: " " }}">{{ category }}</a>
       {% endfor %}
     <a class="button ui toggle filter active" href="#" id="filter-all">{% if language == 'pt' %}Todos{%- elsif language == 'en' -%}All{% endif %}</a>
   </div>
-  {% endif %} -->
+  {% endif %}
 
   {% if portfolio_pages_in_lang.size > 0 %}
   <div class="masonry-wrapper-without-js">
@@ -38,7 +38,7 @@
   
 <script src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
-<!-- <script src="/javascript/filters.js"></script> -->
+<script src="/javascript/filters.js"></script>
 <script src="/javascript/masonry.js"></script>
 <script>
   $('.masonry .dimmer').dimmer({

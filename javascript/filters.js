@@ -27,13 +27,17 @@ function filter(category) {
         selector.fadeOut('fast', function() {
             selector.attr("style", "display: none !important");
         }).promise().done(function() {
-            selector.fadeIn('slow');
+            selector.fadeIn('slow').promise().done(function() {
+                $(this).trigger("fadeInComplete");
+            })
         });
     } else {
         selector.fadeOut('fast', function() {
             selector.attr("style", "display: none !important");
         }).promise().done(function() {
-            $('.' + category).fadeIn('slow');
+            $('.' + category).fadeIn('slow').promise().done(function() {
+                $(this).trigger("fadeInComplete");
+            })
         });
     }
 }

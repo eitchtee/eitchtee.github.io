@@ -1,6 +1,6 @@
 {% assign filters = page.category %}
 <a class="masonry-item {% for label in filters %} {{ label | remove: " " }} {% endfor %}" href="{% if page.projecturl %}{{ page.projecturl }}{% else %}{{ site.baseurl}}{{ include.page.url }}{% endif %}">
-  <div class="dimmable image">
+  <div class="dimmable image masonry-content">
     <div class="ui bottom dimmer dontInvert">
       <div class="content">
           <div class="ui inverted header dontInvert">{{ include.page.title }}</div>
@@ -8,7 +8,7 @@
       </div>
     </div>
     {% if include.page.image %}
-    <img class="ui image masonry-content" src="{{ site.baseurl }}/{{ include.page.image }}" alt="{{ include.page.title }}">
+    <img class="ui image" src="{{ site.baseurl }}/{{ include.page.image }}" alt="{{ include.page.title }}">
     {% endif %}
   </div>
 </a>
