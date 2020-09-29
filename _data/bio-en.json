@@ -159,21 +159,6 @@
       "highlights": []
     },
     {
-      "company": "Fest Trotta",
-      "position": "Administrative Assistant",
-      "website": "",
-      "startDate": "2020-03-31",
-      "endDate": "Present",
-      "summary": "",
-      "location": "Muriaé, Brazil",
-      "highlights": [
-        "Customer service.",
-        "Sales.",
-        "Delivery management.",
-        "Prospecting of new branches and products."
-      ]
-    },
-    {
       "company": "Delegacia de Polícia Civil de Ouro Preto",
       "position": "Trainee Rapporteur",
       "website": "",
@@ -259,10 +244,10 @@
     {
       "title": "Technical Support Fundamentals",
       "date": "2020",
-      "issuer": "Google | Coursera",
-      "summary": "Covering topics such as: binary system, computer assembly, choose and install an operating system on a computer, networks, how applications are created and how they work under the hood of a computer, problem-solving methodologies and soft skills in an Information Technology setting.",
-      "url": "https://www.coursera.org/account/accomplishments/verify/YNS5FHHL6KFA",
-      "category": "TI"
+      "issuer": "Google",
+      "summary": "<i>Covering topics such as: binary system, computer assembly, choose and install an operating system on a computer, networks, how applications are created and how they work under the hood of a computer, problem-solving methodologies and soft skills in an Information Technology setting.</i>",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/KFJGDAYDKH9M",
+      "category": "IT"
     },
     {
       "title": "Python (Basic)",
