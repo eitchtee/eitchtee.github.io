@@ -15,19 +15,19 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout json-resume2altacv
-      uses: actions/checkout@v2.3.2
+      uses: actions/checkout@v2
       with:
         repository: eitchtee/json-resume2altacv
         path: builder
         
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout eitchtee.github.io
-      uses: actions/checkout
+      uses: actions/checkout@v2
       with:
         path: site
 
     - name: Setup Python
-      uses: actions/setup-python
+      uses: actions/setup-python@v2
     
     - name: Install dependencies
       run: |
