@@ -28,9 +28,9 @@ composition:
     - education
     - volunteer
     - languages
+    - new-page
     - soft-skills
     - interests
-    - new-page
     - awards
 
 ignore-certificates-of: []
