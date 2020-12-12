@@ -21,7 +21,6 @@ colors:
 composition:
   first-column:
     - work
-    - new-page
     - technical-skills
     - certificates
   second-column:
