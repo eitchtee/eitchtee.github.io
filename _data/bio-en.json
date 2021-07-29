@@ -159,7 +159,7 @@
   ],
   "work": [
     {
-      "company": "Alcance Innovation Consulting",
+      "name": "Alcance Innovation Consulting",
       "position": "Trainee Innovation Analyst",
       "website": "",
       "startDate": "2020-10-20",
@@ -169,7 +169,7 @@
       "highlights": []
     },
     {
-      "company": "Universidade Federal de Ouro Preto",
+      "name": "Universidade Federal de Ouro Preto",
       "position": "Technical Support",
       "website": "",
       "startDate": "2020-08-04",
@@ -179,7 +179,7 @@
       "highlights": []
     },
     {
-      "company": "Delegacia de Polícia Civil de Ouro Preto",
+      "name": "Delegacia de Polícia Civil de Ouro Preto",
       "position": "Trainee Rapporteur",
       "website": "",
       "startDate": "2019-02-12",
@@ -192,7 +192,7 @@
       ]
     },
     {
-      "company": "Universidade Federal de Ouro Preto",
+      "name": "Universidade Federal de Ouro Preto",
       "position": "Webmaster",
       "website": "",
       "startDate": "2018-05-01",
@@ -203,7 +203,7 @@
       ]
     },
     {
-      "company": "Juizado Especial da Comarca de Muriaé",
+      "name": "Juizado Especial da Comarca de Muriaé",
       "position": "Trainee Conciliator",
       "website": "",
       "startDate": "2017-06-01",
