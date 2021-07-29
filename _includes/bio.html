@@ -113,9 +113,9 @@
           <div class="ui card {% if work.endDate == current %}yellow{% else %}green{% endif %}">
             <div class="content">
               {% if work.website.size >= 1 %}
-              <a class="ui top attached grey label" style="margin-bottom: 12px;" href="{{ work.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ work.company }}</a>
+              <a class="ui top attached grey label" style="margin-bottom: 12px;" href="{{ work.website }}" target="_blank"><i class="map marker alternate icon"></i>{{ work.name }}</a>
               {% else %}
-              <div class="ui top attached grey label" style="margin-bottom: 12px;"><i class="map marker alternate icon"></i>{{ work.company }}</div>
+              <div class="ui top attached grey label" style="margin-bottom: 12px;"><i class="map marker alternate icon"></i>{{ work.name }}</div>
               {% endif %}
               <div class="header">{{ work.position }}</div>
               <div class="description">
