@@ -22,6 +22,7 @@ composition:
   first-column:
     - work
     - technical-skills
+    - new-page
     - certificates
   second-column:
     - education
