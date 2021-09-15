@@ -269,7 +269,15 @@
   ],
   "certificates": [
     {
-      "title": "Google IT Support Professional Certificate",
+      "title": "Programa de cursos integrados: Google IT Automation with Python",
+      "date": "2020",
+      "issuer": "Coursera",
+      "summary": "<i></i>",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/49HFGCCCU5YQ",
+      "category": "TI"
+    },
+    {
+      "title": "Programa de cursos integrados: Google IT Support",
       "date": "2020",
       "issuer": "Coursera",
       "summary": "<i></i>",
