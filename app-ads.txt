@@ -1,6 +1,4 @@
 ---
 title: app-ads.txt
-redirect_from:
-  - /app-ads.txt
-  - /idrink_site/app-ads.txt
+redirect_to: https://herculino.com/idrink_site/app-ads.txt
 ---
