@@ -1,4 +1,1 @@
----
-title: app-ads.txt
-redirect_to: https://herculino.com/idrink_site/app-ads.txt
----
+google.com, pub-9221466881862343, DIRECT, f08c47fec0942fa0
