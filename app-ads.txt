@@ -1,4 +1,6 @@
+---
 title: app-ads.txt
 redirect_from:
   - /app-ads.txt
   - /idrink_site/app-ads.txt
+---
