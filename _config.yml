@@ -40,4 +40,3 @@ include: [_data]
 
 plugins:
   - jekyll-sitemap
-  - jekyll-redirect-from
