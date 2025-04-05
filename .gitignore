@@ -3,3 +3,4 @@
 .plugin-clean
 .cache
 .htpasswd
+/dist
