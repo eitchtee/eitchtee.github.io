@@ -1,0 +1,13 @@
+---
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  permalink: "{{ config.robots }}"
+---
+Sitemap: {{ config.baseUrl + config.siteMap }}
+
+User-Agent: *
+Disallow: 
+Disallow: /files/
+Disallow: /images/
+Disallow: /javascript/
+Disallow: /css/
