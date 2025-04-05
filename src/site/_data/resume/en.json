@@ -1,0 +1,323 @@
+{
+    "basics": {
+        "name": "Herculino Trotta Neto",
+        "label": "Software Developer",
+        "email": "hello@herculino.com",
+        "url": "herculino.com",
+        "summary": "I'm a full stack web developer who can build apps from the ground up. I've worked mostly at startups so I am used to wearing many hats. I am a very product focused developer who prioritizes user feedback first and foremost. I'm generally very flexible when investigating new roles. My publications and volunteer sections are bullshit for the purpose of showing the this theme.",
+        "phone": "",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "Muriaé",
+            "region": "Minas Gerais",
+            "countryCode": "Brazil"
+        },
+        "profiles": [
+            {
+                "network": "Github",
+                "username": "eitchtee",
+                "url": "https://github.com/eitchtee"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "herculinotrotta",
+                "url": "https://www.linkedin.com/in/herculinotrotta/"
+            }
+        ]
+    },
+    "interests": [
+        {
+            "name": "disruptive technologies",
+            "keywords": []
+        },
+        {
+            "name": "automation",
+            "keywords": []
+        },
+        {
+            "name": "gamedev",
+            "keywords": []
+        }
+    ],
+    "skills": [
+        {
+            "name": "Languages",
+            "level": "",
+            "keywords": [
+                [
+                    "Python"
+                ],
+                [
+                    "Javascript"
+                ],
+                [
+                    "Godot Script"
+                ],
+                [
+                    "Dart"
+                ]
+            ]
+        },
+        {
+            "name": "Frameworks",
+            "level": "",
+            "keywords": [
+                [
+                    "Django"
+                ],
+                [
+                    "Flutter"
+                ],
+                [
+                    "Fomantic UI"
+                ],
+                [
+                    "Wordpress"
+                ]
+            ]
+        },
+        {
+            "name": "Tools",
+            "level": "",
+            "keywords": [
+                [
+                    "Git/GitHub"
+                ],
+                [
+                    "Postman"
+                ],
+                [
+                    "Adobe Photoshop"
+                ],
+                [
+                    "Microsoft Office"
+                ],
+                [
+                    "Google Docs"
+                ]
+            ]
+        },
+        {
+            "name": "Systems",
+            "level": "",
+            "keywords": [
+                [
+                    "Windows"
+                ],
+                [
+                    "Ubuntu/Linux"
+                ]
+            ]
+        },
+        {
+            "name": "IDEs",
+            "level": "",
+            "keywords": [
+                [
+                    "Pycharm"
+                ],
+                [
+                    "Webstorm"
+                ],
+                [
+                    "VSCode"
+                ],
+                [
+                    "Android Studio"
+                ]
+            ]
+        },
+        {
+            "name": "Game Engines",
+            "level": "",
+            "keywords": [
+                [
+                    "Godot Engine"
+                ],
+                [
+                    "Unity3D"
+                ]
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Portuguese",
+            "fluency": "Native"
+        },
+        {
+            "language": "English",
+            "fluency": "Advanced"
+        }
+    ],
+    "education": [
+        {
+            "institution": "Universidade Federal de Ouro Preto, Brazil",
+            "url": "https://direito.ufop.br/",
+            "area": "Law",
+            "studyType": "B.A.",
+            "startDate": "2017-09-16",
+            "endDate": "2026-09-16",
+            "score": "",
+            "courses": [
+                "oi",
+                "tchau"
+            ]
+        },
+        {
+            "institution": "Instituto de Gestão e Tecnologia da Informação, Brazil",
+            "url": "https://www.igti.com.br",
+            "area": "Python Developer Bootcamp",
+            "studyType": "Bootcamp",
+            "startDate": "2020-09-10",
+            "endDate": "2020-11-19",
+            "score": "",
+            "courses": []
+        },
+        {
+            "institution": "Instituto de Gestão e Tecnologia da Informação, Brazil",
+            "url": "https://www.igti.com.br",
+            "area": "Python Developer Bootcamp",
+            "studyType": "Bootcamp",
+            "startDate": "2020-09-10",
+            "endDate": "2020-11-19",
+            "score": "",
+            "courses": []
+        }
+    ],
+    "work": [
+        {
+            "name": "Alcance Innovation Consulting",
+            "position": "Trainee Innovation Analyst",
+            "website": "",
+            "startDate": "2020-10-20",
+            "endDate": "2022-10-20",
+            "summary": "Management support to innovation and digital transformation projects.",
+            "location": "Remote",
+            "highlights": [
+                "Automated",
+                "Everything"
+            ]
+        },
+        {
+            "name": "Universidade Federal de Ouro Preto",
+            "position": "Technical Support",
+            "website": "",
+            "startDate": "2020-08-04",
+            "endDate": "",
+            "summary": "Help teachers with the Moodle Platform and other related technologies.",
+            "location": "Remote",
+            "highlights": []
+        },
+        {
+            "name": "Universidade Federal de Ouro Preto",
+            "position": "Webmaster",
+            "website": "",
+            "startDate": "2018-05-01",
+            "endDate": "2019-12-31",
+            "summary": "Develop and manage the website <a href=\"https://estudosdebarragens.ufop.br\" target=\"_blank\">estudosdebarragens.ufop.br</a> for the University's project <i>Rede UFOP de Estudos Sobre as Consequências dos Rompimentos de Barragens</i>, and gather the necessary data through partnerships, manual research and web scraping.",
+            "location": "Ouro Preto, Brazil",
+            "highlights": []
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Association República Kasa Cheia",
+            "url": "",
+            "position": "Treasurer",
+            "startDate": "2020-03-02",
+            "endDate": "",
+            "summary": "Oversee expenditures and look after the association’s fund, making sure their interest is met without loosing liquidity.",
+            "highlights": [
+                "sakdmaskdm",
+                "maskmdkas"
+            ]
+        },
+        {
+            "organization": "Association República Tôa Tôa",
+            "url": "",
+            "position": "Treasurer",
+            "startDate": "2018-01-01",
+            "endDate": "2019-03-01",
+            "summary": "Oversee expenditures and look after the association’s fund, making sure their interest is met without loosing liquidity.",
+            "highlights": []
+        }
+    ],
+    "awards": [
+        {
+            "title": "TOEFL ITP",
+            "date": "2017-01-01",
+            "awarder": "ETS",
+            "summary": "Level C1: _Proficient English user._"
+        },
+        {
+            "title": "Certified Educational Smarketing Professional",
+            "date": "2020-01-01",
+            "awarder": "Rubeus Academy",
+            "summary": "Smarketing for educational institutions focusing on an individualized relationship."
+        },
+        {
+            "title": "Scrum Foundation Professional Certificate",
+            "date": "2020-01-01",
+            "awarder": "CertiProf",
+            "url": "https://certificates.easy-lms.com/exam/session/1cdac0ce-acd0-4338-a93d-9369cc7fd732",
+            "summary": "Covering all the Scrum framework knowledge, key definitions and roles."
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Google IT Automation with Python Professional Certificate",
+            "date": "2021-01-01",
+            "issuer": "Coursera",
+            "url": ""
+        },
+        {
+            "name": "Google IT Support Professional Certificate",
+            "date": "2020-01-01",
+            "issuer": "Coursera",
+            "url": ""
+        },
+        {
+            "name": "Python (Basic)",
+            "date": "2020-01-01",
+            "issuer": "HackerRank",
+            "url": "https://www.hackerrank.com/certificates/2e8bc83d4013"
+        },
+        {
+            "name": "Javascript (Basic)",
+            "date": "2020-01-01",
+            "issuer": "HackerRank",
+            "url": "https://www.hackerrank.com/certificates/8e4e93d661fc"
+        },
+        {
+            "name": "Python",
+            "date": "2020-01-01",
+            "issuer": "Kaggle Learn",
+            "url": "https://www.kaggle.com/learn/certification/eitchtee/python"
+        },
+        {
+            "name": "Intro to Machine Learning",
+            "date": "2020-01-01",
+            "issuer": "Kaggle Learn",
+            "url": "https://www.kaggle.com/learn/certification/eitchtee/intro-to-machine-learning"
+        },
+        {
+            "name": "Emotional Intelligence Course",
+            "date": "2020-01-01",
+            "issuer": "Conquer Online",
+            "url": "https://drive.conqueronline.com.br/Certificados/Inteligência Emocional Conquer/1603935770380-4392ee96-0707-4f23-b83e-a37e11af1cca.pdf"
+        }
+    ],
+    "references": [],
+    "projects": [
+        {
+            "name": "WYGIWYH",
+            "startDate": "2019-01-01",
+            "endDate": "2021-01-01",
+            "description": "Description...",
+            "highlights": [],
+            "url": "https://github.com/eitchtee/WYGIWYH"
+        }
+    ]
+}

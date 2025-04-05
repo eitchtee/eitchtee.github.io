@@ -1,0 +1,20 @@
+---
+layout: default.njk
+---
+
+<article>
+    <h1 class="fs-1">{{ title }}</h1>
+    <p class="lead mb-0">{{ summary }}</p>
+    <div class="d-flex flex-md-row flex-column row-gap-1 column-gap-3 text-secondary-emphasis">
+        <div>
+            <i class="fa-solid fa-calendar me-2"></i>{{ page.date | format_date_as_locale_string("DATE_SHORT") }}
+        </div>
+        <div>
+            <i class="fa-solid fa-language me-2"></i>{{ config.languages[language].name }}
+        </div>
+    </div>
+    <hr>
+    <div class="markdown-body">
+        {{ content | safe}}
+    </div>
+</article>

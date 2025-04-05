@@ -1,0 +1,14 @@
+{
+  "languages": {
+    "en": {
+      "name": "English",
+      "flag": "https://flagcdn.com/w20/us.png",
+      "code": "en"
+    },
+    "pt": {
+      "name": "Português",
+      "flag": "https://flagcdn.com/w20/br.png",
+      "code": "pt"
+    }
+  }
+}

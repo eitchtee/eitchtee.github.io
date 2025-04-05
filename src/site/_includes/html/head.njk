@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="{{ page.lang }}" dir="{{ dir }}">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            {% if title %}{{ title }} :: {% endif %}Herculino Trotta</title>
+
+        <meta name="description" content="{{ meta.descricao }}"/>
+        <link rel="canonical" href="{{ directus.collections.site.url }}{{ page.url }}"/>
+
+        <meta property="og:title" content="{{ meta.titulo or titulo }}"/>
+        <meta property="og:url" content="{{ directus.collections.site.url }}{{ page.url }}"/>
+        <meta property="og:description" content="{{ meta.descricao }}"/>
+        {% if pagination
+            .items[0]
+            .img_destaque %}
+            <meta property="og:image" content="{{ directus.collections.site.url }}{{ pagination.items[0].img_destaque | directus_asset }}"/>
+        {% else %}
+            <meta property="og:image" content="{{ directus.collections.site.url }}/img/logos/cover.jpg"/>
+        {% endif %}
+        <meta property="og:type" content={% if tags and "post" in tags %}"article"{%else%}"website"{%endif%}/>
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        {# <meta name="twitter:site" content="@publisher_handle"> #}
+        <meta name="twitter:title" content="{{ meta.titulo or titulo }}">
+        <meta name="twitter:description" content="{{ meta.descricao | truncate(200) }}">
+        <meta name="twitter:creator" content="@author_handle">
+        {% if pagination
+            .items[0]
+            .img_destaque %}
+            <meta name="twitter:image" content="{{ directus.collections.site.url }}{{ pagination.items[0].img_destaque | directus_asset }}">
+        {% else %}
+            <meta name="twitter:image" content="{{ directus.collections.site.url }}/img/logos/cover.jpg">
+        {% endif %}
+
+        <link rel="icon" type="image/png" href="/static/favicon/favicon-96x96.png" sizes="96x96"/>
+        <link rel="icon" type="image/svg+xml" href="/static/favicon/favicon.svg"/>
+        <link rel="shortcut icon" href="/static/favicon/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png"/>
+        <meta name="apple-mobile-web-app-title" content="Herculino Trotta"/>
+        <link rel="manifest" href="/static/favicon/site.webmanifest"/>
+
+        {% include "html/start_css.njk" %}
+        {% include "html/start_scripts.njk" %}
+    </head>

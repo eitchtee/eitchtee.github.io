@@ -1,0 +1,13 @@
+{
+    "layout": "post.njk",
+    "pagination": {
+        "data": "config.languages",
+        "size": 1,
+        "alias": "lang"
+    },
+    "permalink": "{{ lang }}/blog/posts/{{ page.fileSlug }}.html",
+    "tags": "post",
+    "eleventyComputed": {
+        "locale": "{{ lang }}"
+    }
+}

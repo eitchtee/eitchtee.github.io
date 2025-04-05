@@ -1,0 +1,35 @@
+---
+title: "Projects"
+layout: default.njk
+---
+
+{% import "resume/section.njk" as section %}
+
+{% call section.section() %}
+
+{{ section.title('Projects') }}
+
+<div class="">
+    {% for project in collections.project %}
+        <div class="mb-4">
+            <div class="d-md-flex justify-content-between align-items-center mb-2">
+                <div class="mb-0">
+                    <span class="fw-bold">{{ project.data.title }}</span> • {{ project.data[locale].tag_line }}
+                </div>
+                <div class="text-secondary-emphasis"></div>
+            </div>
+            <div class="mb-2">
+                {% if project.data.badges %}
+                    {% for badge in project.data.badges %}
+                        <img alt="Project Badge" src="{{ badge}}" class="me-2">
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div>
+                {{ project.data[locale].description }}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endcall %}

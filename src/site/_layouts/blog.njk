@@ -1,0 +1,33 @@
+---
+title: "Blog"
+layout: default.njk
+---
+
+{% import "resume/section.njk" as section %}
+
+{% call section.section() %}
+
+{{ section.title('Blog') }}
+
+<div class="">
+    {% for post in collections.post %}
+        <div class="mb-4">
+            <div class="mb-0">
+                <a href="{{ post.page.url | locale_url }}">
+                    <span class="fw-bold">{{ post.data.title }}</span>
+                </a>
+            </div>
+            <div class="d-flex flex-md-row flex-column row-gap-1 column-gap-3 small text-secondary-emphasis">
+                <div>
+                    <i class="fa-solid fa-calendar me-2"></i>{{ post.page.date | format_date_as_locale_string("DATE_SHORT") }}
+                </div>
+                <div>
+                    <i class="fa-solid fa-language me-2"></i>{{ config.languages[post.data.language].name }}
+                </div>
+                {# <div><img src="{{ config.languages[post.data.language].flag }}" width="20" alt="{{ config.languages[post.data.language].name }}"></div> #}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endcall %}

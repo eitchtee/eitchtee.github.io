@@ -1,0 +1,279 @@
+---
+layout: default.njk
+---
+
+{% import "resume/section.njk" as section %}
+
+<main>
+    <!-- Header -->
+    <div class="row mb-3">
+        <div class="text-center">
+            <h1 class="fw-bold h2 mb-1">{{ resume[resume_name].basics.name }}</h1>
+            <p class="text-secondary-emphasis mb-2">{{ resume[resume_name].basics.label }}</p>
+        </div>
+        <div class="justify-content-center d-flex flex-row flex-wrap column-gap-5 mb-2">
+            {% if resume[resume_name].basics.phone %}
+                <div>
+                    <a href="tel:{{ resume[resume_name].basics.phone }}" class="text-decoration-none text-body">
+                        <i class="fa-solid fa-phone fa-fw me-1"></i>{{ resume[resume_name].basics.phone }}</a>
+                </div>
+            {% endif %}
+            <div>
+                <span class="order-1">
+                    <i class="fa-solid fa-location-dot fa-fw me-1 order-2"></i>{{ resume[resume_name].basics.location.city }}, {{ resume[resume_name].basics.location.region }}</span>
+            </div>
+            <div>
+                <a href="mailto:{{ resume[resume_name].basics.email }}" class="text-decoration-none text-body">
+                    <i class="fa-solid fa-envelope fa-fw me-1"></i>{{ resume[resume_name].basics.email }}</a>
+            </div>
+        </div>
+        <div class="justify-content-center d-flex flex-row flex-wrap column-gap-5 mb-3">
+            {% for profile in resume[resume_name].basics.profiles %}
+                <div>
+                    <a href="{{ profile.url }}" target="_blank" class="text-decoration-none text-body">
+                        <i class="fa-brands fa-{{ profile.network | lower }} fa-fw me-1"></i>{{ profile.username }}</a>
+                </div>
+            {% endfor %}
+            {% if resume[resume_name].basics.url %}
+                <div>
+                    <a href="{{ resume[resume_name].basics.url }}" target="_blank" class="text-decoration-none text-body">
+                        <i class="fa-solid fa-link fa-fw me-1"></i>{{ resume[resume_name].basics.url | replace('https://', '') | replace('http://', '') }}</a>
+                </div>
+            {% endif %}
+        </div>
+        <p class="mb-1 text-start">{{ resume[resume_name].basics.summary }}</p>
+    </div>
+
+    <!-- Experience -->
+    {% if resume[resume_name]
+        .work and resume[resume_name]
+        .work | length > 0 %}
+        {% call section.section() -%}
+        {{ section.title('Experience' | i18n) }}
+        <div class="">
+            {% for work in resume[resume_name].work %}
+                <div class="mb-2">
+                    <div class="d-md-flex justify-content-between align-items-center">
+                        <div class="h6 fw-bold mb-0">{{ work.position }}</div>
+                        <div class="text-secondary-emphasis">
+                            {{ work.startDate | format_date("MMM yyyy") }} - 
+                                {% if work.endDate | length %}
+                                {{ work.endDate | format_date("MMM yyyy") }}
+                            {% else %}
+                                {{ 'Present' | i18n }}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="d-md-flex justify-content-between align-items-center">
+                        <div class="mb-0">{{ work.name }}</div>
+                        <div class="mb-0 text-secondary-emphasis fst-italic">{{ work.location }}</div>
+                    </div>
+                    {% if work.highlights | length %}
+                        <ul class="mb-0">
+                            {% for highlight in work.highlights %}
+                                <li>{{ highlight }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+        {% endcall %}
+    {% endif %}
+
+    <!-- Education -->
+    {% if resume[resume_name]
+        .education and resume[resume_name]
+        .education | length > 0 %}
+        {% call section.section() -%}
+        {{ section.title('Education' | i18n) }}
+        <div class="">
+            {% for education in resume[resume_name].education %}
+                <div class="mb-2">
+                    <div class="d-md-flex justify-content-between align-items-center">
+                        <div class="mb-0">
+                            <span class="fw-bold">{{ education.area }}, {{ education.studyType }}</span>, {{ education.institution }}
+                        </div>
+                        <div class="text-secondary-emphasis">
+                            {% if education.startDate | length and education.endDate | format_date("yyyy") > education.startDate | format_date("yyyy")and education.endDate | date <= today %}{{ education.startDate | format_date("yyyy") }} - {% endif %}
+                            {% if education.endDate | length and education.endDate | date < today %}
+                                {{ education.endDate | format_date("yyyy") }}
+                            {% elif education.endDate | length %}
+                                {{ 'Expected' | i18n  }}
+                                {{ education.endDate | format_date("yyyy") }}
+                            {% else %}
+                                {{ 'Attending' | i18n }}
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% if education.courses and education.courses | length > 0 %}
+                        <div>
+                            {{ "Relevant Coursework:" | i18n }}
+                            {{ education.courses | join(', ') }}
+                        </div>
+                    {% endif %}
+                    <p></p>
+                </div>
+            {% endfor %}
+        </div>
+        {% endcall %}
+    {% endif %}
+
+    <!-- Skills -->
+    {% if resume[resume_name]
+        .skills and resume[resume_name]
+        .skills | length > 0 %}
+        {% call section.section() -%}
+        {{ section.title('Skills' | i18n) }}
+        <!-- Technical Skills -->
+        <div class="two-columns-grid">
+            {% for skill in resume[resume_name].skills %}
+                <div class="fw-bold pe-4">{{ skill.name }}</div>
+                {% if skill.keywords and skill.keywords | length > 0 %}
+                    <div>{{ skill.keywords | join(', ') }}</div>
+                {% else %}
+                    <div></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        {%- endcall %}
+    {% endif %}
+
+    <!-- Languages -->
+    {% if resume[resume_name]
+        .languages and resume[resume_name]
+        .languages | length > 0 %}
+        {% call section.section() -%}
+        {{ section.title('Languages' | i18n) }}
+        <div class="two-columns-grid">
+            {% for language in resume[resume_name].languages %}
+                <div class="fw-bold pe-4">{{ language.language }}</div>
+                <div>{{ language.fluency }}</div>
+            {% endfor %}
+        </div>
+        {% endcall %}
+    {% endif %}
+
+    <!-- Projects -->
+    {% if resume[resume_name]
+        .projects and resume[resume_name]
+        .projects | length > 0 %}
+        {% call section.section() -%}
+        {{ section.title('Projects' | i18n) }}
+        <div class="">
+            {% for project in resume[resume_name].projects %}
+                <div class="mb-3">
+                    <p class="mb-0">
+                        <span class="fw-bold">{{ project.name }}</span>. {{ project.description }}
+                        {% if project.url %}
+                            <a href="{{ project.url }}" target="_blank" class="ms-2 small text-decoration-none">
+                                <i class="fa-solid fa-link fa-fw me-1"></i>{{ project.url | replace('https://', '') | replace('http://', '') }}
+                            </a>
+                        {% endif %}
+                    </p>
+                    {% if project.highlights and project.highlights | length > 0 %}
+                        <ul class="mb-2">
+                            {% for highlight in project.highlights %}
+                                <li>{{ highlight }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+        {% endcall %}
+    {% endif %}
+
+    <!-- Volunteer -->
+    {% if resume[resume_name]
+        .volunteer and resume[resume_name]
+        .volunteer | length > 0 %}
+        {% call section.section() -%}
+        {{ section.title('Volunteer' | i18n) }}
+        <div class="">
+            {% for volunteer in resume[resume_name].volunteer %}
+                <div class="mb-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="h6 fw-bold mb-0">{{ volunteer.position }}</h3>
+                        <span class="text-secondary-emphasis">
+                            {{ volunteer.startDate | format_date("MMM yyyy") }} - 
+                                {% if volunteer.endDate | length %}
+                                {{ volunteer.endDate | format_date("MMM yyyy") }}
+                            {% else %}
+                                {{ 'Present' | i18n }}
+                            {% endif %}
+                        </span>
+                    </div>
+                    <div class="mb-1">{{ volunteer.organization }}</div>
+                    {% if volunteer.highlights | length %}
+                        <ul class="mb-0">
+                            {% for highlight in volunteer.highlights %}
+                                <li>{{ highlight }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+        {% endcall %}
+    {% endif %}
+
+    <!-- Awards -->
+    {% if resume[resume_name]
+        .awards and resume[resume_name]
+        .awards | length > 0 %}
+        {% call section.section() -%}
+        {{ section.title('Awards' | i18n) }}
+        <div class="">
+            {% for award in resume[resume_name].awards %}
+                <div class="mb-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="h6 fw-bold mb-0">{{ award.title }}</h3>
+                        <span class="text-secondary-emphasis">
+                            {{ award.date | format_date("yyyy") }}
+                        </span>
+                    </div>
+                    {% if award.summary %}
+                        <p class="mb-0">{{ award.summary | markdown_inline | safe }}</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+        {% endcall %}
+    {% endif %}
+
+    <!-- Certifications -->
+    {% if resume[resume_name]
+        .certificates and resume[resume_name]
+        .certificates | length > 0 %}
+        {% call section.section() -%}
+        {{ section.title('Certifications' | i18n) }}
+        <div class="">
+            {% for certificate in resume[resume_name].certificates %}
+                <div class="mb-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="h6 fw-bold mb-0">
+                            {% if certificate.url %}
+                                <a href="{{ certificate.url }}" target="_blank" class="text-decoration-none text-body small">
+                                    {{ certificate.name }}
+                                    <i class="fa-solid fa-arrow-up-right-from-square ms-2 no-print"></i>
+                                </a>
+                            {% else %}
+                                {{ certificate.name }}
+                            {% endif %}
+                        </h3>
+                        <span class="text-secondary-emphasis">
+                            {% if certificate.date %}
+                                {{ certificate.date | format_date("yyyy") }}
+                            {% endif %}
+                        </span>
+                    </div>
+                    <p class="mb-0">
+                        {{ certificate.issuer }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+        {% endcall %}
+    {% endif %}
+</main>

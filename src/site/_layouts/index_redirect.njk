@@ -1,0 +1,41 @@
+{% include "html/head.njk" %}
+
+<body class="d-flex flex-column min-vh-100">
+    <script>
+        var lang = navigator.language || navigator.browserLanguage; //for IE
+
+        if (lang.includes("pt")) {
+            window
+                .location
+                .replace("/pt");
+        } else {
+            window
+                .location
+                .replace("/en");
+        }
+    </script>
+
+    <noscript>
+        <div style="height: 100%; width: 100%; margin: 0!important" class="ui grid middle aligned">
+            <div class="row">
+                <div class="column">
+                    <div class="ui container center aligned">
+                        <div class="ui buttons">
+                            <a href="/pt" class="ui button green">
+                                <i class="br flag"></i>Português</a>
+                            <div class="or" data-text="&"></div>
+                            <a href="/en" class="ui button blue">
+                                <i class="us flag"></i>English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+
+    {{ content | safe }}
+
+    {% include "html/end_scripts.njk" %}
+</body>
+
+</html>

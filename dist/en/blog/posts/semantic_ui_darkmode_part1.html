@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" dir="">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Dark Theme for SemanticUI :: Herculino Trotta</title>
+
+        <meta name="description" content=""/>
+        <link rel="canonical" href="/en/blog/posts/semantic_ui_darkmode_part1.html"/>
+
+        <meta property="og:title" content=""/>
+        <meta property="og:url" content="/en/blog/posts/semantic_ui_darkmode_part1.html"/>
+        <meta property="og:description" content=""/>
+        
+            <meta property="og:image" content="/img/logos/cover.jpg"/>
+        
+        <meta property="og:type" content="article"/>
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:creator" content="@author_handle">
+        
+            <meta name="twitter:image" content="/img/logos/cover.jpg">
+        
+
+        <link rel="icon" type="image/png" href="/static/favicon/favicon-96x96.png" sizes="96x96"/>
+        <link rel="icon" type="image/svg+xml" href="/static/favicon/favicon.svg"/>
+        <link rel="shortcut icon" href="/static/favicon/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png"/>
+        <meta name="apple-mobile-web-app-title" content="Herculino Trotta"/>
+        <link rel="manifest" href="/static/favicon/site.webmanifest"/>
+
+        
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="/static/css/markdown.css">
+<link rel="stylesheet" href="/static/css/print.css" media="print">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/hyperscript.org@0.9.14"></script>
+<script src="/static/js/theme-switcher.js"></script>
+    </head>
+
+<body class="d-flex flex-column min-vh-100 bg-secondary-subtle font-monospace">
+    <nav class="navbar navbar-expand-lg bg-transparent no-print mb-2">
+        <div class="container px-2 px-lg-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                        
+                        <li class="nav-item fs-5">
+                            <a class="nav-link "  href="/en/">Resume</a>
+                        </li>
+                    
+                        
+                        <li class="nav-item fs-5">
+                            <a class="nav-link "  href="/en/projects/">Projects</a>
+                        </li>
+                    
+                        
+                        <li class="nav-item fs-5">
+                            <a class="nav-link "  href="/en/blog/">Blog</a>
+                        </li>
+                    
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center text-body" 
+                            type="button" 
+                            id="bd-theme" 
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false">
+                        <i class="fa-solid fa-circle-half-stroke theme-icon-active fa-fw"></i>
+                        <span class="ms-2 d-lg-none" id="bd-theme-text">Toggle theme</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="bd-theme">
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+                                <i class="fa-solid fa-sun dropdown-item-icon me-2"></i>
+                                Light
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                                <i class="fa-solid fa-moon dropdown-item-icon me-2"></i>
+                                Dark
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
+                                <i class="fa-solid fa-circle-half-stroke dropdown-item-icon me-2"></i>
+                                Auto
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="vr mx-2 d-none d-lg-inline-block"></div>
+                <div class="dropdown">
+                    <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center text-body" type="button" id="languagePickerButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://flagcdn.com/w20/us.png" width="20" alt="English" class="me-2">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="languagePickerButton">
+                        
+                            
+                            <li>
+                                <a class="dropdown-item active"  aria-current="true">
+                                    <img src="https://flagcdn.com/w20/us.png" width="20" alt="English" class="me-2">
+                                    English
+                                </a>
+                            </li>
+                        
+                            
+                            <li>
+                                <a class="dropdown-item " href="/pt/blog/posts/semantic_ui_darkmode_part1.html" >
+                                    <img src="https://flagcdn.com/w20/br.png" width="20" alt="Português" class="me-2">
+                                    Português
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container bg-body shadow-sm px-5 py-4 text-body">
+        
+<article>
+    <h1 class="fs-1">Dark Theme for SemanticUI</h1>
+    <p class="lead mb-0"></p>
+    <div class="d-flex flex-md-row flex-column row-gap-1 column-gap-3 text-secondary-emphasis">
+        <div>
+            <i class="fa-solid fa-calendar me-2"></i>7/21/2020
+        </div>
+        <div>
+            <i class="fa-solid fa-language me-2"></i>English
+        </div>
+    </div>
+    <hr>
+    <div class="markdown-body">
+        <div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p>This is an achieved copy of a blog post on my old site. While I no longer use the system described here, it should work.</p>
+</div>
+<hr>
+<p>You might've realised by now that this website has a convenient darkmode toggle, if you haven't, I will assume everything is working as intendend and the site has followed your preferences so perfectly you didn't even need to look for one.</p>
+<p><img src="/assets/semantic_ui_darkmode_part1/darkmode_toggle.gif" alt="Toggling darkmode"></p>
+<p>Usually the implementation of such modules is quite convoluted requiring a rewrite of your css, luckly for us, FomanticUI, the up-to-date fork of SemanticUI, and to a certain extent SemanticUI itself has already done 90% of the hard work through the <code>inverted</code> class.</p>
+<h2>The toggle</h2>
+<p>I've opted to do a very simple icon button as my toggle, but you can use checkboxes, buttons or anything else, just make sure to adapt your code accordingly.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ui button icon basic<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>darkmode<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>moon icon<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
+<h2>Invert everything</h2>
+<p>FomanticUI's <code>inverted</code> is a built-in tag avaliable to almost all ui elements which, as the name states, inverts its color, making it an easy fit on a dark mode such as mine.</p>
+<p>Since <abbr title="Fomantic UI / Semantic UI">FUI</abbr> requires JQuerry to work properly, I've resorted to it to do the heavy lifting on our code.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">toggleDarkMode</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// add fomantic's inverted class to all ui elements</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">'.ui'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addClass</span><span class="token punctuation">(</span><span class="token string">'inverted'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// add custom inverted class to body</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addClass</span><span class="token punctuation">(</span><span class="token string">'inverted'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// simple toggle icon change</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#darkmode > i"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">removeClass</span><span class="token punctuation">(</span><span class="token string">'moon'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#darkmode > i"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addClass</span><span class="token punctuation">(</span><span class="token string">'sun'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p><code>toggleDarkMode</code> will add the <code>inverted</code> class to all <code>ui</code> elements, since, usually, they are the ones <abbr title="Fomantic UI / Semantic UI">FUI</abbr> offers. Also, I've had to add our magic class to <code>body</code> and specify a dark background color since <abbr title="Fomantic UI / Semantic UI">FUI</abbr> don't handle that.</p>
+<p>Also, our functions will change the icons to fit with the current theme.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span>
+  <span class="token property">--darkBG</span><span class="token punctuation">:</span> #232B32<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">body.inverted</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--darkBG<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>On the other hand, our <code>toggleLightMode</code> function will undo everything the previou function did by removing the class from all elements and changing our button icon to something more appropriate.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">toggleLightMode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// remove fomantic's inverted from all ui elements</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">'.ui'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">removeClass</span><span class="token punctuation">(</span><span class="token string">'inverted'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// remove custom inverted class to body</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">removeClass</span><span class="token punctuation">(</span><span class="token string">'inverted'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// change button icon</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#darkmode > i"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">removeClass</span><span class="token punctuation">(</span><span class="token string">'sun'</span><span class="token punctuation">)</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#darkmode > i"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addClass</span><span class="token punctuation">(</span><span class="token string">'moon'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>Now all you have to do is listen for a click on your toggle.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#darkmode'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>darkmodeEnabled<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">toggleLightMode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token function">toggleDarkMode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2>Conclusion</h2>
+<p>Today we learned how to do a very basic Dark theme toggle for your website leveraging Fomantic UI's built-in options.</p>
+<p>Your final code should look something like this:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">:root</span> <span class="token punctuation">{</span>
+    <span class="token property">--darkBG</span><span class="token punctuation">:</span> #232B32<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token selector">body.inverted</span> <span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--darkBG<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ui button icon basic<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>darkmode<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>moon icon<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">function</span> <span class="token function">toggleDarkMode</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// add fomantic's inverted class to all ui elements</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">'.ui'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addClass</span><span class="token punctuation">(</span><span class="token string">'inverted'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// add custom inverted class to body</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addClass</span><span class="token punctuation">(</span><span class="token string">'inverted'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// simple toggle icon change</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#darkmode > i"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">removeClass</span><span class="token punctuation">(</span><span class="token string">'moon'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#darkmode > i"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addClass</span><span class="token punctuation">(</span><span class="token string">'sun'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">function</span> <span class="token function">toggleLightMode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// remove fomantic's inverted from all ui elements</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">'.ui'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">removeClass</span><span class="token punctuation">(</span><span class="token string">'inverted'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// remove custom inverted class to body</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">removeClass</span><span class="token punctuation">(</span><span class="token string">'inverted'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// change button icon</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#darkmode > i"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">removeClass</span><span class="token punctuation">(</span><span class="token string">'sun'</span><span class="token punctuation">)</span>
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#darkmode > i"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addClass</span><span class="token punctuation">(</span><span class="token string">'moon'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#darkmode'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>darkmodeEnabled<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">toggleLightMode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token function">toggleDarkMode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+
+    </div>
+</article>
+    </div>
+
+    <footer class="text-center small text-body-secondary mt-auto py-4 no-print fw-medium">
+        <span>Made with ❤ in Minas Gerais</span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm//prismjs@v1.x/components/prism-core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm//prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+{% macro title(title) %}
+    <h2 class="h6 fw-bolder border-bottom border-secondary border-3 pb-1 mb-2 text-uppercase">{{ title }}</h2>
+{% endmacro %}
+
+{% macro section() %}
+    <section class="mb-3">
+        {{ caller() }}
+    </section>
+{% endmacro %}
