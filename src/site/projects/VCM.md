@@ -8,9 +8,4 @@ en:
 badges:
  - "https://img.shields.io/github/stars/eitchtee/WYGIWYH?style=flat&logo=github&logoColor=black&logoSize=auto&label=stars&labelColor=white&color=black"
  - "https://img.shields.io/github/stars/eitchtee/WYGIWYH?style=flat&logo=github&logoColor=black&logoSize=auto&label=stars&labelColor=white&color=black"
-
-
-tags: project
-
-permalink: false
 ---
