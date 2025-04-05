@@ -10,5 +10,8 @@
       "flag": "https://flagcdn.com/w20/br.png",
       "code": "pt"
     }
-  }
+  },
+  "baseUrl": "https://herculino.com",
+  "robots": "/robots.txt",
+  "siteMap": "/sitemap.xml"
 }
