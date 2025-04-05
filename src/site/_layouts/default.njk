@@ -49,6 +49,7 @@
                 <div class="dropdown">
                     <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center text-body" type="button" id="languagePickerButton" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="{{ config.languages[locale].flag }}" width="20" alt="{{ config.languages[locale].name }}" class="me-2">
+                        <span class="ms-2 d-lg-none">{{ config.languages[locale].name }}</span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="languagePickerButton">
                         {% for _, language in config.languages %}
