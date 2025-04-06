@@ -63,4 +63,20 @@ export const translations = {
         'en': 'Attending',
         'pt': 'Cursando'
     },
+    "Toggle theme": {
+        'en': 'Toggle theme',
+        'pt': 'Trocar tema'
+    },
+    "Dark": {
+        'en': 'Dark',
+        'pt': 'Escuro'
+    },
+    "Light": {
+        'en': 'Light',
+        'pt': 'Claro'
+    },
+    "Auto": {
+        'en': 'Auto',
+        'pt': 'Automático'
+    }
 };

@@ -22,25 +22,25 @@
                             data-bs-toggle="dropdown" 
                             aria-expanded="false">
                         <i class="fa-solid fa-circle-half-stroke theme-icon-active fa-fw"></i>
-                        <span class="ms-2 d-lg-none" id="bd-theme-text">Toggle theme</span>
+                        <span class="ms-2 d-lg-none" id="bd-theme-text">{{ "Toggle theme" | i18n }}</span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="bd-theme">
                         <li>
                             <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
                                 <i class="fa-solid fa-sun dropdown-item-icon me-2"></i>
-                                Light
+                                {{ "Light" | i18n }}
                             </button>
                         </li>
                         <li>
                             <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
                                 <i class="fa-solid fa-moon dropdown-item-icon me-2"></i>
-                                Dark
+                                {{ "Dark" | i18n }}
                             </button>
                         </li>
                         <li>
                             <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
                                 <i class="fa-solid fa-circle-half-stroke dropdown-item-icon me-2"></i>
-                                Auto
+                                {{ "Auto" | i18n }}
                             </button>
                         </li>
                     </ul>
