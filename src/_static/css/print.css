@@ -1,7 +1,7 @@
 :root {
     --bs-link-color-rgb: 0, 0, 0 !important;
     --bs-link-hover-color-rgb: 76, 76, 76 !important;
-    }
+}
 
 a.unroll-link[href]:after,
 .unroll-link a[href]:after {

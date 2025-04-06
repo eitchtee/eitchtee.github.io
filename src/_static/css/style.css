@@ -1,7 +1,8 @@
 :root {
     a {
         text-decoration-style: dotted;
-        text-underline-offset: 0.1em;
+        text-underline-offset: 0.2em;
+        text-decoration-thickness: 0.1rem;
     }
 }
 
