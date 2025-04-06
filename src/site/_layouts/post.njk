@@ -7,10 +7,10 @@ layout: default.njk
     <p class="lead mb-0">{{ summary }}</p>
     <div class="d-flex flex-md-row flex-column row-gap-1 column-gap-3 text-secondary-emphasis">
         <div>
-            <i class="fa-solid fa-calendar me-2"></i>{{ page.date | format_date_as_locale_string("DATE_SHORT") }}
+            <i class="fa-solid fa-calendar me-1"></i>{{ page.date | format_date_as_locale_string("DATE_SHORT") }}
         </div>
         <div>
-            <i class="fa-solid fa-language me-2"></i>{{ config.languages[language].name }}
+            <i class="fa-solid fa-language me-1"></i>{{ config.languages[language].name | i18n }}
         </div>
     </div>
     <hr>
