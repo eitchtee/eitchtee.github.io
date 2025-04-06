@@ -1,8 +1,10 @@
 import { EleventyI18nPlugin } from "@11ty/eleventy";
 import i18n from "eleventy-plugin-i18n";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
-import markdownIt from "markdown-it"
+
 import { DateTime } from "luxon";
+
+import markdownIt from "markdown-it"
 import MarkdownItGitHubAlerts from "markdown-it-github-alerts";
 import markdownItAbbr from "markdown-it-abbr/dist/markdown-it-abbr.js";
 
@@ -108,6 +110,54 @@ export default async function (eleventyConfig) {
     })
 
     eleventyConfig.addFilter("debug", (content) => `<pre>${content}</pre>`);
+
+    eleventyConfig.addCollection("projects", function (collectionApi) {
+        // --- Step 1: Get the items for the 'project' collection ---
+        const projectItems = collectionApi.getFilteredByGlob("src/site/projects/*.md");
+
+        // --- Step 2: Sort the retrieved items with multi-level logic ---
+        const sortedProjectItems = [...projectItems].sort((a, b) => {
+            const orderA = a.data.order;
+            const orderB = b.data.order;
+
+            // Use more robust checks for existence (handle order: 0 correctly)
+            // Checks if the key exists and is not null/undefined
+            const hasOrderA = orderA !== undefined && orderA !== null;
+            const hasOrderB = orderB !== undefined && orderB !== null;
+
+            // ** Primary Sort: Existence of 'order' **
+            // Items *with* 'order' should come before items *without* 'order'.
+            if (hasOrderA && !hasOrderB) {
+                return -1; // a comes first
+            }
+            if (!hasOrderA && hasOrderB) {
+                return 1;  // b comes first (so a comes after)
+            }
+
+            // ** Secondary Sort: Value of 'order' (numerical) **
+            // This block only runs if *both* have 'order' or *neither* has 'order'.
+            // If both have 'order', compare them numerically.
+            if (hasOrderA && hasOrderB) {
+                // If orders are different, sort by order value
+                if (orderA !== orderB) {
+                    return orderA - orderB; // Ascending numerical sort
+                }
+                // If orders are the same, fall through to the tie-breaker
+            }
+
+            // ** Tie-breaker Sort: Value of 'title' (alphabetical) **
+            // This runs if:
+            // 1) Both items have the same 'order' value.
+            // 2) Neither item has an 'order' value.
+            const titleA = a.data.title || ""; // Use default empty string if title is missing
+            const titleB = b.data.title || ""; // Use default empty string if title is missing
+
+            return titleA.localeCompare(titleB); // Alphabetical sort
+        });
+
+        // --- Step 3: Return the sorted array ---
+        return sortedProjectItems;
+    });
 };
 
 export const config = {
