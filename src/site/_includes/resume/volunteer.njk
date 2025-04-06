@@ -1,0 +1,33 @@
+<!-- Volunteer -->
+{% if resume[resume_name]
+    .volunteer and resume[resume_name]
+    .volunteer | length > 0 %}
+    {% call section.section() -%}
+    {{ section.title('Volunteer' | i18n) }}
+    <div class="">
+        {% for volunteer in resume[resume_name].volunteer %}
+            <div class="mb-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="h6 fw-bold mb-0">{{ volunteer.position }}</h3>
+                    <span class="text-secondary-emphasis text-nowrap">
+                        {{ volunteer.startDate | format_date("MMM yyyy") }} - 
+                                {% if volunteer.endDate | length %}
+                            {{ volunteer.endDate | format_date("MMM yyyy") }}
+                        {% else %}
+                            {{ 'Present' | i18n }}
+                        {% endif %}
+                    </span>
+                </div>
+                <div class="mb-1">{{ volunteer.organization }}</div>
+                {% if volunteer.highlights | length %}
+                    <ul class="mb-0">
+                        {% for highlight in volunteer.highlights %}
+                            <li>{{ highlight }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    {% endcall %}
+{% endif %}

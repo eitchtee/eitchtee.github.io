@@ -1,0 +1,19 @@
+<!-- Skills -->
+{% if resume[resume_name]
+    .skills and resume[resume_name]
+    .skills | length > 0 %}
+    {% call section.section() -%}
+    {{ section.title('Skills' | i18n) }}
+    <!-- Technical Skills -->
+    <div class="two-columns-grid">
+        {% for skill in resume[resume_name].skills %}
+            <div class="fw-bold pe-4">{{ skill.name }}</div>
+            {% if skill.keywords and skill.keywords | length > 0 %}
+                <div>{{ skill.keywords | join(', ') }}</div>
+            {% else %}
+                <div></div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {%- endcall %}
+{% endif %}

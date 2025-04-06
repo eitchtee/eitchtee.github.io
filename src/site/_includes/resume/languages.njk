@@ -1,0 +1,14 @@
+<!-- Languages -->
+{% if resume[resume_name]
+    .languages and resume[resume_name]
+    .languages | length > 0 %}
+    {% call section.section() -%}
+    {{ section.title('Languages' | i18n) }}
+    <div class="two-columns-grid">
+        {% for language in resume[resume_name].languages %}
+            <div class="fw-bold pe-4">{{ language.language }}</div>
+            <div>{{ language.fluency }}</div>
+        {% endfor %}
+    </div>
+    {% endcall %}
+{% endif %}

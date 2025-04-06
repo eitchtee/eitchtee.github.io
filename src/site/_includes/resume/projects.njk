@@ -1,0 +1,29 @@
+<!-- Projects -->
+{% if resume[resume_name]
+    .projects and resume[resume_name]
+    .projects | length > 0 %}
+    {% call section.section() -%}
+    {{ section.title('Projects' | i18n) }}
+    <div class="">
+        {% for project in resume[resume_name].projects %}
+            <div class="mb-3">
+                <p class="mb-0">
+                    <span class="fw-bold">{{ project.name }}</span>. {{ project.description }}
+                    {% if project.url %}
+                        <a href="{{ project.url }}" target="_blank" class="ms-2 small text-decoration-none">
+                            <i class="fa-solid fa-link fa-fw me-1"></i>{{ project.url | replace('https://', '') | replace('http://', '') }}
+                        </a>
+                    {% endif %}
+                </p>
+                {% if project.highlights and project.highlights | length > 0 %}
+                    <ul class="mb-2">
+                        {% for highlight in project.highlights %}
+                            <li>{{ highlight }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    {% endcall %}
+{% endif %}

@@ -1,0 +1,38 @@
+<!-- Header -->
+<div class="row mb-3">
+    <div class="text-center">
+        <h1 class="fw-bold h2 mb-1">{{ resume[resume_name].basics.name }}</h1>
+        <p class="text-secondary-emphasis mb-2">{{ resume[resume_name].basics.label }}</p>
+    </div>
+    <div class="justify-content-center d-flex flex-row flex-wrap column-gap-5 mb-2">
+        {% if resume[resume_name].basics.phone %}
+            <div>
+                <a href="tel:{{ resume[resume_name].basics.phone }}" class="text-decoration-none text-body">
+                    <i class="fa-solid fa-phone fa-fw me-1"></i>{{ resume[resume_name].basics.phone }}</a>
+            </div>
+        {% endif %}
+        <div>
+            <span class="order-1">
+                <i class="fa-solid fa-location-dot fa-fw me-1 order-2"></i>{{ resume[resume_name].basics.location.city }}, {{ resume[resume_name].basics.location.region }}</span>
+        </div>
+        <div>
+            <a href="mailto:{{ resume[resume_name].basics.email }}" class="text-decoration-none text-body">
+                <i class="fa-solid fa-envelope fa-fw me-1"></i>{{ resume[resume_name].basics.email }}</a>
+        </div>
+    </div>
+    <div class="justify-content-center d-flex flex-row flex-wrap column-gap-5 mb-3">
+        {% for profile in resume[resume_name].basics.profiles %}
+            <div>
+                <a href="{{ profile.url }}" target="_blank" class="text-decoration-none text-body">
+                    <i class="fa-brands fa-{{ profile.network | lower }} fa-fw me-1"></i>{{ profile.username }}</a>
+            </div>
+        {% endfor %}
+        {% if resume[resume_name].basics.url %}
+            <div>
+                <a href="{{ resume[resume_name].basics.url }}" target="_blank" class="text-decoration-none text-body">
+                    <i class="fa-solid fa-link fa-fw me-1"></i>{{ resume[resume_name].basics.url | replace('https://', '') | replace('http://', '') }}</a>
+            </div>
+        {% endif %}
+    </div>
+    <p class="mb-1 text-start">{{ resume[resume_name].basics.summary }}</p>
+</div>

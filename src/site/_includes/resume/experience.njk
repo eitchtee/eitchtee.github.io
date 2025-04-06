@@ -1,0 +1,36 @@
+<!-- Experience -->
+{% if resume[resume_name]
+    .work and resume[resume_name]
+    .work | length > 0 %}
+    {% call section.section() -%}
+    {{ section.title('Experience' | i18n) }}
+    <div class="">
+        {% for work in resume[resume_name].work %}
+            <div class="mb-2">
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <div class="h6 fw-bold mb-0">{{ work.position }}</div>
+                    <div class="text-secondary-emphasis text-nowrap">
+                        {{ work.startDate | format_date("MMM yyyy") }} - 
+                                {% if work.endDate | length %}
+                            {{ work.endDate | format_date("MMM yyyy") }}
+                        {% else %}
+                            {{ 'Present' | i18n }}
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <div class="mb-0">{{ work.name }}</div>
+                    <div class="mb-0 text-secondary-emphasis fst-italic">{{ work.location }}</div>
+                </div>
+                {% if work.highlights | length %}
+                    <ul class="mb-0">
+                        {% for highlight in work.highlights %}
+                            <li>{{ highlight }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    {% endcall %}
+{% endif %}

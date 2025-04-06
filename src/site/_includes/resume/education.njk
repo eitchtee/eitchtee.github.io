@@ -1,0 +1,37 @@
+<!-- Education -->
+{% if resume[resume_name]
+    .education and resume[resume_name]
+    .education | length > 0 %}
+    {% call section.section() -%}
+    {{ section.title('Education' | i18n) }}
+    <div class="">
+        {% for education in resume[resume_name].education %}
+            <div class="mb-2">
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <div class="mb-0">
+                        <span class="fw-bold">{{ education.area }}, {{ education.studyType }}</span>, {{ education.institution }}
+                    </div>
+                    <div class="text-secondary-emphasis text-nowrap">
+                        {% if education.startDate | length and education.endDate | format_date("yyyy") > education.startDate | format_date("yyyy")and education.endDate | date <= today %}{{ education.startDate | format_date("yyyy") }} - {% endif %}
+                        {% if education.endDate | length and education.endDate | date < today %}
+                            {{ education.endDate | format_date("yyyy") }}
+                        {% elif education.endDate | length %}
+                            {{ 'Expected' | i18n  }}
+                            {{ education.endDate | format_date("yyyy") }}
+                        {% else %}
+                            {{ 'Attending' | i18n }}
+                        {% endif %}
+                    </div>
+                </div>
+                {% if education.courses and education.courses | length > 0 %}
+                    <div>
+                        {{ "Relevant Coursework:" | i18n }}
+                        {{ education.courses | join(', ') }}
+                    </div>
+                {% endif %}
+                <p></p>
+            </div>
+        {% endfor %}
+    </div>
+    {% endcall %}
+{% endif %}

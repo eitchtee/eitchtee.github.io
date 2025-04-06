@@ -1,0 +1,34 @@
+<!-- Certifications -->
+{% if resume[resume_name]
+    .certificates and resume[resume_name]
+    .certificates | length > 0 %}
+    {% call section.section() -%}
+    {{ section.title('Certifications' | i18n) }}
+    <div class="">
+        {% for certificate in resume[resume_name].certificates %}
+            <div class="mb-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="h6 fw-bold mb-0">
+                        {% if certificate.url %}
+                            <a href="{{ certificate.url }}" target="_blank" class="text-decoration-none text-body small">
+                                {{ certificate.name }}
+                                <i class="fa-solid fa-arrow-up-right-from-square ms-2 no-print"></i>
+                            </a>
+                        {% else %}
+                            {{ certificate.name }}
+                        {% endif %}
+                    </h3>
+                    <span class="text-secondary-emphasis text-nowrap">
+                        {% if certificate.date %}
+                            {{ certificate.date | format_date("yyyy") }}
+                        {% endif %}
+                    </span>
+                </div>
+                <p class="mb-0">
+                    {{ certificate.issuer }}
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+    {% endcall %}
+{% endif %}

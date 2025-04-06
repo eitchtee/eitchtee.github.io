@@ -1,0 +1,23 @@
+<!-- Awards -->
+{% if resume[resume_name]
+    .awards and resume[resume_name]
+    .awards | length > 0 %}
+    {% call section.section() -%}
+    {{ section.title('Awards' | i18n) }}
+    <div class="">
+        {% for award in resume[resume_name].awards %}
+            <div class="mb-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="h6 fw-bold mb-0">{{ award.title }}</h3>
+                    <span class="text-secondary-emphasis text-nowrap">
+                        {{ award.date | format_date("yyyy") }}
+                    </span>
+                </div>
+                {% if award.summary %}
+                    <p class="mb-0">{{ award.summary | markdown_inline | safe }}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    {% endcall %}
+{% endif %}
