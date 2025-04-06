@@ -55,7 +55,7 @@ layout: default.njk
                 <div class="mb-2">
                     <div class="d-md-flex justify-content-between align-items-center">
                         <div class="h6 fw-bold mb-0">{{ work.position }}</div>
-                        <div class="text-secondary-emphasis">
+                        <div class="text-secondary-emphasis text-nowrap">
                             {{ work.startDate | format_date("MMM yyyy") }} - 
                                 {% if work.endDate | length %}
                                 {{ work.endDate | format_date("MMM yyyy") }}
@@ -94,7 +94,7 @@ layout: default.njk
                         <div class="mb-0">
                             <span class="fw-bold">{{ education.area }}, {{ education.studyType }}</span>, {{ education.institution }}
                         </div>
-                        <div class="text-secondary-emphasis">
+                        <div class="text-secondary-emphasis text-nowrap">
                             {% if education.startDate | length and education.endDate | format_date("yyyy") > education.startDate | format_date("yyyy")and education.endDate | date <= today %}{{ education.startDate | format_date("yyyy") }} - {% endif %}
                             {% if education.endDate | length and education.endDate | date < today %}
                                 {{ education.endDate | format_date("yyyy") }}
@@ -195,7 +195,7 @@ layout: default.njk
                 <div class="mb-2">
                     <div class="d-flex justify-content-between align-items-center">
                         <h3 class="h6 fw-bold mb-0">{{ volunteer.position }}</h3>
-                        <span class="text-secondary-emphasis">
+                        <span class="text-secondary-emphasis text-nowrap">
                             {{ volunteer.startDate | format_date("MMM yyyy") }} - 
                                 {% if volunteer.endDate | length %}
                                 {{ volunteer.endDate | format_date("MMM yyyy") }}
@@ -229,7 +229,7 @@ layout: default.njk
                 <div class="mb-2">
                     <div class="d-flex justify-content-between align-items-center">
                         <h3 class="h6 fw-bold mb-0">{{ award.title }}</h3>
-                        <span class="text-secondary-emphasis">
+                        <span class="text-secondary-emphasis text-nowrap">
                             {{ award.date | format_date("yyyy") }}
                         </span>
                     </div>
@@ -262,7 +262,7 @@ layout: default.njk
                                 {{ certificate.name }}
                             {% endif %}
                         </h3>
-                        <span class="text-secondary-emphasis">
+                        <span class="text-secondary-emphasis text-nowrap">
                             {% if certificate.date %}
                                 {{ certificate.date | format_date("yyyy") }}
                             {% endif %}
