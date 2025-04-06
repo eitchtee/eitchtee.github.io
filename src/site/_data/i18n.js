@@ -87,4 +87,12 @@ export const translations = {
         'en': 'Portuguese',
         'pt': 'Português'
     },
+    "active": {
+        'en': 'active',
+        'pt': 'ativo'
+    },
+    "archived": {
+        'en': 'archived',
+        'pt': 'arquivado'
+    }
 };
