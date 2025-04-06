@@ -2,19 +2,21 @@
 layout: default.njk
 ---
 
-<article>
-    <h1 class="fs-1">{{ title }}</h1>
-    <p class="lead mb-0">{{ summary }}</p>
-    <div class="d-flex flex-md-row flex-column row-gap-1 column-gap-3 text-secondary-emphasis">
-        <div>
-            <i class="fa-solid fa-calendar me-1"></i>{{ page.date | format_date_as_locale_string("DATE_SHORT") }}
+<div class="container bg-body shadow-sm px-lg-5 py-4 text-body">
+    <article>
+        <h1 class="fs-1">{{ title }}</h1>
+        <p class="lead mb-0">{{ summary }}</p>
+        <div class="d-flex flex-md-row flex-column row-gap-1 column-gap-3 text-secondary-emphasis">
+            <div>
+                <i class="fa-solid fa-calendar me-1"></i>{{ page.date | format_date_as_locale_string("DATE_SHORT") }}
+            </div>
+            <div>
+                <i class="fa-solid fa-language me-1"></i>{{ config.languages[language].name | i18n }}
+            </div>
         </div>
-        <div>
-            <i class="fa-solid fa-language me-1"></i>{{ config.languages[language].name | i18n }}
+        <hr>
+        <div class="markdown-body">
+            {{ content | safe}}
         </div>
-    </div>
-    <hr>
-    <div class="markdown-body">
-        {{ content | safe}}
-    </div>
-</article>
+    </article>
+</div>

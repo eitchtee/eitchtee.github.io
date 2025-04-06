@@ -1,79 +1,81 @@
 {% include "html/head.njk" %}
 
 <body class="d-flex flex-column min-vh-100 bg-secondary-subtle font-monospace">
-    <nav class="navbar navbar-expand-lg bg-transparent no-print mb-2">
-        <div class="container px-2 px-lg-0">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    {% for nav in navigation[locale] %}
-                        {% set active = nav.url == page.url %}
-                        <li class="nav-item fs-5">
-                            <a class="nav-link {% if active %}active{% endif %}" {% if active %}aria-current="page"{% endif %} href="{{ nav.url }}">{{ nav.title }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-                <div class="dropdown">
-                    <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center text-body" 
+    {% if not disable_navbar %}
+        <nav class="navbar navbar-expand-lg bg-transparent no-print mb-2">
+            <div class="container px-2 px-lg-0">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        {% for nav in navigation[locale] %}
+                            {% set active = nav.url == page.url %}
+                            <li class="nav-item fs-5">
+                                <a class="nav-link {% if active %}active{% endif %}" {% if active %}aria-current="page"{% endif %} href="{{ nav.url }}">{{ nav.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center text-body" 
                             type="button" 
                             id="bd-theme" 
                             data-bs-toggle="dropdown" 
                             aria-expanded="false">
-                        <i class="fa-solid fa-circle-half-stroke theme-icon-active fa-fw"></i>
-                        <span class="ms-2 d-lg-none" id="bd-theme-text">{{ "Toggle theme" | i18n }}</span>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="bd-theme">
-                        <li>
-                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
-                                <i class="fa-solid fa-sun dropdown-item-icon fa-fw me-2"></i>
-                                {{ "Light" | i18n }}
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
-                                <i class="fa-solid fa-moon dropdown-item-icon fa-fw me-2"></i>
-                                {{ "Dark" | i18n }}
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
-                                <i class="fa-solid fa-circle-half-stroke dropdown-item-icon fa-fw me-2"></i>
-                                {{ "Auto" | i18n }}
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="vr mx-2 d-none d-lg-inline-block"></div>
-                <div class="dropdown">
-                    <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center text-body" type="button" id="languagePickerButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="{{ config.languages[locale].flag }}" width="20" alt="{{ config.languages[locale].name }}" class="me-2">
-                        <span class="ms-2 d-lg-none">{{ config.languages[locale].name }}</span>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="languagePickerButton">
-                        {% for _, language in config.languages %}
-                            {% set active = language.code == locale %}
+                            <i class="fa-solid fa-circle-half-stroke theme-icon-active fa-fw"></i>
+                            <span class="ms-2 d-lg-none" id="bd-theme-text">{{ "Toggle theme" | i18n }}</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="bd-theme">
                             <li>
-                                <a class="dropdown-item {% if active %}active{% endif %}" {% if not active %}href="{{ page.url | locale_url(language.code) }}"{% endif %} {% if active %}aria-current="true"{% endif %}>
-                                    <img src="{{ language.flag }}" width="20" alt="{{ language.name }}" class="me-2">
-                                    {{ language.name }}
-                                </a>
+                                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+                                    <i class="fa-solid fa-sun dropdown-item-icon fa-fw me-2"></i>
+                                    {{ "Light" | i18n }}
+                                </button>
                             </li>
-                        {% endfor %}
-                    </ul>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                                    <i class="fa-solid fa-moon dropdown-item-icon fa-fw me-2"></i>
+                                    {{ "Dark" | i18n }}
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
+                                    <i class="fa-solid fa-circle-half-stroke dropdown-item-icon fa-fw me-2"></i>
+                                    {{ "Auto" | i18n }}
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vr mx-2 d-none d-lg-inline-block"></div>
+                    <div class="dropdown">
+                        <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center text-body" type="button" id="languagePickerButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="{{ config.languages[locale].flag }}" width="20" alt="{{ config.languages[locale].name }}" class="me-2">
+                            <span class="ms-2 d-lg-none">{{ config.languages[locale].name }}</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="languagePickerButton">
+                            {% for _, language in config.languages %}
+                                {% set active = language.code == locale %}
+                                <li>
+                                    <a class="dropdown-item {% if active %}active{% endif %}" {% if not active %}href="{{ page.url | locale_url(language.code) }}"{% endif %} {% if active %}aria-current="true"{% endif %}>
+                                        <img src="{{ language.flag }}" width="20" alt="{{ language.name }}" class="me-2">
+                                        {{ language.name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    {% endif %}
 
-    <div class="container bg-body shadow-sm px-lg-5 py-4 text-body">
-        {{ content | safe }}
-    </div>
+    {{ content | safe }}
 
-    <footer class="text-center small text-body-secondary mt-auto py-4 no-print fw-medium">
-        <span>{{ "Made with ❤ in Minas Gerais" | i18n }}</span>
-    </footer>
+    {% if not disable_footer %}
+        <footer class="text-center small text-body-secondary mt-auto py-4 no-print fw-medium">
+            <span>{{ "Made with ❤ in Minas Gerais" | i18n }}</span>
+        </footer>
+    {% endif %}
 
     {% include "html/end_scripts.njk" %}
 </body>
