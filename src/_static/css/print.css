@@ -1,8 +1,11 @@
-.timeline::before {
-    -webkit-print-color-adjust: exact !important;
-    /* Chrome, Safari 6 – 15.3, Edge */
-    print-color-adjust: exact !important;
-    /* Firefox 97+, Safari 15.4+ */
+:root {
+    --bs-link-color-rgb: 0, 0, 0 !important;
+    --bs-link-hover-color-rgb: 76, 76, 76 !important;
+    }
+
+a.unroll-link[href]:after,
+.unroll-link a[href]:after {
+    content: ' (' attr(href) ')';
 }
 
 .container {
