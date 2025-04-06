@@ -10,23 +10,43 @@ layout: default.njk
 {{ section.title('Projects' | i18n) }}
 
 <div class="">
-    {% for project in collections.project %}
+    {% for project in collections.projects %}
         <div class="mb-4">
-            <div class="d-md-flex justify-content-between align-items-center mb-2">
-                <div class="mb-0">
-                    <span class="fw-bold">{{ project.data.title }}</span> • {{ project.data[locale].tag_line }}
-                </div>
-                <div class="text-secondary-emphasis"></div>
-            </div>
-            <div class="mb-2">
-                {% if project.data.badges %}
-                    {% for badge in project.data.badges %}
-                        <img alt="Project Badge" src="{{ badge}}" class="me-2">
-                    {% endfor %}
+            <div class="mb-0">
+                <span class="fw-bold fs-4">{{ project.data.title }}</span>
+                {% if project
+                    .data[locale]
+                    .tag_line %}
+                    <span> • {{ project.data[locale].tag_line }}</span>
                 {% endif %}
             </div>
-            <div>
+            <div class="d-flex flex-row column-gap-2 flex-wrap mb-1">
+                {% if project.data.archived %}
+                    <div>
+                        <img alt="Project status" src="https://img.shields.io/badge/{{ "archived" | i18n}}-darkred?style=flat&label=status&labelColor=white">
+                    </div>
+                {% else %}
+                    <div>
+                        <img alt="Project status" src="https://img.shields.io/badge/{{ "active" | i18n}}-darkgreen?style=flat&label=status&labelColor=white">
+                    </div>
+                {% endif %}
+                {% for badge in project.data.badges %}
+                    <div>
+                        <img alt="Project Badge" src="{{ badge}}">
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="mb-1">
                 {{ project.data[locale].description }}
+            </div>
+            <div class="d-flex flex-row column-gap-3 flex-wrap">
+                {% for link in project.data.links %}
+                    <div>
+                        <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="fw-bold unroll-link">
+                            {{ link.label | i18n }}
+                        </a>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     {% endfor %}
