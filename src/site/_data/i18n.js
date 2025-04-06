@@ -78,5 +78,13 @@ export const translations = {
     "Auto": {
         'en': 'Auto',
         'pt': 'Automático'
-    }
+    },
+    "English": {
+        'en': 'English',
+        'pt': 'Inglês'
+    },
+    "Português": {
+        'en': 'Portuguese',
+        'pt': 'Português'
+    },
 };

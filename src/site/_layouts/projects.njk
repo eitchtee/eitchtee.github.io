@@ -7,7 +7,7 @@ layout: default.njk
 
 {% call section.section() %}
 
-{{ section.title('Projects') }}
+{{ section.title('Projects' | i18n) }}
 
 <div class="">
     {% for project in collections.project %}
