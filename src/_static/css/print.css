@@ -20,6 +20,7 @@ body {
     zoom: 80%;
 }
 
+/* Hide elements you don't want to print */
 .no-print,
 .no-print * {
     display: none !important;
@@ -39,7 +40,7 @@ div,
 li,
 td,
 th,
-.text-body,
+.text-body:not(.bg-secondary-subtle),
 .text-white,
 .text-light {
     color: #000 !important;
@@ -47,11 +48,6 @@ th,
 
 .text-secondary-emphasis {
     color: #2b2f32 !important;
-}
-
-/* Hide elements you don't want to print */
-.no-print {
-    display: none !important;
 }
 
 .force-print {
