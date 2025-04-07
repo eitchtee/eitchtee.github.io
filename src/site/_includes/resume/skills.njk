@@ -5,8 +5,8 @@
     {% call section.section() -%}
     {{ section.title('Skills' | i18n) }}
     <!-- Technical Skills -->
-    <div class="two-columns-grid">
-        {% for skill in resume[resume_name].skills %}
+    {% for skill in resume[resume_name].skills %}
+        <div class="two-columns-grid mb-3">
             <div class="fw-bold pe-4">{{ skill.name }}</div>
             {% if skill.keywords and skill.keywords | length > 0 %}
                 <div>
@@ -17,7 +17,7 @@
             {% else %}
                 <div></div>
             {% endif %}
-        {% endfor %}
-    </div>
+        </div>
+    {% endfor %}
     {%- endcall %}
 {% endif %}
