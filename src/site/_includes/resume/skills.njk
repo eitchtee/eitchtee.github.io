@@ -9,7 +9,11 @@
         {% for skill in resume[resume_name].skills %}
             <div class="fw-bold pe-4">{{ skill.name }}</div>
             {% if skill.keywords and skill.keywords | length > 0 %}
-                <div>{{ skill.keywords | join(', ') }}</div>
+                <div>
+                    {% for skill_keyword in skill.keywords %}
+                        <span class="badge text-body bg-secondary-subtle force-print">{{ skill_keyword }}</span>
+                    {% endfor %}
+                </div>
             {% else %}
                 <div></div>
             {% endif %}
