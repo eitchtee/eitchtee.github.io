@@ -9,8 +9,12 @@
             <div class="mb-2">
                 <div class="d-md-flex justify-content-between align-items-center">
                     <div class="mb-0">
-                        <span class="fw-bold">{{ education.area }}, {{ education.studyType }}</span>, {{ education.institution }}
+                        <span class="fw-bold">{{ education.area }}, {{ education.studyType }}</span>
+                        <div class="mb-0">
+                            {{ education.institution }}
+                        </div>
                     </div>
+
                     <div class="text-secondary-emphasis text-nowrap">
                         {% if education.startDate | length and education.endDate | format_date("yyyy") > education.startDate | format_date("yyyy")and education.endDate | date <= today %}{{ education.startDate | format_date("yyyy") }} - {% endif %}
                         {% if education.endDate | length and education.endDate | date < today %}
