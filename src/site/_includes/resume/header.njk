@@ -23,13 +23,13 @@
     <div class="justify-content-center d-flex flex-row flex-wrap column-gap-5 mb-3">
         {% for profile in resume[resume_name].basics.profiles %}
             <div>
-                <a href="{{ profile.url }}" target="_blank" class="text-decoration-none text-body">
+                <a href="{{ profile.url }}" target="_blank" class="text-decoration-none">
                     <i class="fa-brands fa-{{ profile.network | lower }} fa-fw me-1"></i>{{ profile.username }}</a>
             </div>
         {% endfor %}
         {% if resume[resume_name].basics.url %}
             <div>
-                <a href="{{ resume[resume_name].basics.url }}" target="_blank" class="text-decoration-none text-body">
+                <a href="{{ resume[resume_name].basics.url }}" target="_blank" class="text-decoration-none">
                     <i class="fa-solid fa-link fa-fw me-1"></i>{{ resume[resume_name].basics.url | replace('https://', '') | replace('http://', '') }}</a>
             </div>
         {% endif %}
