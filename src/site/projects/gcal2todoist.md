@@ -18,5 +18,5 @@ pt:
 
 badges:
  - "https://img.shields.io/github/stars/eitchtee/gcal2todoist?style=flat&logo=github&logoColor=black&logoSize=auto&label=stars&labelColor=white&color=black"
- - "https://img.shields.io/github/language/top/eitchtee/gcal2todoist?style=flat&labelColor=white&color=blue"
+ - "https://img.shields.io/github/languages/top/eitchtee/gcal2todoist?style=flat&labelColor=white&color=blue"
 ---

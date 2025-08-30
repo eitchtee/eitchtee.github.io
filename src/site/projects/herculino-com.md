@@ -1,7 +1,7 @@
 ---
 title: herculino.com
 archived: false
-order: 9
+order: 2
 
 url: https://github.com/eitchtee/eitchtee.github.io
 links:
@@ -16,9 +16,8 @@ en:
 
 pt:
     tag_line: "Meu portfólio pessoal, currículo e blog"
-    description: "Este é um site de currículo, índice de projetos e blog, construído com 11ty (Eleventy). Foi projetado para ser totalmente imprimível e exportável para PDF. O currículo é gerado a partir de um esquema Json Resume, facilitando a manutenção e atualização de informações profissionais em diferentes formatos."
+    description: "Este é um site de currículo, índice de projetos e blog, construído com 11ty (Eleventy). Foi projetado para ser impresso e exportável para PDF. O currículo é gerado a partir de um esquema Json Resume, facilitando a manutenção e atualização de informações profissionais em diferentes formatos."
 
 badges:
- - "https://img.shields.io/github/language/top/eitchtee/eitchtee.github.io?style=flat&labelColor=white&color=blue"
- - "https://img.shields.io/website?style=flat&url=https%3A%2F%2Fherculino.com&labelColor=white&color=green&label=website"
+  - "https://img.shields.io/github/languages/top/eitchtee/eitchtee.github.io?style=flat&labelColor=white&color=blue"
 ---

@@ -1,7 +1,7 @@
 ---
 title: VCM
 archived: false
-order: 5
+order: 4
 
 url: https://github.com/eitchtee/VCM
 links:
@@ -20,6 +20,5 @@ pt:
 
 badges:
  - "https://img.shields.io/github/stars/eitchtee/VCM?style=flat&logo=github&logoColor=black&logoSize=auto&label=stars&labelColor=white&color=black"
- - "https://img.shields.io/github/language/top/eitchtee/VCM?style=flat&labelColor=white&color=blue"
- - "https://img.shields.io/badge/platform-Windows-0078d4?style=flat&logo=windows&logoColor=white"
+ - "https://img.shields.io/github/languages/top/eitchtee/VCM?style=flat&labelColor=white&color=blue"
 ---

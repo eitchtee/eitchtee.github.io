@@ -20,6 +20,5 @@ pt:
 
 badges:
  - "https://img.shields.io/github/stars/eitchtee/pyCelsiusNetwork?style=flat&logo=github&logoColor=black&logoSize=auto&label=stars&labelColor=white&color=black"
- - "https://img.shields.io/pypi/v/pycelsiusnetwork?style=flat&labelColor=white&color=blue&logo=pypi&logoColor=blue"
- - "https://img.shields.io/github/language/top/eitchtee/pyCelsiusNetwork?style=flat&labelColor=white&color=blue"
+ - "https://img.shields.io/github/languages/top/eitchtee/pyCelsiusNetwork?style=flat&labelColor=white&color=blue"
 ---

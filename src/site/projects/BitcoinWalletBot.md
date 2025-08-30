@@ -18,7 +18,5 @@ pt:
 
 badges:
  - "https://img.shields.io/github/stars/eitchtee/BitcoinWalletBot?style=flat&logo=github&logoColor=black&logoSize=auto&label=stars&labelColor=white&color=black"
- - "https://img.shields.io/github/language/top/eitchtee/BitcoinWalletBot?style=flat&labelColor=white&color=blue"
- - "https://img.shields.io/badge/platform-Telegram-0088cc?style=flat&logo=telegram&logoColor=white"
- - "https://img.shields.io/badge/crypto-Bitcoin-f7931a?style=flat&logo=bitcoin&logoColor=white"
+ - "https://img.shields.io/github/languages/top/eitchtee/BitcoinWalletBot?style=flat&labelColor=white&color=blue"
 ---

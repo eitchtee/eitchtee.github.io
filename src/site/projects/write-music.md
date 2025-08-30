@@ -1,7 +1,7 @@
 ---
 title: Write Music
 archived: false
-order: 2
+order: 5
 
 url: https://github.com/eitchtee/write-music
 links:
@@ -20,5 +20,5 @@ pt:
 
 badges:
  - "https://img.shields.io/github/stars/eitchtee/write-music?style=flat&logo=github&logoColor=black&logoSize=auto&label=stars&labelColor=white&color=black"
- - "https://img.shields.io/github/language/top/eitchtee/write-music?style=flat&labelColor=white&color=blue"
+ - "https://img.shields.io/github/languages/top/eitchtee/write-music?style=flat&labelColor=white&color=blue"
 ---

@@ -1,14 +1,12 @@
 ---
 title: TextStylesBot
 archived: false
-order: 4
+order: 6
 
 url: https://github.com/eitchtee/TextStylesBot
 links:
     - url: https://github.com/eitchtee/TextStylesBot
       label: Repo
-    - url: https://t.me/txtfrmtbot
-      label: Try Bot
 
 en:
     tag_line: "Get fancy text styles for your Telegram messages"
@@ -20,6 +18,5 @@ pt:
 
 badges:
  - "https://img.shields.io/github/stars/eitchtee/TextStylesBot?style=flat&logo=github&logoColor=black&logoSize=auto&label=stars&labelColor=white&color=black"
- - "https://img.shields.io/github/language/top/eitchtee/TextStylesBot?style=flat&labelColor=white&color=blue"
- - "https://img.shields.io/badge/platform-Telegram-0088cc?style=flat&logo=telegram&logoColor=white"
+ - "https://img.shields.io/github/languages/top/eitchtee/TextStylesBot?style=flat&labelColor=white&color=blue"
 ---
