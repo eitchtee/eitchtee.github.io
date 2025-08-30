@@ -2,7 +2,6 @@
 title: WYGIWYH
 archived: false
 order: 1
-draft: true
 
 url: https://github.com/eitchtee/WYGIWYH
 links:

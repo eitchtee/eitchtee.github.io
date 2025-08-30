@@ -94,5 +94,29 @@ export const translations = {
     "archived": {
         'en': 'archived',
         'pt': 'arquivado'
+    },
+    "Repo": {
+        'en': 'Repo',
+        'pt': 'Repositório'
+    },
+    "Demo": {
+        'en': 'Demo',
+        'pt': 'Demo'
+    },
+    "Site": {
+        'en': 'Site',
+        'pt': 'Site'
+    },
+    "Try Bot": {
+        'en': 'Try Bot',
+        'pt': 'Testar Bot'
+    },
+    "Download": {
+        'en': 'Download',
+        'pt': 'Baixar'
+    },
+    "PyPI": {
+        'en': 'PyPI',
+        'pt': 'PyPI'
     }
 };
