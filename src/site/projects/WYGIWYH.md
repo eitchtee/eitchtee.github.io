@@ -2,7 +2,6 @@
 title: WYGIWYH
 archived: false
 order: 1
-draft: true
 
 url: https://github.com/eitchtee/WYGIWYH
 links:
@@ -21,4 +20,5 @@ pt:
 
 badges:
  - "https://img.shields.io/github/stars/eitchtee/WYGIWYH?style=flat&logo=github&logoColor=black&logoSize=auto&label=stars&labelColor=white&color=black"
+ - "https://img.shields.io/github/languages/top/eitchtee/WYGIWYH?style=flat&labelColor=white&color=blue"
 ---
