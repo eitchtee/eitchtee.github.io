@@ -19,4 +19,6 @@ pt:
     description: "Write Music é um visualizador do ritmo de leitura de um texto. Baseado em um ensinamento de Gary Provost sobre escrita. Veja e ouça seu texto."
 
 badges:
+ - "https://img.shields.io/github/stars/eitchtee/write-music?style=flat&logo=github&logoColor=black&logoSize=auto&label=stars&labelColor=white&color=black"
+ - "https://img.shields.io/github/language/top/eitchtee/write-music?style=flat&labelColor=white&color=blue"
 ---
