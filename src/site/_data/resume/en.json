@@ -83,6 +83,12 @@
             "date": "",
             "issuer": "",
             "url": ""
+        },
+        {
+            "name": "English Certificate 74/100 (C2 Proficient)",
+            "date": "2025-09-27",
+            "issuer": "EF SET",
+            "url": "https://cert.efset.org/en/sGYwQp"
         }
     ],
     "publications": [],
